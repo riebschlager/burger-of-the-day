@@ -321,9 +321,6 @@ season,episode_title,burger_of_the_day
 10,The Hawkening: Look Who's Hawking Now!,The Hawk And Chickpeas Burger
 10,The Hawkening: Look Who's Hawking Now!,The Thousand Chard Stare Burger (Comes With Thousand Island Dressing And Swiss Chard)
 10,The Ring (But Not Scary),The Olive Me Why Not Take Olive Me? Burger
-Here is the CSV file with the burgers of the day extracted from the season 13 document:
-
-Season,Episode_Title,Burger_of_the_Day
 13,"To Bob, or Not to Bob",I LIKE WALNUTS AND I CANNOT LIE BURGER
 13,"To Bob, or Not to Bob",MID-CUCUMBER NIGHT'S BRIE-M BURGER
 13,"To Bob, or Not to Bob",DIRTY ROTTEN TENDRILS BURGER 
