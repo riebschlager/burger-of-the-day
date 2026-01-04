@@ -1,445 +1,592 @@
-season,episode_title,burger_of_the_day
-1,Art Crawl,Poblano Picasso Burger
-1,Art Crawl,Salvador Cauliflower Burger
-1,Bed & Breakfast,Camembert-Ly Legal Burger
-1,Bed & Breakfast,Krauted House Burger
-1,Burger War,Hit Me With Your Best Shallot Burger
-1,Burger War,The Sound & The Curry Burger
-1,Crawl Space,Foot Feta-ish Burger
-1,Crawl Space,Tunami
-1,Hamburger Dinner Theatre,Last Of The Mo-jicama Burger - Comes With Jicama
-1,Hamburger Dinner Theatre,Onion Burger - Grilled...To Death!
-1,Hamburger Dinner Theatre,Totally Radish Burger - Comes With Radish
-1,Human Flesh,New Bacon-ings - Comes With Bacon
-1,Human Flesh,The Child Molester - Comes With Candy!
-1,Lobsterfest,Neither Fish Nor Fowl Burger (100% Beef)
-1,Lobsterfest,"One Fish, Two Fish, Red Fish Hamburger"
-1,Lobsterfest,Something's Not Fishy Burger (100% Beef)
-1,Sacred Cow,Mission A-corn-plished Burger - Comes With Corn Salsa
-1,Sacred Cow,Pepper Don't Preach Burger
-1,Sacred Cow,Rest In Peas Burger
-1,Sexy Dance Fighting,Chevre Which Way But Loose Burger
-1,Sexy Dance Fighting,Fig-eta Bout It Burger
-1,Sexy Dance Fighting,The Roquefort Files Burger
-1,Sexy Dance Fighting,These Collards Don't Run Burger
-1,"Sheesh! Cab, Bob?",Olive And Let Die Burger
-1,"Sheesh! Cab, Bob?",Thank God It's Fried Egg Burger
-1,Spaghetti Western & Meatballs,Shoot Out At The Okra Corral Burger
-1,Torpedo,Take Me Out To The Burger - Comes With Peanuts And Crackerjacks
-1,Weekend at Mort's,I've Created A Muenster Burger
-2,Bad Tina,Sit And Spinach Burger
-2,Bad Tina,Sweaty Palms Burger (Comes With Hearts Of Palm)
-2,Beefsquatch,Mesclun Around Burger
-2,Beefsquatch,Poutine On The Ritz Burger (Comes With Poutine Fries)
-2,Beefsquatch,The Don't Get Creme Fraiche With Me Burger
-2,Bob Day Afternoon,Chard To A Crisp Burger
-2,Burgerboss,Band On The Bun Burger - Comes With Wings.
-2,Burgerboss,Good Night And Good Leek Burger
-2,Burgerboss,Papaya Was A Rolling Stone Burger
-2,Dr. Yap,"It's Fun To Eat At The Ryemca Burger (Comes On Rye W/ Mustard, Cheese & Avocado)"
-2,Food Truckin',Chorizo Your Own Adventure Burger
-2,Food Truckin',What's The Worcestershire That Could Happen Burger.
-2,Food Truckin',Where Have You Bean All My Life Burger - Comes With Baked Beans.
-2,Moody Foodie,Girls Just Wanna Have Fennel Burger
-2,Moody Foodie,If Looks Could Kale Burger
-2,Moody Foodie,Little Swiss Bunshine Burger (Comes On A Buttered Bun)
-2,Moody Foodie,The Final Kraut Down Burger (Comes With Sauerkraut)
-2,Synchronized Swimming,Burger A La Mode - Comes With Ice Cream (Not On Top)
-2,Synchronized Swimming,Do Brussel Burger (Comes With Brussel Sprouts)
-2,Synchronized Swimming,Shake Your Honeymaker Burger (Comes With Honey Mustard)
-2,Synchronized Swimming,The One Yam Band Burger (Comes With Yams)
-2,Synchronized Swimming,Use It Or Bleus It Burger (Comes With Bleu Cheese)
-2,The Belchies,I'm Mad About Saffron (Made With No Saffron)
-3,An Indecent Thanksgiving Proposal,Plymouth Roquefort Burger
-3,Bob Fires the Kids,Beets Me Burger
-3,Bob Fires the Kids,Butterface Burger (Served With Butter Lettuce)
-3,Bob Fires the Kids,Itsy Bitsy Teeny Weenie Yellow Polka-Dot Zucchini Burger
-3,Bob Fires the Kids,Summer Thyme Burger
-3,Bob Fires the Kids,"We're Here We're Gruyere, Get Used To It Burger"
-3,Broadcast Wagstaff School News,Grandpa Muenster Burger (10% Senior Discount)
-3,Broadcast Wagstaff School News,Mushroom With A View Burger (Porcini On A Double Decker)
-3,Carpe Museum,"So Many Fennel So Little Thyme Burger (Comes With Lots Of Fennel, No Thyme)"
-3,Ear-Sy Rider,Not If I Can Kelp It Burger
-3,Ear-Sy Rider,Say It Ain't Cilantro Burger (Doesn't Come With Cilantro. Because Cilantro Is Terrible.)
-3,Ear-Sy Rider,Two Karat Burger (Comes With Two Carrots)
-3,Full Bars,The Jack-O-Lentil Burger
-3,God Rest Ye Merry Gentle-Mannequins,Fifth Day Of Christmas Burger (Comes With Five Golden Rings Of Onion)
-3,God Rest Ye Merry Gentle-Mannequins,Home For The Challah-Days Burger (Comes On A Challah Roll)
-3,God Rest Ye Merry Gentle-Mannequins,Jingle Bell Pepper Burger
-3,God Rest Ye Merry Gentle-Mannequins,"One Horse Open Slaw Burger (Comes With Slaw, No Horse)"
-3,God Rest Ye Merry Gentle-Mannequins,Santa Claus Is Cumin To Town Burger (With Cumin)
-3,God Rest Ye Merry Gentle-Mannequins,The Silentil Night Burger (Comes With Lentils)
-3,Lindapendent Woman,Don't You Four Cheddar 'Bout Me Burger (Comes With Four Kinds Of Cheddar)
-3,Lindapendent Woman,I Mint To Do That Burger (Comes With Mint Relish)
-3,Lindapendent Woman,Only The Provolonely Burger (Comes With Provolone)
-3,Mother Daughter Laser Razor,50 Ways To Leave Your Guava Burger
-3,Mother Daughter Laser Razor,Ruta-Bag-A Burger
-3,My Fuzzy Valentine,I Heartichoke You Burger
-3,Nude Beach,Don't Go Brocking My Heart Burger (With Broccoli And Artichoke Hearts)
-3,Nude Beach,Eggers Can't Be Cheesers Burger (With Fried Egg And Cheese)
-3,Nude Beach,Freedom Of Choys Burger (Comes With Bok Choy)
-3,O.T. The Outside Toilet,Sharp Cheddar Dressed Man (Comes With Sharp Cheddar)
-3,The Deepening,Let'S Get Frisée Burger
-3,The Deepening,She's A Super Leek Burger (Comes With Braised Leeks)
-3,The Kids Run the Restaurant,Top Bun Burger (Comes On Our Best Seven-Grain Bun)
-3,The Kids Run the Restaurant,Top Butt Burger (Your Face Looks Like A Butt)
-3,The Unbearable Like-Likeness of Gene,Bean Spirit (Comes With Beans)
-3,The Unbearable Like-Likeness of Gene,Yes I Cayenne Burger
-3,The Unnatural,A Few Gouda Men
-3,The Unnatural,As Gouda As It Gets
-3,The Unnatural,Free To Brie You And Me Burger
-3,The Unnatural,Gouda Day Sir
-3,The Unnatural,Gouda Gouda Gumdrops
-3,The Unnatural,Gouda Gouda Two Shoes (It Comes With Shoes)
-3,The Unnatural,National Pass-Thyme Burger
-3,The Unnatural,Woulda Coulda Gouda
-3,The Unnatural,You Gouda Be Kidding Me
-3,Tina-Rannosaurus Wrecks,Chipotle Off The Old Block Burger
-3,Tina-Rannosaurus Wrecks,Don't Give Me No Chive Burger (Served With No Chives)
-3,Tina-Rannosaurus Wrecks,Open Sesame Burger (Served Open-Faced On A Sesame Seed Bun)
-3,Tina-Rannosaurus Wrecks,Pickle My Funny Bone Burger
-3,Topsy,I Know Why The Cajun Burger Sings
-3,Topsy,Tarragon In Sixty Seconds Burger
-3,Two for Tina,Chile Relleno-You-Didn't Burger
-4,Ambergris,Sweet Home Avocado Burger
-4,Ambergris,To Err Is Cumin Burger
-4,Bob and Deliver,Bohemian Radishy Burger
-4,Bob and Deliver,Edward James Olive-Most Burger
-4,Bob and Deliver,"I'm Ok, You're Ok-ra Burger"
-4,"Easy Com-mercial, Easy Go-mercial",Kale Mary Burger - Served With Kale
-4,"Easy Com-mercial, Easy Go-mercial",The Longest Chard Burger
-4,"Easy Com-mercial, Easy Go-mercial",The Troy Oinkman Burger - Served With Bacon
-4,"Easy Com-mercial, Easy Go-mercial",Winter Muensterland Burger With Muenster Cheese - Side Of Snow Peas
-4,Fort Night,The Cauliflower's Cumin From Inside The House Burger (Comes With Cauliflower And Cumin)
-4,Gene It On,Bleu By You Burger - With Locally Sourced Bleu Cheese
-4,Gene It On,Parma Parma Parma Chameleon Burger - With Parmesan Crisp
-4,How Bob Saves/Destroys the Town Parts 1&2,The Saffron Saff-Off Burger
-4,I Get Psy-chic Out of You,Beets Of The Southern Wild Burger
-4,I Get Psy-chic Out of You,"Charbroil Fair Burger - Comes With Parlsey, Sage, Rosemary And Thyme"
-4,I Get Psy-chic Out of You,I Fought The Slaw Burger (And The Slaw Won)
-4,I Get Psy-chic Out of You,Sympathy For The Deviled Egg Burger
-4,My Big Fat Greek Bob,A Leek Of Their Own Burger
-4,Presto Tina-O,"Caper Magic To Yourself Burger (Comes With Capers - Also, Magic Doesn't Exist)"
-4,Presto Tina-O,I Don't Bay Leaf In Magic Burger
-4,Presto Tina-O,Is This Your Chard Burger
-4,Seaplane!,Sprouts! Sprouts! Sprouts It All Out! Burger
-4,The Equestranauts,The Life Of The Parsley Burger
-4,The Kids Rob a Train,Enoki Dokie Burger - Comes With Enoki Mushrooms
-4,The Kids Run Away,Onion Ring Around The Rosemary Burger
-4,Uncle Teddy,It's Only Sourdough Burger (But I Like It)
-5,Adventures in Chinchilla-Sitting,The Six Scallion Dollar Man Burger
-5,Best Burger,Run Gorgonzola Run Burger - Made With Gorgonzola
-5,Can't Buy Me Math,Let It Snow Peas Burger
-5,Father of the Bob,Cheeses Is Born Burger - Comes With Baby Swiss
-5,Friends with Burger-fits,Beet-Er Late Than Never
-5,Friends with Burger-fits,Parsnips-Vous Francais Burger
-5,Friends with Burger-fits,Peas And Thank You Burger
-5,Friends with Burger-fits,Romanes Of The Day Burger
-5,Friends with Burger-fits,Sub-Conscious Burger - On A Sub Roll
-5,Hawk & Chick,Take A Leek Burger – Comes With Sautéed Leeks
-5,Housetrap,She'll Be Coming 'Round The Plantain Burger
-5,Late Afternoon in the Garden of Bob and Louise,A Good Manchego Is Hard To Find Burger
-5,Late Afternoon in the Garden of Bob and Louise,Shoestring Around The Rosey Burger
-5,Late Afternoon in the Garden of Bob and Louise,The Garden Of E-Dumb Burger - Served With Crapple
-5,Li'l Hard Dad,Sweet Chili O' Mine Burger
-5,Midday Run,Beets Of Burden Burger
-5,Speakeasy Rider,Blue Is The Warmest Cheese Burger
-5,Speakeasy Rider,The Grand Brie Burger
-5,Speakeasy Rider,Three Beets To The Wind Burger
-5,The Gayle Tales,Curd-Fect Strangers Burger - Comes With Cheese Curds
-5,The Itty Bitty Ditty Committee,Chile Relleno-You-Didn't Burger
-5,The Itty Bitty Ditty Committee,"If You've Got It, Croissant It Burger"
-5,The Itty Bitty Ditty Committee,Parm-Pit Burger - Comes With Parmesan
-5,The Itty Bitty Ditty Committee,Scent Of A Cumin Burger
-5,The Millie-Churian Candidate,"I Ran, So Tar... Burger"
-5,The Millie-Churian Candidate,Knife To Meet You Burger - Comes With Thinly Sliced Beets
-5,The Oeder Games,Who Wants To Be A Scallionaire Burger?
-5,The Runway Club,Let's Give 'Em Something Shiitake 'Bout Burger
-5,Tina and the Real Ghost,Kales From The Crypt Burger
-5,Tina and the Real Ghost,Paranormal Pepper Jack-Tivity Burger
-5,Tina and the Real Ghost,Texas Chainsaw Massa-Curd Burger
-5,Tina and the Real Ghost,The Human Polenta-Pede Burger
-5,Tina Tailor Soldier Spy,Blondes Have More Fun-Gus Burger - Comes With Mushrooms
-5,Tina Tailor Soldier Spy,Cajun Gracefully Burger
-6,Bye Bye Boo Boo,Fig Lebowski Burger
-6,Bye Bye Boo Boo,My Farro Lady Burger
-6,"Glued, Where's My Bob?",Put Me In Poached Burger (Comes With A Poached Egg)
-6,"Glued, Where's My Bob?",The Hand That Rocks The Bagel Burger (Comes With An Everything Bagel)
-6,House of 1000 Bounces,Ring Around The Collard Burger
-6,Lice Things Are Lice,Total Eclipse Of The Havarti Burger
-6,Nice-Capades,The Pear Tree Burger (With Sliced Pears - Partridge Not Included)
-6,Pro Tiki/Con Tiki,All In A Glaze Work Burger (Served With Balsamic Glaze)
-6,Pro Tiki/Con Tiki,"If At First You Sesame Seed, Thai, Thai, Again Burger"
-6,Pro Tiki/Con Tiki,Turn The Other Leek Burger
-6,Secret Admiral-irer,Aw Nuts Burger (Comes With Peanut Butter)
-6,Secret Admiral-irer,The Glass Fromagerie Burger
-6,Sexy Dance Healing,Heads Shoulders Knees And Tomatoes Burger
-6,Sexy Dance Healing,I'm Picklish Burger (Comes With Pickles)
-6,Sexy Dance Healing,It Takes Bun To Know Bun Burger (Comes On A Fancy Bun)
-6,Sexy Dance Healing,Runny Out Of Thyme Burger (Comes With A Runny Fried Egg)
-6,Sexy Dance Healing,The Say Cheese Burger
-6,Stand by Gene,To Thine Own Self Be Bleu Burger (Served With Bleu Cheese)
-6,"The Cook, The Steve, The Gayle and Her Lover","Cole Came, Cole Slaw, Cole Conquered Burger"
-6,The Gene and Courtney Show,Be My Valen-Thyme Burger
-6,The Hauntening,Breaking Radish Burger (Comes With A Slice Of Radish)
-6,The Hormone-iums,Captain Pepper Jack Marrow Burger
-6,The Hormone-iums,Curry On My Wayward Bun Burger
-6,The Hormone-iums,"Frisee It, Don’t Spray It Burger"
-6,The Hormone-iums,We Bought A Zucchini Burger
-6,The Horse Rider-er,Chutney The Front Door Burger (Comes With Mango Chutney)
-6,The Horse Rider-er,Teriyaki A New One Burger
-6,The Horse Rider-er,You're Kimchi The Best Burger
-6,The Land Ship,Snipwrecked Burger (Comes With Parsnips)
-6,The Land Ship,The Yam Ship Burger (Comes With Yams)
-6,The Land Ship,You Can't Fight City Challa Burger (Comes On A Challah Roll)
-6,Wag the Hog,Barley Davidson Burger (Comes On A Barley Roll)
-6,Wag the Hog,Edamame Dearest Burger (Comes With Edamame)
-7,A Few 'Gurt Men,Fingerling Brothers And Barnum And Bay Leaves Burger
-7,A Few 'Gurt Men,It's My Havarti And I'll Rye If I Want To
-7,Ain't Miss Debatin',The Choys Are Bok In Town Burger
-7,Aquaticism,For Those About To Roquefort We Salute You Burger
-7,Aquaticism,The Oh Con-Pear Burger
-7,Bob Actually,Andrew Diced Carrots Burger (Comes With Pickled Diced Carrots)
-7,Eggs for Days,Emergency Eggs-It Burger
-7,Eggs for Days,Passion Of The Cress Burger
-7,Ex MachTina,Caper The Friendly Goat Cheese Burger (S/W Capers & Feta)
-7,Ex MachTina,"If You've Got It, Croissant It Burger"
-7,Ex MachTina,Video Killed The Radicchio Star Burger
-7,Flu-ouise,Endive Had The Time Of My Life Burger
-7,Into the Mild,Pear Goes The Neighborhood (Comes With A Side Of Pear Salad)
-7,"Large Brother, Where Fart Thou?",The Olives Kitteridge Burger (With Olive Tapenade)
-7,Like Gene for Chocolate,Citizen Kale Burger
-7,Like Gene for Chocolate,It Takes Two To Mango
-7,Paraders of the Lost Float,Riding In Cars With Bok Choys
-7,Sea Me Now,Wasabi My Guest Burger
-7,Sea Me Now,You Spinach Me Right Round Spinach Burger
-7,Teen-a Witch,Muenster Under The Bun Burger
-7,The Grand Mama-pest Hotel,Nothing Compares 2 Blue (Cheese) Burger
-7,The Last Gingerbread House on the Left,Away In A Mango Burger
-7,Thelma & Louise Except Thelma is Linda,Glory Glory Jalapeño Burger
-7,There's No Business Like Mr. Business Business,Garlic Shandling Burger
-7,There's No Business Like Mr. Business Business,Little Red Bruschett-A Burger
-7,There's No Business Like Mr. Business Business,Stilton On The Dock Of The Bun Burger
-7,There's No Business Like Mr. Business Business,Walking In A Winter Comes-With-Cran Burger (Comes With Cranberry Sauce)
-7,"They Serve Horses, Don't They?",Chili Wonka Burger
-7,"They Serve Horses, Don't They?",Corned Identity Burger (Comes With Corned Beef)
-7,"They Serve Horses, Don't They?",Do Fry For Me Argentina Burger
-7,"They Serve Horses, Don't They?",I Know What You Did Last Summer Squash Burger
-7,"They Serve Horses, Don't They?",Tangled Up In Blueberry Burger (Comes With A Blueberry Compote)
-7,"They Serve Horses, Don't They?",When Harry Met Salumi Burger
-7,Zero LARP Thirty,Creminis And Misdemeanies Burger (Comes With Cremini Mushrooms)
-8,"Are You There Bob? It's Me, Birthday",The Here I Am Broccoli Like A Hurricane Burger
-8,"Are You There Bob? It's Me, Birthday",The Older With More Eggs-Perience Burger (Aged Burger With A Fried Egg On Top)
-8,As I Walk Through the Alley of the Shadow of Ramps,The 500 Glaze Of Summer Burger (Comes With Pomegranate Glaze)
-8,As I Walk Through the Alley of the Shadow of Ramps,The Sneakin' Celery Down The Alley Burger
-8,As I Walk Through the Alley of the Shadow of Ramps,The Sun'll Come Out To-Marrow Burger (Comes With Bone Marrow)
-8,Boywatch,Portobello The Belt Burger
-8,Boywatch,Shishito Corleone Burger (Comes With Shishito Peppers)
-8,Boywatch,The Gouda Wife Burger (Comes With Mature Gouda)
-8,Boywatch,Walk This Waioli Burger (Comes With Wasabi Aioli)
-8,Brunchsquatch,The Blanc Canvas Burger (Comes With A Fromage Blanc)
-8,Brunchsquatch,Topless The Morning To You Burger
-8,"Cheer Up, Sleepy Gene",Judy Garlic Burger
-8,Go Tina on the Mountain,The Paprika Smurf Burger (Comes With Blue Potato Fries)
-8,Go Tina on the Mountain,You Won't Believe It's Not Buttersquash Burger (Served With Zucchini)
-8,Mission Impos-slug-ble,The Don't Dream It's Okra Burger
-8,Mission Impos-slug-ble,The I'm Getting Too Old For This Shishito Burger
-8,Sit Me Baby One More Time,The Clear And Present Ginger Burger
-8,Sleeping with the Frenemy,The Olive What She's Having Burger
-8,Sleeping with the Frenemy,The Rosemary's Baby Spinach Burger
-8,"Something Old, Something New, Something Bob Caters for You",The Stop Or My Mom Will Shoots Burger (Comes With Pea Shoots)
-8,Thanks-Hoarding,The Catch Me If You Cran Burger (Served With Cranberry Sauce)
-8,"The Bleakening, Part 1",The Ebeneezer Bleu-Ge Burger
-8,"The Bleakening, Part 1",Twas The Nut Before Christmas Burger (Comes With Walnut Aioli)
-8,The Hurt Soccer,The Heirloom Where It Happens Burger
-8,The Hurt Soccer,The Wasabi With You Burger
-8,The Secret Ceramics Room of Secrets,The Full Head Of Heir-Loom Tomato Burger
-8,The Secret Ceramics Room of Secrets,The Sous-Vide And The Banshees Burger
-8,The Secret Ceramics Room of Secrets,The We Bought A Zucchini Burger
-8,The Secret Ceramics Room of Secrets,The What's Kala-Mata With You Burger
-8,The Silence of the Louise,Weekend At Bearnaise Burger
-8,V for Valentine-detta,The Shut Up And Swiss Me Burger
-8,Y Tu Ga-Ga Tambien,Corn This Way Burger
-8,Y Tu Ga-Ga Tambien,Havarti Like It's 1999 Burger
-8,Y Tu Ga-Ga Tambien,Smells Like Bean Spirit Burger
-8,Y Tu Ga-Ga Tambien,Step Into The Okra-Tagon Burger
-9,Better Off Sled,The Santa Slaws Is Coming To Town Burger
-9,Better Off Sled,The Smilla's Sense Of Snowpeas Burger
-9,Bobby Driver,Focaccia Red Handed Burger (On Focaccia With Beets)
-9,Every Which Way but Goose,The I Love You Just The Whey You Are Burger
-9,Every Which Way but Goose,The Sealed With A Swiss Burger
-9,Every Which Way but Goose,The Throw Your Hands In The Gruyere Burger
-9,Every Which Way but Goose,The Two Left Beet Burger
-9,"If You Love It So Much, Why Don't You Marionette?",The Ruth Tomater Ginsburger (Comes With Heirloom Tomatoes And Pickled Ginger)
-9,Just One of the Boyz 4 Now for Now,The Dragonfruit Me To Hell Burger
-9,Live and Let Fly,The Absentee Shallot Burger (Comes With Crispy Shallots)
-9,Live and Let Fly,The Land Of The Slaw-St Burger (Comes With Pickle Slaw)
-9,"Long Time Listener, First Time Bob",The Devil's Avocado-Cate Burger
-9,"Long Time Listener, First Time Bob","The Fleetwood Jack Burger (Comes With Sweet Little Fries Pies, Jack Cheese)"
-9,"Lorenzo's Oil? No, Linda's",The Bustle And Flow Burger (Served With Brussel Sprouts)
-9,Nightmare on Ocean Avenue Street,My Bloody Kale-Entine Burger
-9,P.T.A. It Ain't So,Lordy Lordy Look Who's Roquefort-y Burger
-9,P.T.A. It Ain't So,One Flew Okra The Couscous Nest Burger
-9,P.T.A. It Ain't So,The Hickory Chicory Guac Burger
-9,Roamin' Bob-iday,"Murder, Kimchi Wrote Burger"
-9,Roamin' Bob-iday,The I Hate To See You Brie-Ve But I Love To Watch You Go Burger
-9,Roller? I Hardly Know Her!,The Fifty Glaze To Eat Your Burger
-9,Roller? I Hardly Know Her!,The Frankie Goes To Hollandaise Burger
-9,Roller? I Hardly Know Her!,The Throw Your Hands In The Heirloom Burger
-9,The Fresh Princ-ipal,Video Killed The Radicchio Star Burger
-9,The Gene Mile,The Judge Brine-Hold Burger
-9,The Helen Hunt,The Mush-Aroom About Nothing Burger
-9,The Taking of Funtime One Two Three,Won't Baguette Fooled Again Burger
-9,Tweentrepreneurs,Little Chop Of Horseradish Burger
-9,Tweentrepreneurs,The Cops And Rabe-Ers Burger (Topped With Broccoli Rabes)
-9,Tweentrepreneurs,The Finders Capers Burger
-9,Tweentrepreneurs,Turmeric-A The Beautiful Burger
-9,UFO No You Didn't,The Around The World In Eighty Dates Burger
-9,UFO No You Didn't,The Colby By Your Name Burger
-9,UFO No You Didn't,The Dill Crazy After All These Gruyeres Burger
-9,UFO No You Didn't,The Figgy Smalls Burger
-9,What About Blob?,The All Hot And Collard Burger
-9,What About Blob?,The Chevre Little Thing She Does Is Magic Burger
-9,What About Blob?,The Gorgon-Baby-Gone Burger (Comes With Gorgonzola Cheese)
-9,What About Blob?,The Someone Raclette The Bed Burger (Comes With Raclette Cheese)
-9,What About Blob?,The Straight And Marrow Burger (Comes With Marrow)
-9,Yes Without My Zeke,The Pea-Brie's Big Adventure Burger (Pea Protein Burger W/Brie)
-10,A Fish Called Tina,The If It's Yellow Let It Portobello Burger (With Yellow Peppers And Portobello Mushrooms)
-10,A Fish Called Tina,The Random Jacks Of Chive-Ness Burger (With Monterrey Jack Cheese And Chives)
-10,A Fish Called Tina,The Thin Red Pepper Burger
-10,All That Gene,The Creme Fraiche Prince Of Bell Peppers Burger
-10,All That Gene,The Fried Off Into The Sunset Burger (Comes With A Fried Egg)
-10,All That Gene,The Oaxaca Waka Waka Burger (Comes With Oaxaca Cheese)
-10,Boys Just Wanna Have Fungus,The Hunt For Red Onion-Tober Burger (On Focaccia With Beets)
-10,Drumforgiven,The Ber-Gouda Triangle Burger
-10,Drumforgiven,"The Easy Come, Asiago Burger"
-10,Drumforgiven,The Mama Said There'd Be Glaze Like This Burger (Comes With A Worcestershire Glaze)
-10,Land of the Loft,The Twisted Swiss-Ster Burger
-10,"Motor, She Boat",The What If Peapod Was One Of Us Burger
-10,P.T.A. It Ain't So,The 28 Maize Later Burger (Comes With Corn Salsa)
-10,P.T.A. It Ain't So,The Corn-Juring Two Burger (Comes With Even More Corn Salsa)
-10,The Hawkening: Look Who's Hawking Now!,The Hawk And Chickpeas Burger
-10,The Hawkening: Look Who's Hawking Now!,The Thousand Chard Stare Burger (Comes With Thousand Island Dressing And Swiss Chard)
-10,The Ring (But Not Scary),The Olive Me Why Not Take Olive Me? Burger
-11,"Dream a Little Bob of Bob",THE WHAT'S THE MATTER-HORN BURGER
-11,"Worms of In-Rear-ment",None
-11,"Copa-Bob-bana",PAINT IT BLACKBERRY BURGER
-11,"Copa-Bob-bana",PLAY IT AGAIN YAM BURGER
-11,"Heartbreak Hotel-oween",THE NIGHT-PEAR ON ELM BEET BURGER
-11,"Fast Time Capsules at Wagstaff School",THE BLEU COLLARD BURGER
-11,"Fast Time Capsules at Wagstaff School",THE UNBREAKABLE KIMCHI SCHMIDT BURGER
-11,"Bob Belcher and the Terrible, Horrible, No Good, Very Bad Kids",THE CHIMICHURRI UP AND WAIT BURGER
-11,"Bob Belcher and the Terrible, Horrible, No Good, Very Bad Kids",THE GUAC! OR MY MOM WILL SHOOT BURGER
-11,"Diarrhea of a Poopy Kid",None
-11,"The Terminalator II: Terminals of Endearment",THE EGGPLANT ONE ON ME BURGER
-11,"Mommy Boy",THE RYE OF THE STORM BURGER
-11,"Mommy Boy",ASIAGO FOR BROKE BURGER
-11,"Yachty or Nice",I'm Brie-ing of a White Crisp-mas Sliders
-11,"Romancing the Beef",THE TIKKA LOOK AT ME NOW BURGER
-11,"Die Card, or Card Trying",None
-11,"An Incon-Wheelie-ent Truth",THE FOR BUTTER OR FOR WURST BURGER
-11,"Mr. Lonely Farts",THE GREEN A LITTLE BEAN OF ME BURGER
-11,"Sheshank Redumption",GRATERS OF THE SAUCED HAVART(I) BURGER
-11,"Y Tu Tina También",THE PECORINO ON SOMEONE YOUR OWN SIZE BURGER
-11,"Y Tu Tina También",THE THREE CHEEKS TO THE WIND BURGER
-11,"Fingers-loose",THE GROOVE IS IN THE CHARD BURGER
-11,"Fingers-loose",STEP UP 2: THE BEETS BURGER
-11,"Some Kind of Fender Benderful","THE MO, LARRY, AND CURRY BURGER"
-11,"Bridge Over Troubled Rudy",THE SHOULD I SAUTEE OR SHOULD I MANGO BURGER
-11,"Bridge Over Troubled Rudy","DO THE CREMINI, DO THE THYME BURGER"
-11,"Steal Magazine-olias",PARME-JEAN-CLAUDE VAN HAMBURGER
-11,"Tell Me Dumb Thing Good",THE YOU CAN LEAD A HORSERADISH TO WATERCRESS BURGER
-11,"Tell Me Dumb Thing Good",THE BREWSTER'S SCALLIONS BURGER
-11,"Tell Me Dumb Thing Good",...YOU CALL ME BURGER (With mango chutney)
-11,"Tell Me Dumb Thing Good",TAKE A BITE OUT OF LIME BURGER (With lime chutney)
-11,"Tell Me Dumb Thing Good",...I AM... FATHER
-11,"Vampire Disco Death Dance",STILTON CRAZY AFTER ALL THESE GRUYERES BURGER
-12,"Manic Pixie Crap Show",THE IF I HAD A (PUMPER)NICKEL BURGER
-12,"Crystal Mess",THE YOU HAD ME AT HELLOKRA BURGER
-12,"Crystal Mess",GRIN AND CARROT BURGER
-12,"The Pumpkinening",THE LEEK-Y CAULDRON BURGER
-12,"Driving Big Dummy",THE MARVELOUS MRS. BASIL BURGER
-12,"Seven-tween Again",SON OF A PEACH-ER MAN BURGER
-12,"Seven-tween Again",LIVIN' ON A PEAR BURGER
-12,"Seven-tween Again",FULL NETTLE JACKET BURGER
-12,"Seven-tween Again",BABY GOT BAK CHOY BURGER
-12,"Beach, Please",YOUR CRESS IS ON MY LIST BURGER
-12,"Loft in Bedslation",I BEAN OF GREENIE BURGER
-12,"Stuck in the Kitchen with You",None
-12,"FOMO You Didn't",A WRINKLE IN THYME BURGER
-12,"FOMO You Didn't",IT'S CHIVE O'CLOCK SOME-PEAR BURGER
-12,"FOMO You Didn't",THE LOST IN YAM-SLATION BURGER
-12,"Gene's Christmas Break",THE CHALLAH AND THE CHIVE-Y BURGER
-12,"Gene's Christmas Break","YOU CHEDDAR WATCH OUT, YOU CHEDDER ON RYE BURGER"
-12,"Gene's Christmas Break",JINGLE BELL PEPPERS ROCK BURGER
-12,"Gene's Christmas Break",IT CAME UPON A MIDNIGHT GRUYERE BURGER
-12,"Touch of Eval(uations)",THROW CARDAMOM-MA FROM THE TRAIN BURGER
-12,"Ferry on My Wayward Bob and Linda",DON'T DREAM IT'S OKRA BURGER
-12,"Frigate Me Knot",-
-12,"Video Killed the Gene-io Star",HOUSE OF 1000 PORK-SES BURGER
-12,"Video Killed the Gene-io Star",I STILTON HAVEN'T FOUND WHAT THYME LOOKING FOR BURGER
-12,"Ancient Misbehavin'",THE CHIMI-CHURRI YOU CAN'T BE SERIOUS BURGER
-12,"Interview with a Pop-pop-ire",None
-12,"The Spider House Rules",THE RIB LONG AND PROSPER BURGER
-12,"The Spider House Rules",THE WHAT WE DILL IN THE SHADOWS BURGER
-12,"Clear and Present Ginger","CELERY-BRATE GOOD TIMES, COME ON! BURGER"
-12,"A-Sprout a Boy",READY OR NOT HERE I PLUM BURGER
-12,"A-Sprout a Boy",THE LITTLE SPROUTS ON THE PRAIRIE BURGER
-12,"Sauce Side Story",BURGER SHE GOAT
-12,"Some Like It Bot Part 1: Eighth Grade Runner",THE LEEK-Y TIKKI TAVI BURGER
-12,"Some Like It Bot Part 1: Eighth Grade Runner",THE SAGE OF INNOCENCE BURGER
-12,"Some Like It Bot Part 1: Eighth Grade Runner",THE MAD FLAX CURRY ROAD BURGER
-12,"Some Like It Bot Part 2: Judge-bot Day",THE MR. SMITH GOES TO SQUASH-INGTON BURGER
-12,"Some Like It Bot Part 2: Judge-bot Day",THE I AIN'T MESCLUN YOU AT ALL BURGER
-13,"To Bob, or Not to Bob",I LIKE WALNUTS AND I CANNOT LIE BURGER
-13,"To Bob, or Not to Bob",MID-CUCUMBER NIGHT'S BRIE-M BURGER
-13,"To Bob, or Not to Bob",DIRTY ROTTEN TENDRILS BURGER 
-13,"To Bob, or Not to Bob",CAULIFLOWER ME MAYBE BURGER
-13,"To Bob, or Not to Bob",ALL THE WORLD'S A SAGE BURGER
-13,"The Reeky Lake Show",THE YOU BURRATA KNOW BURGER
-13,"What About Job?",THE KIDS ARE ALL RYE BURGER
-13,"Comet-y of Errors",THE TAKE BANH MI BURGER
-13,"So You Stink You Can Dance",CAUL-LOW YOUR BLISS BURGER
-13,"So You Stink You Can Dance",SILENCE OF THE YAMS BURGER
-13,"So You Stink You Can Dance",GUAC-Y HORROR PICTURE SHOW BURGER
-13,"Apple Gore-chard! (But Not Gory)",ROSEMARY'S BABY CORN BURGER
-13,"Ready Player Gene",I'M GUACING HERE BURGER
-13,"Ready Player Gene",SURELY YOU JEST BURGER
-13,"Ready Player Gene",CHEDDAR SAFE THAN CHARD-Y BURGER
-13,Putts-giving,None
-13,"Show Mama from the Grave",None
-13,"The Plight Before Christmas",THE PINEAPPLE ON 34TH STREET BURGER
-13,"Cheaty Cheaty Bang Bang",None
-13,"Oh Row You Didn't",THE MOULD MAN AND THE SEA BURGER
-13,"Stop! Or My Mom Will Sleuth!",THE THAT GIRL IS HOISIN BURGER
-13,"These Boots Are Made for Stalking",THE IT'S MY PARSLEY AND I'LL CHIVE IF I WANT TO BURGER
-13,"These Boots Are Made for Stalking",THE SMELLS LIKE POUTINE SPIRIT BURGER
-13,"These Boots Are Made for Stalking",THE OLIVE AND LET RYE BURGER
-13,"These Boots Are Made for Stalking",THE ROMANCING THE PRUNE BURGER
-13,"The Show (and Tell) Must Go On",THE EDAM AND WEEP BURGER
-13,"What a (April) Fool Believes",SWISS-TER ACT 2 BURGER
-13,"Crows Encounters of the Bird Kind",RYE HERE RYE NOW BURGER
-13,"Gift Card or Buy Trying",HEY MR. ... MAN ...
-13,"Crab-solutely Fabulous",THE CHIVE EASY PEAS-ES BURGER
-13,"Crab-solutely Fabulous",THE LET'S GET CHEDDAR TO RUMBLE BURGER
-13,"Crab-solutely Fabulous",THE BRUSSEL-MANIA BURGER
-13,"Radio No You Didn't",None
-13,"Mother Author Laser Pointer","THE ANYTHING YUZU CAN DO, RYE CAN DO CHEDDAR BURGER"
-13,Amelia,THE PLUM FRY WITH ME BURGER
-13,Amelia,THE MAMA TOLD ME GNOCCHI COME
-14,Fight at the Not Okay Chore-al,A LEAGUE OF PEAR OWN BURGER
-14,The Amazing Rudy,LAMB! I WISH I WAS YOUR B-
-14,The Pickleorette,THE BURGER BALL PIT
-14,Running Down a Gene,None
-14,Bully-ieve It or Not,THE BURGER BALL PIT
-14,Escape from Which Island?,THE CORN IDENTITY BURGER
-14,"The (Raccoon) King and I",EVERYTHING EVERYWHERE ALL AT QUINCE BURGER
-14,"Wharf, Me Worry?",THE ELECTRIC LIGHT OKRA-SLAW BURGER
-14,"Wharf, Me Worry?",THE GOOD THYME BURGER
-14,"Wharf, Me Worry?",THE PEARY- B-
-14,"Fraud of the Dead: Zombie-docu-pocalypse",BROCCOLI RABE-IN HOOD BURGER
-14,The Nightmare 2 Days Before Christmas,None
-14,Mission Impossi-Bob,MRS. KRAUTFIRE BURGER
-14,Jade in the Shade,SWISS CONGENIALITY BURGER
-14,Jade in the Shade,THE SCARLET CHEDDAR BURGER
-14,Butt Sweat and Fears,"THE ONCE, TWICE, THREE TIMES A MARMA-LADY BURGER"
+season,episode_title,episode_url,burger_of_the_day,burger_name,burger_description
+1,Human Flesh,https://bobs-burgers.fandom.com/wiki/Human_Flesh,"""NEW BACON-INGS"" (Comes with Bacon)","""NEW BACON-INGS""",Comes with Bacon
+1,Human Flesh,https://bobs-burgers.fandom.com/wiki/Human_Flesh,THE CHILD MOLESTER (Comes with Candy!),THE CHILD MOLESTER,Comes with Candy!
+1,Crawl Space,https://bobs-burgers.fandom.com/wiki/Crawl_Space,FOOT FETA-ISH BURGER,FOOT FETA-ISH BURGER,
+1,Crawl Space,https://bobs-burgers.fandom.com/wiki/Crawl_Space,TUNAMI,TUNAMI,
+1,Sacred Cow,https://bobs-burgers.fandom.com/wiki/Sacred_Cow,Mission A-Corn-Plished Burger (Comes with Corn Salsa),Mission A-Corn-Plished Burger,Comes with Corn Salsa
+1,Sacred Cow,https://bobs-burgers.fandom.com/wiki/Sacred_Cow,Pepper Don't Preach Burger (Comes with Roasted Peppers),Pepper Don't Preach Burger,Comes with Roasted Peppers
+1,Sacred Cow,https://bobs-burgers.fandom.com/wiki/Sacred_Cow,REST IN PEAS BURGER,REST IN PEAS BURGER,
+1,Sexy Dance Fighting,https://bobs-burgers.fandom.com/wiki/Sexy_Dance_Fighting,Fig-eta Bout It Burger,Fig-eta Bout It Burger,
+1,Sexy Dance Fighting,https://bobs-burgers.fandom.com/wiki/Sexy_Dance_Fighting,Chevre Which Way But Loose Burger,Chevre Which Way But Loose Burger,
+1,Sexy Dance Fighting,https://bobs-burgers.fandom.com/wiki/Sexy_Dance_Fighting,The Roquefort Files Burger,The Roquefort Files Burger,
+1,Sexy Dance Fighting,https://bobs-burgers.fandom.com/wiki/Sexy_Dance_Fighting,These Collards Don't Run Burger,These Collards Don't Run Burger,
+1,Hamburger Dinner Theater,https://bobs-burgers.fandom.com/wiki/Hamburger_Dinner_Theater,TOTALLY RADISH BURGER (Comes with Radish),TOTALLY RADISH BURGER,Comes with Radish
+1,Hamburger Dinner Theater,https://bobs-burgers.fandom.com/wiki/Hamburger_Dinner_Theater,ONION BURGER GRILLED.... TO DEATH!,ONION BURGER GRILLED.... TO DEATH!,
+1,Hamburger Dinner Theater,https://bobs-burgers.fandom.com/wiki/Hamburger_Dinner_Theater,LAST OF THE MO-JICAMA (Comes with Jicama),LAST OF THE MO-JICAMA,Comes with Jicama
+1,"Sheesh! Cab, Bob?","https://bobs-burgers.fandom.com/wiki/Sheesh!_Cab,_Bob%3F",OLIVE AND LET DIE BURGER,OLIVE AND LET DIE BURGER,
+1,"Sheesh! Cab, Bob?","https://bobs-burgers.fandom.com/wiki/Sheesh!_Cab,_Bob%3F",THANK GOD IT'S FRIED EGG Burger,THANK GOD IT'S FRIED EGG Burger,
+1,Bed & Breakfast,https://bobs-burgers.fandom.com/wiki/Bed_%26_Breakfast,CAMEMBERT-LY LEGAL BURGER,CAMEMBERT-LY LEGAL BURGER,
+1,Bed & Breakfast,https://bobs-burgers.fandom.com/wiki/Bed_%26_Breakfast,KRAUTED HOUSE BURGER,KRAUTED HOUSE BURGER,
+1,Art Crawl,https://bobs-burgers.fandom.com/wiki/Art_Crawl,Poblano Picasso BURGER,Poblano Picasso BURGER,
+1,Art Crawl,https://bobs-burgers.fandom.com/wiki/Art_Crawl,Salvador Cauliflower BURGER,Salvador Cauliflower BURGER,
+1,Spaghetti Western and Meatballs,https://bobs-burgers.fandom.com/wiki/Spaghetti_Western_and_Meatballs,SHOOT OUT AT THE OKRA CORRAL BURGER,SHOOT OUT AT THE OKRA CORRAL BURGER,
+1,Burger War,https://bobs-burgers.fandom.com/wiki/Burger_War,Hit Me With Your Best Shallot Burger,Hit Me With Your Best Shallot Burger,
+1,Burger War,https://bobs-burgers.fandom.com/wiki/Burger_War,The Sound & The Curry Burger,The Sound & The Curry Burger,
+1,Weekend at Mort's,https://bobs-burgers.fandom.com/wiki/Weekend_at_Mort%27s_(episode),I've Created a Muenster Burger,I've Created a Muenster Burger,
+1,Lobsterfest,https://bobs-burgers.fandom.com/wiki/Lobsterfest,Something's NOT Fishy Burger (100% Beef),Something's NOT Fishy Burger,Something's NOT Fishy Burger (100% Beef)
+1,Lobsterfest,https://bobs-burgers.fandom.com/wiki/Lobsterfest,Neither Fish Nor Fowl Burger (100% Beef),Neither Fish Nor Fowl Burger,100% Beef
+1,Lobsterfest,https://bobs-burgers.fandom.com/wiki/Lobsterfest,"One Fish, Two Fish, Red Fish, Hamburger","One Fish, Two Fish, Red Fish, Hamburger",
+1,Torpedo,https://bobs-burgers.fandom.com/wiki/Torpedo,TAKE ME OUT TO THE BURGER (Comes with Peanuts and Crackerjacks),TAKE ME OUT TO THE BURGER,Comes with Peanuts and Crackerjacks
+2,The Belchies,https://bobs-burgers.fandom.com/wiki/The_Belchies,I AM MAD ABOUT SAFFRON (Made with no saffron),I AM MAD ABOUT SAFFRON,Made with no saffron
+2,Bob Day Afternoon,https://bobs-burgers.fandom.com/wiki/Bob_Day_Afternoon,Chard to a Crisp Burger,Chard to a Crisp Burger,
+2,Synchronized Swimming,https://bobs-burgers.fandom.com/wiki/Synchronized_Swimming,BURGER A LA MODE (Comes with Ice Cream (Not on top)),BURGER A LA MODE,Comes with Ice Cream (Not on top)
+2,Synchronized Swimming,https://bobs-burgers.fandom.com/wiki/Synchronized_Swimming,SHAKE YOUR HONEYMAKER BURGER (Comes with honey mustard),SHAKE YOUR HONEYMAKER BURGER,Comes with honey mustard
+2,Synchronized Swimming,https://bobs-burgers.fandom.com/wiki/Synchronized_Swimming,USE IT OR BLEUS IT BURGER (Comes with bleu cheese),USE IT OR BLEUS IT BURGER,Comes with bleu cheese
+2,Synchronized Swimming,https://bobs-burgers.fandom.com/wiki/Synchronized_Swimming,THE ONE YAM BAND BURGER (Comes with yams),THE ONE YAM BAND BURGER,Comes with yams
+2,Synchronized Swimming,https://bobs-burgers.fandom.com/wiki/Synchronized_Swimming,DO THE BRUSSEL BURGER (Comes with brussel sprouts),DO THE BRUSSEL BURGER,Comes with brussel sprouts
+2,Burgerboss,https://bobs-burgers.fandom.com/wiki/Burgerboss,PAPAYA WAS A ROLLING STONE BURGER,PAPAYA WAS A ROLLING STONE BURGER,
+2,Burgerboss,https://bobs-burgers.fandom.com/wiki/Burgerboss,GOOD NIGHT AND GOOD LEEK BURGER,GOOD NIGHT AND GOOD LEEK BURGER,
+2,Burgerboss,https://bobs-burgers.fandom.com/wiki/Burgerboss,BAND ON THE BUN BURGER (Comes with wings),BAND ON THE BUN BURGER,Comes with wings
+2,Food Truckin',https://bobs-burgers.fandom.com/wiki/Food_Truckin%27,CHORIZO YOUR OWN ADVENTURE BURGER,CHORIZO YOUR OWN ADVENTURE BURGER,
+2,Food Truckin',https://bobs-burgers.fandom.com/wiki/Food_Truckin%27,WHAT'S THE WORCESTERSHIRE THAT COULD HAPPEN BURGER,WHAT'S THE WORCESTERSHIRE THAT COULD HAPPEN BURGER,
+2,Food Truckin',https://bobs-burgers.fandom.com/wiki/Food_Truckin%27,WHERE HAVE YOU BEAN ALL MY LIFE BURGER (Comes with baked beans),WHERE HAVE YOU BEAN ALL MY LIFE BURGER,Comes with baked beans
+2,Dr. Yap,https://bobs-burgers.fandom.com/wiki/Dr._Yap_(Episode),"IT'S FUN TO EAT AT THE rYeMCA BURGER (Comes on R y e w/ M ustard, C heese & A vocado)",IT'S FUN TO EAT AT THE rYeMCA BURGER,"Comes on R y e w/ M ustard, C heese & A vocado"
+2,Moody Foodie,https://bobs-burgers.fandom.com/wiki/Moody_Foodie_(Episode),IF LOOKS COULD KALE BURGER,IF LOOKS COULD KALE BURGER,
+2,Moody Foodie,https://bobs-burgers.fandom.com/wiki/Moody_Foodie_(Episode),LITTLE SWISS BUNSHINE BURGER (Comes on a buttered bun),LITTLE SWISS BUNSHINE BURGER,Comes on a buttered bun
+2,Moody Foodie,https://bobs-burgers.fandom.com/wiki/Moody_Foodie_(Episode),GIRLS JUST WANNA HAVE FENNEL BURGER,GIRLS JUST WANNA HAVE FENNEL BURGER,
+2,Moody Foodie,https://bobs-burgers.fandom.com/wiki/Moody_Foodie_(Episode),THE FINAL KRAUT DOWN BURGER (Comes with sauerkraut),THE FINAL KRAUT DOWN BURGER,Comes with sauerkraut
+2,Bad Tina,https://bobs-burgers.fandom.com/wiki/Bad_Tina,SIT AND SPINACH BURGER,SIT AND SPINACH BURGER,
+2,Bad Tina,https://bobs-burgers.fandom.com/wiki/Bad_Tina,SWEATY PALMS BURGER (Comes with hearts of palm),SWEATY PALMS BURGER,Comes with hearts of palm
+2,Beefsquatch,https://bobs-burgers.fandom.com/wiki/Beefsquatch,POUTINE ON THE RITZ BURGER (Comes with poutine fries),POUTINE ON THE RITZ BURGER,Comes with poutine fries
+2,Beefsquatch,https://bobs-burgers.fandom.com/wiki/Beefsquatch,ONION-TENDED CONSEQUENCES BURGER,ONION-TENDED CONSEQUENCES BURGER,
+2,Beefsquatch,https://bobs-burgers.fandom.com/wiki/Beefsquatch,BRUSCHETTA BOUT IT BURGER,BRUSCHETTA BOUT IT BURGER,
+2,Beefsquatch,https://bobs-burgers.fandom.com/wiki/Beefsquatch,MESCLUN AROUND BURGER,MESCLUN,AROUND BURGER
+2,Beefsquatch,https://bobs-burgers.fandom.com/wiki/Beefsquatch,MEDITERR-AIN'T MISBEHAVIN' BURGER,MEDITERR-AIN'T MISBEHAVIN' BURGER,
+2,Beefsquatch,https://bobs-burgers.fandom.com/wiki/Beefsquatch,I'M GONNA GET YOU SUCCOTASH BURGER,I'M GONNA GET YOU SUCCOTASH BURGER,
+2,Beefsquatch,https://bobs-burgers.fandom.com/wiki/Beefsquatch,EVERY BREATH YOU TIKKA MASALA BURGER,EVERY BREATH YOU TIKKA MASALA BURGER,
+2,Beefsquatch,https://bobs-burgers.fandom.com/wiki/Beefsquatch,THE DON’T GET CREME FRAICHE WITH ME BURGER,THE DON’T GET CREME FRAICHE WITH ME BURGER,
+3,Ear-sy Rider,https://bobs-burgers.fandom.com/wiki/Ear-sy_Rider,TWO KARAT BURGER (Comes with two carrots),TWO KARAT BURGER,Comes with two carrots
+3,Ear-sy Rider,https://bobs-burgers.fandom.com/wiki/Ear-sy_Rider,SAY IT AIN'T CILANTRO BURGER (Doesn't come with cilantro... Because cilantro is terrible.),SAY IT AIN'T CILANTRO BURGER,Doesn't come with cilantro... Because cilantro is terrible.
+3,Ear-sy Rider,https://bobs-burgers.fandom.com/wiki/Ear-sy_Rider,NOT IF I CAN KELP IT BURGER,NOT IF I CAN KELP IT BURGER,
+3,Full Bars,https://bobs-burgers.fandom.com/wiki/Full_Bars,THE JACK-O-LENTIL BURGER,THE JACK-O-LENTIL BURGER,
+3,Bob Fires the Kids,https://bobs-burgers.fandom.com/wiki/Bob_Fires_the_Kids,ITSY BITSY TEENY WEENIE YELLOW POLKA DOT ZUCCHINI BURGER,ITSY BITSY TEENY WEENIE YELLOW POLKA DOT ZUCCHINI BURGER,
+3,Bob Fires the Kids,https://bobs-burgers.fandom.com/wiki/Bob_Fires_the_Kids,SUMMER THYME BURGER,SUMMER THYME BURGER,
+3,Bob Fires the Kids,https://bobs-burgers.fandom.com/wiki/Bob_Fires_the_Kids,BUTTERFACE BURGER (Served with butter lettuce),BUTTERFACE BURGER,Served with butter lettuce
+3,Bob Fires the Kids,https://bobs-burgers.fandom.com/wiki/Bob_Fires_the_Kids,BEETS ME BURGER,BEETS ME BURGER,
+3,Bob Fires the Kids,https://bobs-burgers.fandom.com/wiki/Bob_Fires_the_Kids,"WE'RE HERE WE'RE GRUYERE, GET USED TO IT BURGER","WE'RE HERE WE'RE GRUYERE, GET USED TO IT BURGER",
+3,Mutiny on the Windbreaker,https://bobs-burgers.fandom.com/wiki/Mutiny_on_the_Windbreaker,"None (A Burger of the Day can be partially seen, but only a couple of letters are visible)",None,"A Burger of the Day can be partially seen, but only a couple of letters are visible"
+3,An Indecent Thanksgiving Proposal,https://bobs-burgers.fandom.com/wiki/An_Indecent_Thanksgiving_Proposal,PLYMOUTH ROQUEFORT BURGER,PLYMOUTH ROQUEFORT BURGER,
+3,The Deepening,https://bobs-burgers.fandom.com/wiki/The_Deepening,SHE'S A SUPER LEEK BURGER (Comes with braised leeks),SHE'S A SUPER LEEK BURGER,Comes with braised leeks
+3,The Deepening,https://bobs-burgers.fandom.com/wiki/The_Deepening,LET'S GET FRISÉE BURGER,LET'S GET FRISÉE BURGER,
+3,Tinarannosaurus Wrecks,https://bobs-burgers.fandom.com/wiki/Tinarannosaurus_Wrecks,OPEN SESAME BURGER (Served open-faced on a sesame seed bun),OPEN SESAME BURGER,Served open-faced on a sesame seed bun
+3,Tinarannosaurus Wrecks,https://bobs-burgers.fandom.com/wiki/Tinarannosaurus_Wrecks,CHIPOTLE OFF THE OLD BLOCK BURGER,CHIPOTLE OFF THE OLD BLOCK BURGER,
+3,Tinarannosaurus Wrecks,https://bobs-burgers.fandom.com/wiki/Tinarannosaurus_Wrecks,DON'T GIVE ME NO CHIVE BURGER (Served with no chives),DON'T GIVE ME NO CHIVE BURGER,Served with no chives
+3,Tinarannosaurus Wrecks,https://bobs-burgers.fandom.com/wiki/Tinarannosaurus_Wrecks,PICKLE MY FUNNY BONE BURGER,PICKLE MY FUNNY BONE BURGER,
+3,The Unbearable Like-Likeness of Gene,https://bobs-burgers.fandom.com/wiki/The_Unbearable_Like-Likeness_of_Gene,YES I CAYENNE BURGER,YES I CAYENNE BURGER,
+3,The Unbearable Like-Likeness of Gene,https://bobs-burgers.fandom.com/wiki/The_Unbearable_Like-Likeness_of_Gene,BEAN SPIRIT (Comes with beans),BEAN SPIRIT,Comes with beans
+3,God Rest Ye Merry Gentle-Mannequins,https://bobs-burgers.fandom.com/wiki/God_Rest_Ye_Merry_Gentle-Mannequins,"ONE HORSE OPEN SLAW BURGER (Comes with slaw, no horse)",ONE HORSE OPEN SLAW BURGER,"Comes with slaw, no horse"
+3,God Rest Ye Merry Gentle-Mannequins,https://bobs-burgers.fandom.com/wiki/God_Rest_Ye_Merry_Gentle-Mannequins,SANTA CLAUS IS CUMIN TO TOWN BURGER (With cumin),SANTA CLAUS IS CUMIN TO TOWN BURGER,With cumin
+3,God Rest Ye Merry Gentle-Mannequins,https://bobs-burgers.fandom.com/wiki/God_Rest_Ye_Merry_Gentle-Mannequins,FIFTH DAY OF CHRISTMAS BURGER (Comes with five golden rings of onion),FIFTH DAY OF CHRISTMAS BURGER,Comes with five golden rings of onion
+3,God Rest Ye Merry Gentle-Mannequins,https://bobs-burgers.fandom.com/wiki/God_Rest_Ye_Merry_Gentle-Mannequins,JINGLE BELL PEPPER BURGER,JINGLE BELL PEPPER BURGER,
+3,God Rest Ye Merry Gentle-Mannequins,https://bobs-burgers.fandom.com/wiki/God_Rest_Ye_Merry_Gentle-Mannequins,HOME FOR THE CHALLAH-DAYS BURGER (Comes on a challah roll),HOME FOR THE CHALLAH-DAYS BURGER,Comes on a challah roll
+3,God Rest Ye Merry Gentle-Mannequins,https://bobs-burgers.fandom.com/wiki/God_Rest_Ye_Merry_Gentle-Mannequins,THE SILENTIL NIGHT BURGER (Comes with lentils),THE SILENTIL NIGHT BURGER,Comes with lentils
+3,Mother Daughter Laser Razor,https://bobs-burgers.fandom.com/wiki/Mother_Daughter_Laser_Razor,50 WAYS TO LEAVE YOUR GUAVA BURGER,50 WAYS TO LEAVE YOUR GUAVA BURGER,
+3,Mother Daughter Laser Razor,https://bobs-burgers.fandom.com/wiki/Mother_Daughter_Laser_Razor,RUTA-BAG-A BURGER,RUTA-BAG-A BURGER,
+3,Nude Beach,https://bobs-burgers.fandom.com/wiki/Nude_Beach,DON'T GO BROCKING MY HEART BURGER (With broccoli and artichoke hearts),DON'T GO BROCKING MY HEART BURGER,With broccoli and artichoke hearts
+3,Nude Beach,https://bobs-burgers.fandom.com/wiki/Nude_Beach,EGGERS CAN'T BE CHEESERS BURGER (With fried egg and cheese),EGGERS CAN'T BE CHEESERS BURGER,With fried egg and cheese
+3,Nude Beach,https://bobs-burgers.fandom.com/wiki/Nude_Beach,FREEDOM OF CHOYS BURGER (Comes with bok choy),FREEDOM OF CHOYS BURGER,Comes with bok choy
+3,Broadcast Wagstaff School News,https://bobs-burgers.fandom.com/wiki/Broadcast_Wagstaff_School_News,GRANDPA MUENSTER BURGER (10% Senior Discount),GRANDPA MUENSTER BURGER,10% Senior Discount
+3,Broadcast Wagstaff School News,https://bobs-burgers.fandom.com/wiki/Broadcast_Wagstaff_School_News,MUSHROOM WITH A VIEW BURGER (Porcini on a double decker),MUSHROOM WITH A VIEW BURGER,Porcini on a double decker
+3,My Fuzzy Valentine,https://bobs-burgers.fandom.com/wiki/My_Fuzzy_Valentine,I HEARTICHOKE YOU BURGER,I HEARTICHOKE YOU BURGER,
+3,Lindapendent Woman,https://bobs-burgers.fandom.com/wiki/Lindapendent_Woman,DON'T YOU FOUR CHEDDAR 'BOUT ME BURGER (Comes with four kinds of cheddar),DON'T YOU FOUR CHEDDAR 'BOUT ME BURGER,Comes with four kinds of cheddar
+3,Lindapendent Woman,https://bobs-burgers.fandom.com/wiki/Lindapendent_Woman,I MINT TO DO THAT BURGER (Comes with mint relish),I MINT TO DO THAT BURGER,Comes with mint relish
+3,Lindapendent Woman,https://bobs-burgers.fandom.com/wiki/Lindapendent_Woman,ONLY THE PROVONELY BURGER (Comes with provolone),ONLY THE PROVONELY BURGER,Comes with provolone
+3,O.T. The Outside Toilet,https://bobs-burgers.fandom.com/wiki/O.T._The_Outside_Toilet,SHARP CHEDDAR DRESSED MAN BURGER (Comes with sharp cheddar),SHARP CHEDDAR DRESSED MAN BURGER,Comes with sharp cheddar
+3,Topsy,https://bobs-burgers.fandom.com/wiki/Topsy,I KNOW WHY THE CAJUN BURGER SINGS,I KNOW WHY THE CAJUN BURGER SINGS,
+3,Topsy,https://bobs-burgers.fandom.com/wiki/Topsy,TARRAGON IN SIXTY SECONDS BURGER,TARRAGON IN SIXTY SECONDS BURGER,
+3,Two for Tina,https://bobs-burgers.fandom.com/wiki/Two_for_Tina,CHILE RELLENO-YOU-DIDN'T BURGER,CHILE RELLENO-YOU-DIDN'T BURGER,
+3,It Snakes a Village,https://bobs-burgers.fandom.com/wiki/It_Snakes_a_Village,None,None,
+3,Family Fracas,https://bobs-burgers.fandom.com/wiki/Family_Fracas,"None (A Burger of the Day can be seen, but it's impossible to read in one shot, and only a couple of letters are visible in another.)",None,"A Burger of the Day can be seen, but it's impossible to read in one shot, and only a couple of letters are visible in another."
+3,The Kids Run the Restaurant,https://bobs-burgers.fandom.com/wiki/The_Kids_Run_the_Restaurant,TOP BUN BURGER (Comes on our best seven-grain bun),TOP BUN BURGER,Comes on our best seven-grain bun
+3,The Kids Run the Restaurant,https://bobs-burgers.fandom.com/wiki/The_Kids_Run_the_Restaurant,TOP BUTT BURGER (Your face looks like a butt),TOP BUTT BURGER,Your face looks like a butt
+3,Boyz 4 Now,https://bobs-burgers.fandom.com/wiki/Boyz_4_Now,None,None,
+3,Carpe Museum,https://bobs-burgers.fandom.com/wiki/Carpe_Museum,"SO MANY FENNEL SO LITTLE THYME BURGER (Comes with lots of fennel, no thyme)",SO MANY FENNEL SO LITTLE THYME BURGER,"Comes with lots of fennel, no thyme"
+3,The Unnatural,https://bobs-burgers.fandom.com/wiki/The_Unnatural,NATIONAL PASS-THYME BURGER,NATIONAL PASS-THYME BURGER,
+3,The Unnatural,https://bobs-burgers.fandom.com/wiki/The_Unnatural,FREE TO BRIE YOU AND ME BURGER,FREE TO BRIE YOU AND ME BURGER,
+4,A River Runs Through Bob,https://bobs-burgers.fandom.com/wiki/A_River_Runs_Through_Bob,None,None,
+4,Fort Night,https://bobs-burgers.fandom.com/wiki/Fort_Night,THE CAULIFLOWER'S CUMIN FROM INSIDE THE HOUSE BURGER (Comes with cauliflower and cumin),THE CAULIFLOWER'S CUMIN FROM INSIDE THE HOUSE BURGER,Comes with cauliflower and cumin
+4,Seaplane!,https://bobs-burgers.fandom.com/wiki/Seaplane!,SPROUTS! SPROUTS! SPROUTS IT ALL OUT! BURGER,SPROUTS! SPROUTS! SPROUTS IT ALL OUT! BURGER,
+4,My Big Fat Greek Bob,https://bobs-burgers.fandom.com/wiki/My_Big_Fat_Greek_Bob,A LEEK OF THEIR OWN BURGER,A LEEK OF THEIR OWN BURGER,
+4,Turkey in a Can,https://bobs-burgers.fandom.com/wiki/Turkey_in_a_Can,SMOKE-A-HONTAS BURGER (Comes with ...),SMOKE-A-HONTAS BURGER,Comes with ...
+4,Turkey in a Can,https://bobs-burgers.fandom.com/wiki/Turkey_in_a_Can,GOURDON-HAMSEY BURGER (Comes with squash and ham),GOURDON-HAMSEY BURGER,Comes with squash and ham
+4,Purple Rain-Union,https://bobs-burgers.fandom.com/wiki/Purple_Rain-Union,None,None,
+4,Bob and Deliver,https://bobs-burgers.fandom.com/wiki/Bob_and_Deliver,"I'M OK, YOU'RE OK-RA BURGER","I'M OK, YOU'RE OK-RA BURGER",
+4,Bob and Deliver,https://bobs-burgers.fandom.com/wiki/Bob_and_Deliver,BOHEMIAN RADISHY BURGER,BOHEMIAN RADISHY BURGER,
+4,Bob and Deliver,https://bobs-burgers.fandom.com/wiki/Bob_and_Deliver,EDWARD JAMES OLIVE-MOST BURGER,EDWARD JAMES OLIVE-MOST BURGER,
+4,Christmas in the Car,https://bobs-burgers.fandom.com/wiki/Christmas_in_the_Car,None,None,
+4,Slumber Party,https://bobs-burgers.fandom.com/wiki/Slumber_Party,None,None,
+4,Presto Tina-O,https://bobs-burgers.fandom.com/wiki/Presto_Tina-O,IS THIS YOUR CHARD? BURGER,IS THIS YOUR CHARD? BURGER,
+4,Presto Tina-O,https://bobs-burgers.fandom.com/wiki/Presto_Tina-O,"CAPER MAGIC TO YOURSELF BURGER (Comes with capers - Also, Magic doesn't exist)",CAPER MAGIC TO YOURSELF BURGER,"Comes with capers - Also, Magic doesn't exist"
+4,Presto Tina-O,https://bobs-burgers.fandom.com/wiki/Presto_Tina-O,I DON'T BAY LEAF IN MAGIC BURGER,I DON'T BAY LEAF IN MAGIC BURGER,
+4,"Easy Com-mercial, Easy Go-mercial","https://bobs-burgers.fandom.com/wiki/Easy_Com-mercial,_Easy_Go-mercial",WINTER MUENSTERLAND BURGER (With Muenster cheese and side of snow peas),WINTER MUENSTERLAND BURGER,With Muenster cheese and side of snow peas
+4,"Easy Com-mercial, Easy Go-mercial","https://bobs-burgers.fandom.com/wiki/Easy_Com-mercial,_Easy_Go-mercial",THE LONGEST CHARD BURGER,THE LONGEST CHARD BURGER,
+4,"Easy Com-mercial, Easy Go-mercial","https://bobs-burgers.fandom.com/wiki/Easy_Com-mercial,_Easy_Go-mercial",KALE MARY BURGER (Served with kale),KALE MARY BURGER,Served with kale
+4,"Easy Com-mercial, Easy Go-mercial","https://bobs-burgers.fandom.com/wiki/Easy_Com-mercial,_Easy_Go-mercial",THE TROY OINKMAN BURGER (Served with bacon),THE TROY OINKMAN BURGER,Served with bacon
+4,The Frond Files,https://bobs-burgers.fandom.com/wiki/The_Frond_Files,None,None,
+4,Mazel Tina,https://bobs-burgers.fandom.com/wiki/Mazel_Tina,None,None,
+4,Uncle Teddy,https://bobs-burgers.fandom.com/wiki/Uncle_Teddy,IT'S ONLY SOURDOUGH BURGER (But I like it),IT'S ONLY SOURDOUGH BURGER (But I like it),
+4,The Kids Rob a Train,https://bobs-burgers.fandom.com/wiki/The_Kids_Rob_a_Train,ENOKI DOKIE BURGER (Comes with enoki mushrooms),ENOKI DOKIE BURGER,Comes with enoki mushrooms
+4,I Get Psy-chic Out of You,https://bobs-burgers.fandom.com/wiki/I_Get_Psy-chic_Out_of_You,I FOUGHT THE SLAW BURGER (And the Slaw Won),I FOUGHT THE SLAW BURGER (And the Slaw Won),
+4,I Get Psy-chic Out of You,https://bobs-burgers.fandom.com/wiki/I_Get_Psy-chic_Out_of_You,"CHARBROIL FAIR BURGER (Comes with Parsley, Sage, Rosemary and Thyme)",CHARBROIL FAIR BURGER,"Comes with Parsley, Sage, Rosemary and Thyme"
+4,I Get Psy-chic Out of You,https://bobs-burgers.fandom.com/wiki/I_Get_Psy-chic_Out_of_You,SYMPATHY FOR THE DEVILED EGG BURGER,SYMPATHY FOR THE DEVILED EGG BURGER,
+4,I Get Psy-chic Out of You,https://bobs-burgers.fandom.com/wiki/I_Get_Psy-chic_Out_of_You,BEETS OF THE SOUTHERN WILD BURGER,BEETS OF THE SOUTHERN WILD BURGER,
+4,The Equestranauts,https://bobs-burgers.fandom.com/wiki/The_Equestranauts,THE LIFE OF THE PARSLEY BURGER,THE LIFE OF THE PARSLEY BURGER,
+4,Ambergris,https://bobs-burgers.fandom.com/wiki/Ambergris,SWEET HOME AVOCADO BURGER,SWEET HOME AVOCADO BURGER,
+4,Ambergris,https://bobs-burgers.fandom.com/wiki/Ambergris,TO ERR IS CUMIN BURGER,TO ERR IS CUMIN BURGER,
+4,Ambergris,https://bobs-burgers.fandom.com/wiki/Ambergris,HUMMUS A TUNE BURGER,HUMMUS A TUNE BURGER,
+4,Ambergris,https://bobs-burgers.fandom.com/wiki/Ambergris,"I CAME, I SLAW, THE COLESLAW BURGER","I CAME, I SLAW, THE COLESLAW BURGER",
+4,The Kids Run Away,https://bobs-burgers.fandom.com/wiki/The_Kids_Run_Away,ONION RING AROUND THE ROSEMARY BURGER,ONION RING AROUND THE ROSEMARY BURGER,
+4,The Kids Run Away,https://bobs-burgers.fandom.com/wiki/The_Kids_Run_Away,SGT. POBLANO PEPPER'S LONELY ARTICHOKE HEARTS CLUB BURGER,SGT. POBLANO PEPPER'S LONELY ARTICHOKE HEARTS CLUB BURGER,
+4,Gene It On,https://bobs-burgers.fandom.com/wiki/Gene_It_On,PARMA PARMA PARMA CHAMELEON BURGER (With Parmesan crisp),PARMA PARMA PARMA CHAMELEON BURGER,With Parmesan crisp
+4,Gene It On,https://bobs-burgers.fandom.com/wiki/Gene_It_On,BLEU BY YOU BURGER (With locally sourced bleu cheese),BLEU BY YOU BURGER,With locally sourced bleu cheese
+4,Wharf Horse,https://bobs-burgers.fandom.com/wiki/Wharf_Horse,THE SAFFRON SAFF-OFF BURGER,THE SAFFRON SAFF-OFF BURGER,
+4,World Wharf II: The Wharfening,https://bobs-burgers.fandom.com/wiki/World_Wharf_II:_The_Wharfening,Same as Wharf Horse since both episodes take place on the same day.,,
+5,"Work Hard or Die Trying, Girl","https://bobs-burgers.fandom.com/wiki/Work_Hard_or_Die_Trying,_Girl",None,None,
+5,Tina and the Real Ghost,https://bobs-burgers.fandom.com/wiki/Tina_and_the_Real_Ghost,TEXAS CHAINSAW MASSA-CURD BURGER (Comes with Cheese Curds),TEXAS CHAINSAW MASSA-CURD BURGER,Comes with Cheese Curds
+5,Tina and the Real Ghost,https://bobs-burgers.fandom.com/wiki/Tina_and_the_Real_Ghost,HUMAN POLENTA-PEDE BURGER,HUMAN POLENTA-PEDE BURGER,
+5,Tina and the Real Ghost,https://bobs-burgers.fandom.com/wiki/Tina_and_the_Real_Ghost,KALES FROM THE CRYPT BURGER,KALES FROM THE CRYPT BURGER,
+5,Tina and the Real Ghost,https://bobs-burgers.fandom.com/wiki/Tina_and_the_Real_Ghost,PARANORMAL PEPPER-JACK-TIVITY BURGER (Comes with Pepper Jack cheese),PARANORMAL PEPPER-JACK-TIVITY BURGER,Comes with Pepper Jack cheese
+5,Friends with Burger-fits,https://bobs-burgers.fandom.com/wiki/Friends_with_Burger-fits,ROMAINES OF THE DAY BURGER,ROMAINES OF THE DAY BURGER,
+5,Friends with Burger-fits,https://bobs-burgers.fandom.com/wiki/Friends_with_Burger-fits,SUB-CONSCIOUS BURGER (On a sub roll),SUB-CONSCIOUS BURGER,On a sub roll
+5,Friends with Burger-fits,https://bobs-burgers.fandom.com/wiki/Friends_with_Burger-fits,PARSNIPS-VOUS FRANCAIS BURGER,PARSNIPS-VOUS FRANCAIS BURGER,
+5,Friends with Burger-fits,https://bobs-burgers.fandom.com/wiki/Friends_with_Burger-fits,BEET-ER LATE THAN NEVER BURGER,BEET-ER LATE THAN NEVER BURGER,
+5,Friends with Burger-fits,https://bobs-burgers.fandom.com/wiki/Friends_with_Burger-fits,PEAS AND THANK YOU BURGER,PEAS AND THANK YOU BURGER,
+5,Dawn of the Peck,https://bobs-burgers.fandom.com/wiki/Dawn_of_the_Peck,THE MELTS IN YOUR PLY-MOUTH BURGER,THE MELTS IN YOUR PLY-MOUTH BURGER,
+5,Best Burger,https://bobs-burgers.fandom.com/wiki/Best_Burger,BET IT ALL ON BLACK GARLIC BURGER,BET IT ALL ON BLACK GARLIC BURGER,
+5,Best Burger,https://bobs-burgers.fandom.com/wiki/Best_Burger,RUN GORGONZOLA RUN BURGER (Made with gorgonzola),RUN GORGONZOLA RUN BURGER,Made with gorgonzola
+5,Father of the Bob,https://bobs-burgers.fandom.com/wiki/Father_of_the_Bob,"BABY YOU CAN CHIVE MY CAR BURGER (With Sour Cream, Chives and little Fried Pickle wheels on the sides that make it look like a car)",BABY YOU CAN CHIVE MY CAR BURGER,"With Sour Cream, Chives and little Fried Pickle wheels on the sides that make it look like a car"
+5,Father of the Bob,https://bobs-burgers.fandom.com/wiki/Father_of_the_Bob,CHEESES IS BORN BURGER (Comes with baby swiss),CHEESES IS BORN BURGER,Comes with baby swiss
+5,Tina Tailor Soldier Spy,https://bobs-burgers.fandom.com/wiki/Tina_Tailor_Soldier_Spy,CAJUN GRACEFULLY BURGER,CAJUN GRACEFULLY BURGER,
+5,Tina Tailor Soldier Spy,https://bobs-burgers.fandom.com/wiki/Tina_Tailor_Soldier_Spy,BLONDES HAVE MORE FUN-GUS BURGER (Comes with mushrooms),BLONDES HAVE MORE FUN-GUS BURGER,Comes with mushrooms
+5,Midday Run,https://bobs-burgers.fandom.com/wiki/Midday_Run,BEETS OF BURDEN BURGER (Served with too many beets),BEETS OF BURDEN BURGER,Served with too many beets
+5,Speakeasy Rider,https://bobs-burgers.fandom.com/wiki/Speakeasy_Rider,BLUE IS THE WARMEST CHEESE BURGER,BLUE IS THE WARMEST CHEESE BURGER,
+5,Speakeasy Rider,https://bobs-burgers.fandom.com/wiki/Speakeasy_Rider,THREE BEETS TO THE WIND BURGER,THREE BEETS TO THE WIND BURGER,
+5,Speakeasy Rider,https://bobs-burgers.fandom.com/wiki/Speakeasy_Rider,THE GRAND BRIE BURGER,THE GRAND BRIE BURGER,
+5,Late Afternoon in the Garden of Bob and Louise,https://bobs-burgers.fandom.com/wiki/Late_Afternoon_in_the_Garden_of_Bob_and_Louise,A GOOD MANCHEGO IS HARD TO FIND BURGER,A GOOD MANCHEGO IS HARD TO FIND BURGER,
+5,Late Afternoon in the Garden of Bob and Louise,https://bobs-burgers.fandom.com/wiki/Late_Afternoon_in_the_Garden_of_Bob_and_Louise,THE GARDEN OF E-DUMB BURGER (Served with Crapple),THE GARDEN OF E-DUMB BURGER,Served with Crapple
+5,Late Afternoon in the Garden of Bob and Louise,https://bobs-burgers.fandom.com/wiki/Late_Afternoon_in_the_Garden_of_Bob_and_Louise,SHOE STRING AROUND THE ROSEY BURGER,SHOE STRING AROUND THE ROSEY BURGER,
+5,Can't Buy Me Math,https://bobs-burgers.fandom.com/wiki/Can%27t_Buy_Me_Math,LET IT SNOW PEAS BURGER,LET IT SNOW PEAS BURGER,
+5,The Millie-Churian Candidate,https://bobs-burgers.fandom.com/wiki/The_Millie-Churian_Candidate,KNIFE TO ... YOU BURGER (w/ Thinly Sliced B...),KNIFE TO ... YOU BURGER,w/ Thinly Sliced B...
+5,The Millie-Churian Candidate,https://bobs-burgers.fandom.com/wiki/The_Millie-Churian_Candidate,"I RAN, ... SO TAR... BURGER","I RAN, ... SO TAR... BURGER",
+5,The Gayle Tales,https://bobs-burgers.fandom.com/wiki/The_Gayle_Tales,CURD-FECT STRANGERS BURGER (Comes with cheese curds),CURD-FECT STRANGERS BURGER,Comes with cheese curds
+5,Li'l Hard Dad,https://bobs-burgers.fandom.com/wiki/Li%27l_Hard_Dad,SWEET CHILI O' MINE BURGER,SWEET CHILI O' MINE BURGER,
+5,Adventures in Chinchilla-Sitting,https://bobs-burgers.fandom.com/wiki/Adventures_in_Chinchilla-Sitting,THE SIX SCALLION DOLLAR MAN BURGER,THE SIX SCALLION DOLLAR MAN BURGER,
+5,The Runway Club,https://bobs-burgers.fandom.com/wiki/The_Runway_Club,LET'S GIVE 'EM SOMETHING SHIITAKE 'BOUT BURGER,LET'S GIVE 'EM SOMETHING SHIITAKE 'BOUT BURGER,
+5,The Itty Bitty Ditty Committee,https://bobs-burgers.fandom.com/wiki/The_Itty_Bitty_Ditty_Committee,IF YOU'VE GOT IT CROISSANT IT BURGER,IF YOU'VE GOT IT CROISSANT IT BURGER,
+5,The Itty Bitty Ditty Committee,https://bobs-burgers.fandom.com/wiki/The_Itty_Bitty_Ditty_Committee,CHILE RELLENO-YOU-DON'T BURGER,CHILE RELLENO-YOU-DON'T BURGER,
+5,The Itty Bitty Ditty Committee,https://bobs-burgers.fandom.com/wiki/The_Itty_Bitty_Ditty_Committee,PARM-PIT BURGER (Comes with Parmesan),PARM-PIT BURGER,Comes with Parmesan
+5,The Itty Bitty Ditty Committee,https://bobs-burgers.fandom.com/wiki/The_Itty_Bitty_Ditty_Committee,SCENT OF A CUMIN BURGER,SCENT OF A CUMIN BURGER,
+5,"Eat, Spray, Linda","https://bobs-burgers.fandom.com/wiki/Eat,_Spray,_Linda",None,None,
+5,Housetrap,https://bobs-burgers.fandom.com/wiki/Housetrap,SHE'LL BE COMIN' ROUND THE PLANTAIN BURGER (Comes with plantains),SHE'LL BE COMIN' ROUND THE PLANTAIN BURGER,Comes with plantains
+5,Hawk & Chick,https://bobs-burgers.fandom.com/wiki/Hawk_%26_Chick,TAKE A LEEK BURGER (Comes with sautéed leeks),TAKE A LEEK BURGER,Comes with sautéed leeks
+5,The Oeder Games,https://bobs-burgers.fandom.com/wiki/The_Oeder_Games,WHO WANTS TO BE A SCALLIONAIRE BURGER?,WHO WANTS TO BE A SCALLIONAIRE BURGER?,
+6,Sliding Bobs,https://bobs-burgers.fandom.com/wiki/Sliding_Bobs,"There were no burgers of the day in this episode but in the Hugo 's Hot Dogs segment a Hot Dog of the Day appeared which was the ""A View to a Kielbasa Dog"" which is a reference to the 1985 James Bond movie ""A View to a Kill.""",,
+6,The Land Ship,https://bobs-burgers.fandom.com/wiki/The_Land_Ship,THE YAM SHIP BURGER (Comes with yams),THE YAM SHIP BURGER,Comes with yams
+6,The Land Ship,https://bobs-burgers.fandom.com/wiki/The_Land_Ship,YOU CAN'T FIGHT CITY CHALLAH BURGER (Comes on a Challah roll),YOU CAN'T FIGHT CITY CHALLAH BURGER,Comes on a Challah roll
+6,The Land Ship,https://bobs-burgers.fandom.com/wiki/The_Land_Ship,SNIPWRECKED BURGER (Comes with parsnips),SNIPWRECKED BURGER,Comes with parsnips
+6,The Hauntening,https://bobs-burgers.fandom.com/wiki/The_Hauntening,BREAKING RADISH BURGER (Comes with a side of radish),BREAKING RADISH BURGER,Comes with a side of radish
+6,Gayle Makin' Bob Sled,https://bobs-burgers.fandom.com/wiki/Gayle_Makin%27_Bob_Sled,None,None,
+6,Nice-Capades,https://bobs-burgers.fandom.com/wiki/Nice-Capades,THE PEAR TREE BURGER (With sliced pears - partridge not included),THE PEAR TREE BURGER,With sliced pears - partridge not included
+6,"The Cook, the Steve, the Gayle, & Her Lover","https://bobs-burgers.fandom.com/wiki/The_Cook,_the_Steve,_the_Gayle,_%26_Her_Lover","COLE CAME, COLE SLAW, COLE CONQUERED BURGER","COLE CAME, COLE SLAW, COLE CONQUERED BURGER",
+6,The Gene and Courtney Show,https://bobs-burgers.fandom.com/wiki/The_Gene_and_Courtney_Show,BE MY VALEN-THYME BURGER,BE MY VALEN-THYME BURGER,
+6,Sexy Dance Healing,https://bobs-burgers.fandom.com/wiki/Sexy_Dance_Healing,THE SAY CHEESE BURGER,THE SAY CHEESE BURGER,
+6,Sexy Dance Healing,https://bobs-burgers.fandom.com/wiki/Sexy_Dance_Healing,IT TAKES BUN TO KNOW BUN BURGER (Served on a fancy bun),IT TAKES BUN TO KNOW BUN BURGER,Served on a fancy bun
+6,Sexy Dance Healing,https://bobs-burgers.fandom.com/wiki/Sexy_Dance_Healing,"HEAD, SHOULDERS, KNEES AND TOMATOES BURGER","HEAD, SHOULDERS, KNEES AND TOMATOES BURGER",
+6,Sexy Dance Healing,https://bobs-burgers.fandom.com/wiki/Sexy_Dance_Healing,I'M PICKLISH BURGER (Comes with pickles),I'M PICKLISH BURGER,Comes with pickles
+6,Sexy Dance Healing,https://bobs-burgers.fandom.com/wiki/Sexy_Dance_Healing,RUNNY OUT OF THYME BURGER (Comes with a runny fried egg),RUNNY OUT OF THYME BURGER,Comes with a runny fried egg
+6,Sacred Couch,https://bobs-burgers.fandom.com/wiki/Sacred_Couch,None,None,
+6,Lice Things Are Lice,https://bobs-burgers.fandom.com/wiki/Lice_Things_Are_Lice,TOTAL ECLIPSE OF THE HAVARTI BURGER,TOTAL ECLIPSE OF THE HAVARTI BURGER,
+6,House of 1000 Bounces,https://bobs-burgers.fandom.com/wiki/House_of_1000_Bounces,RING AROUND THE COLLARD BURGER,RING AROUND THE COLLARD BURGER,
+6,Stand by Gene,https://bobs-burgers.fandom.com/wiki/Stand_by_Gene,TO THINE OWN SELF BE BLEU BURGER (Served with bleu cheese),TO THINE OWN SELF BE BLEU BURGER,Served with bleu cheese
+6,Wag the Hog,https://bobs-burgers.fandom.com/wiki/Wag_the_Hog,EDAMAME DEAREST BURGER (Comes with edamame),EDAMAME DEAREST BURGER,Comes with edamame
+6,Wag the Hog,https://bobs-burgers.fandom.com/wiki/Wag_the_Hog,BARLEY DAVIDSON BURGER (Comes on a barley roll),BARLEY DAVIDSON BURGER,Comes on a barley roll
+6,The Hormone-iums,https://bobs-burgers.fandom.com/wiki/The_Hormone-iums,CAPTAIN PEPPER JACK MARROW BURGER,CAPTAIN PEPPER JACK MARROW BURGER,
+6,The Hormone-iums,https://bobs-burgers.fandom.com/wiki/The_Hormone-iums,CURRY ON MY WAYWARD BUN BURGER,CURRY ON MY WAYWARD BUN BURGER,
+6,The Hormone-iums,https://bobs-burgers.fandom.com/wiki/The_Hormone-iums,"FRISEE IT, DON’T SPRAY IT BURGER","FRISEE IT, DON’T SPRAY IT BURGER",
+6,The Hormone-iums,https://bobs-burgers.fandom.com/wiki/The_Hormone-iums,WE BOUGHT A ZUCCHINI BURGER,WE BOUGHT A ZUCCHINI BURGER,
+6,Pro Tiki/Con Tiki,https://bobs-burgers.fandom.com/wiki/Pro_Tiki/Con_Tiki,ALL IN A GLAZE WORK BURGER (Served with Balsamic Glaze),ALL IN A GLAZE WORK BURGER,Served with Balsamic Glaze
+6,Pro Tiki/Con Tiki,https://bobs-burgers.fandom.com/wiki/Pro_Tiki/Con_Tiki,SPROUT O... KRAUT O... BURGER,SPROUT O... KRAUT O... BURGER,
+6,Pro Tiki/Con Tiki,https://bobs-burgers.fandom.com/wiki/Pro_Tiki/Con_Tiki,"IF AT FIRST YOU SESAME SEED, THAI, THAI, AGAIN BURGER","IF AT FIRST YOU SESAME SEED, THAI, THAI, AGAIN BURGER",
+6,Pro Tiki/Con Tiki,https://bobs-burgers.fandom.com/wiki/Pro_Tiki/Con_Tiki,TURN THE OTHER LEEK BURGER,TURN THE OTHER LEEK BURGER,
+6,Bye Bye Boo Boo,https://bobs-burgers.fandom.com/wiki/Bye_Bye_Boo_Boo,FIG LEBOWSKI BURGER,FIG LEBOWSKI BURGER,
+6,Bye Bye Boo Boo,https://bobs-burgers.fandom.com/wiki/Bye_Bye_Boo_Boo,MY FARRO LADY BURGER,MY FARRO LADY BURGER,
+6,The Horse Rider-er,https://bobs-burgers.fandom.com/wiki/The_Horse_Rider-er,CHUTNEY THE FRONT DOOR BURGER (Comes with Mango Chutney),CHUTNEY THE FRONT DOOR BURGER,Comes with Mango Chutney
+6,The Horse Rider-er,https://bobs-burgers.fandom.com/wiki/The_Horse_Rider-er,YOU'RE KIMCHI THE BEST BURGER,YOU'RE KIMCHI THE BEST BURGER,
+6,The Horse Rider-er,https://bobs-burgers.fandom.com/wiki/The_Horse_Rider-er,TERIYAKI A NEW ONE BURGER,TERIYAKI A NEW ONE BURGER,
+6,Secret Admiral-irer,https://bobs-burgers.fandom.com/wiki/Secret_Admiral-irer,AW NUTS BURGER (Comes with peanut butter),AW NUTS BURGER,Comes with peanut butter
+6,Secret Admiral-irer,https://bobs-burgers.fandom.com/wiki/Secret_Admiral-irer,THE GLASS FROMAGERIE BURGER,THE GLASS FROMAGERIE BURGER,
+6,"Glued, Where's My Bob?","https://bobs-burgers.fandom.com/wiki/Glued,_Where%27s_My_Bob%3F",THE HAND THAT ROCKS THE BAGEL BURGER (Comes with an everything bagel),THE HAND THAT ROCKS THE BAGEL BURGER,Comes with an everything bagel
+6,"Glued, Where's My Bob?","https://bobs-burgers.fandom.com/wiki/Glued,_Where%27s_My_Bob%3F",PUT ME IN POACHED BURGER (Comes with a poached egg),PUT ME IN POACHED BURGER,Comes with a poached egg
+7,Flu-ouise,https://bobs-burgers.fandom.com/wiki/Flu-ouise,ENDIVE HAD THE TIME OF MY LIFE BURGER,ENDIVE HAD THE TIME OF MY LIFE BURGER,
+7,Sea Me Now,https://bobs-burgers.fandom.com/wiki/Sea_Me_Now,YOU SPINACH ME RIGHT ROUND BABY SPINACH BURGER,YOU SPINACH ME RIGHT ROUND BABY SPINACH BURGER,
+7,Sea Me Now,https://bobs-burgers.fandom.com/wiki/Sea_Me_Now,WASABI MY GUEST BURGER,WASABI MY GUEST BURGER,
+7,Teen-a Witch,https://bobs-burgers.fandom.com/wiki/Teen-a_Witch,MUENSTER UNDER THE BUN BURGER,MUENSTER UNDER THE BUN BURGER,
+7,"They Serve Horses, Don't They?","https://bobs-burgers.fandom.com/wiki/They_Serve_Horses,_Don%27t_They%3F",DO FRY FOR ME ARGENTINA BURGER (Comes with Chimichurri sauce and ...),DO FRY FOR ME ARGENTINA BURGER,Comes with Chimichurri sauce and ...
+7,"They Serve Horses, Don't They?","https://bobs-burgers.fandom.com/wiki/They_Serve_Horses,_Don%27t_They%3F",THE ELVIS PRETZEL BURGER (Served on a pretzel bun),THE ELVIS PRETZEL BURGER,Served on a pretzel bun
+7,"They Serve Horses, Don't They?","https://bobs-burgers.fandom.com/wiki/They_Serve_Horses,_Don%27t_They%3F",I KNOW WHAT YOU DID LAST SUMMER SQUASH BURGER,I KNOW WHAT YOU DID LAST SUMMER SQUASH BURGER,
+7,"They Serve Horses, Don't They?","https://bobs-burgers.fandom.com/wiki/They_Serve_Horses,_Don%27t_They%3F",CHILI WONKA BURGER,CHILI WONKA BURGER,
+7,"They Serve Horses, Don't They?","https://bobs-burgers.fandom.com/wiki/They_Serve_Horses,_Don%27t_They%3F",CORNED IDENTITY BURGER (Comes with corned beef),CORNED IDENTITY BURGER,Comes with corned beef
+7,"They Serve Horses, Don't They?","https://bobs-burgers.fandom.com/wiki/They_Serve_Horses,_Don%27t_They%3F",TANGLED UP IN BLUEBERRY BURGER (Comes with a blueberry compote),TANGLED UP IN BLUEBERRY BURGER,Comes with a blueberry compote
+7,"They Serve Horses, Don't They?","https://bobs-burgers.fandom.com/wiki/They_Serve_Horses,_Don%27t_They%3F",WHEN HARRY MET SALUMI BURGER,WHEN HARRY MET SALUMI BURGER,
+7,"Large Brother, Where Fart Thou?","https://bobs-burgers.fandom.com/wiki/Large_Brother,_Where_Fart_Thou%3F",THE OLIVES KITTERIDGE BURGER (With olive tapenade),THE OLIVES KITTERIDGE BURGER,With olive tapenade
+7,The Quirkducers,https://bobs-burgers.fandom.com/wiki/The_Quirkducers,JAGGED LITTLE DILL BURGER,JAGGED LITTLE DILL BURGER,
+7,The Last Gingerbread House on the Left,https://bobs-burgers.fandom.com/wiki/The_Last_Gingerbread_House_on_the_Left,AWAY IN A MANGO BURGER,AWAY IN A MANGO BURGER,
+7,Ex MachTina,https://bobs-burgers.fandom.com/wiki/Ex_MachTina,CAPER THE FRIENDLY GOAT CHEESE BURGER (Comes /w Capers & Feta),CAPER THE FRIENDLY GOAT CHEESE BURGER,Comes /w Capers & Feta
+7,Ex MachTina,https://bobs-burgers.fandom.com/wiki/Ex_MachTina,VIDEO KILLED THE RADICCHIO STAR BURGER,VIDEO KILLED THE RADICCHIO STAR BURGER,
+7,Ex MachTina,https://bobs-burgers.fandom.com/wiki/Ex_MachTina,IF YOU'VE GOT IT CROISSANT IT BURGER,IF YOU'VE GOT IT CROISSANT IT BURGER,
+7,Bob Actually,https://bobs-burgers.fandom.com/wiki/Bob_Actually,ANDREW DICED CARROTS BURGER (Comes with pickled diced carrots),ANDREW DICED CARROTS BURGER,Comes with pickled diced carrots
+7,There's No Business Like Mr. Business Business,https://bobs-burgers.fandom.com/wiki/There%27s_No_Business_Like_Mr._Business_Business,GARLIC SHANDLING BURGER,GARLIC SHANDLING BURGER,
+7,There's No Business Like Mr. Business Business,https://bobs-burgers.fandom.com/wiki/There%27s_No_Business_Like_Mr._Business_Business,LITTLE RED BRUSCHETT-A BURGER,LITTLE RED BRUSCHETT-A BURGER,
+7,There's No Business Like Mr. Business Business,https://bobs-burgers.fandom.com/wiki/There%27s_No_Business_Like_Mr._Business_Business,WALKING IN A WINTER COMES-WITH-CRAN BURGER (Comes with cranberry sauce),WALKING IN A WINTER COMES-WITH-CRAN BURGER,Comes with cranberry sauce
+7,There's No Business Like Mr. Business Business,https://bobs-burgers.fandom.com/wiki/There%27s_No_Business_Like_Mr._Business_Business,STILTON ON THE DOCK OF THE BUN BURGER,STILTON ON THE DOCK OF THE BUN BURGER,
+7,A Few 'Gurt Men,https://bobs-burgers.fandom.com/wiki/A_Few_%27Gurt_Men,IT'S MY HAVARTI AND I'LL RYE IF I WANT TO BURGER,IT'S MY HAVARTI AND I'LL RYE IF I WANT TO BURGER,
+7,A Few 'Gurt Men,https://bobs-burgers.fandom.com/wiki/A_Few_%27Gurt_Men,FINGERLING BROTHERS AND BARNUM AND BAY LEAVES BURGER,FINGERLING BROTHERS AND BARNUM AND BAY LEAVES BURGER,
+7,Like Gene for Chocolate,https://bobs-burgers.fandom.com/wiki/Like_Gene_for_Chocolate,... BITES T... BURGER,... BITES T... BURGER,
+7,Like Gene for Chocolate,https://bobs-burgers.fandom.com/wiki/Like_Gene_for_Chocolate,CITIZEN KALE BURGER,CITIZEN KALE BURGER,
+7,Like Gene for Chocolate,https://bobs-burgers.fandom.com/wiki/Like_Gene_for_Chocolate,IT TAKES TWO TO MANGO BURGER (Comes with ...),IT TAKES TWO TO MANGO BURGER,Comes with ...
+7,The Grand Mama-pest Hotel,https://bobs-burgers.fandom.com/wiki/The_Grand_Mama-pest_Hotel,NOTHING COMPARES 2 BLUE (CHEESE) BURGER,NOTHING COMPARES 2 BLUE (CHEESE) BURGER,
+7,Aquaticism,https://bobs-burgers.fandom.com/wiki/Aquaticism,THE FOR THOSE ABOUT TO ROQUEFORT WE SALUTE YOU BURGER,THE FOR THOSE ABOUT TO ROQUEFORT WE SALUTE YOU BURGER,
+7,Aquaticism,https://bobs-burgers.fandom.com/wiki/Aquaticism,THE OH CON-PEAR BURGER,THE OH CON-PEAR BURGER,
+7,Ain't Miss Debatin',https://bobs-burgers.fandom.com/wiki/Ain%27t_Miss_Debatin%27,... EASY AS ... BURGER,... EASY AS ... BURGER,
+7,Ain't Miss Debatin',https://bobs-burgers.fandom.com/wiki/Ain%27t_Miss_Debatin%27,THE CHOYS ARE BOK IN TOWN BURGER (Comes with Bok Choy),THE CHOYS ARE BOK IN TOWN BURGER,Comes with Bok Choy
+7,Eggs for Days,https://bobs-burgers.fandom.com/wiki/Eggs_for_Days,EMERGENCY EGGS-IT BURGER,EMERGENCY EGGS-IT BURGER,
+7,Eggs for Days,https://bobs-burgers.fandom.com/wiki/Eggs_for_Days,PASSION OF THE CRESS BURGER,PASSION OF THE CRESS BURGER,
+7,Zero Larp Thirty,https://bobs-burgers.fandom.com/wiki/Zero_Larp_Thirty,CREMINIS AND MISDEMEANIES BURGER (Comes with cremini mushrooms),CREMINIS AND MISDEMEANIES BURGER,Comes with cremini mushrooms
+7,The Laser-inth,https://bobs-burgers.fandom.com/wiki/The_Laser-inth,None,None,
+7,Thelma & Louise Except Thelma is Linda,https://bobs-burgers.fandom.com/wiki/Thelma_%26_Louise_Except_Thelma_is_Linda,GLORY GLORY JALAPEÑO BURGER (Comes with jalapeños),GLORY GLORY JALAPEÑO BURGER,Comes with jalapeños
+7,"Mom, Lies, and Videotapes","https://bobs-burgers.fandom.com/wiki/Mom,_Lies,_and_Videotapes",None,None,
+7,Paraders of the Lost Float,https://bobs-burgers.fandom.com/wiki/Paraders_of_the_Lost_Float,RIDING IN CARS WITH BOK CHOYS,RIDING IN CARS WITH BOK CHOYS,
+7,Into the Mild,https://bobs-burgers.fandom.com/wiki/Into_the_Mild,THE PEAR GOES THE NEIGHBORHOOD BURGER,THE PEAR GOES THE NEIGHBORHOOD BURGER,
+8,Brunchsquatch,https://bobs-burgers.fandom.com/wiki/Brunchsquatch,THE BLANC CANVAS BURGER (Comes with a fromage blanc),THE BLANC CANVAS BURGER,Comes with a fromage blanc
+8,Brunchsquatch,https://bobs-burgers.fandom.com/wiki/Brunchsquatch,TOPLESS THE MORNING TO YOU BURGER,TOPLESS THE MORNING TO YOU BURGER,
+8,The Silence of the Louise,https://bobs-burgers.fandom.com/wiki/The_Silence_of_the_Louise,BURRATA BE ... AW BURGER,BURRATA BE ... AW BURGER,
+8,The Silence of the Louise,https://bobs-burgers.fandom.com/wiki/The_Silence_of_the_Louise,WEEKEND AT BEARNAISE BURGER,WEEKEND AT BEARNAISE BURGER,
+8,The Wolf of Wharf Street,https://bobs-burgers.fandom.com/wiki/The_Wolf_of_Wharf_Street,None,None,
+8,Sit Me Baby One More Time,https://bobs-burgers.fandom.com/wiki/Sit_Me_Baby_One_More_Time,THE CLEAR AND PRESENT GINGER BURGER,THE CLEAR AND PRESENT GINGER BURGER,
+8,Thanks-hoarding,https://bobs-burgers.fandom.com/wiki/Thanks-hoarding,THE CATCH ME IF YOU CRAN BURGER (Served with cranberry sauce),THE CATCH ME IF YOU CRAN BURGER,Served with cranberry sauce
+8,The Bleakening,https://bobs-burgers.fandom.com/wiki/The_Bleakening,THE EBENEEZER BLEU-GE BURGER,THE EBENEEZER BLEU-GE BURGER,
+8,The Bleakening,https://bobs-burgers.fandom.com/wiki/The_Bleakening,TWAS THE NUT BEFORE CHRISTMAS BURGER (Comes with walnut aioli),TWAS THE NUT BEFORE CHRISTMAS BURGER,Comes with walnut aioli
+8,V for Valentine-detta,https://bobs-burgers.fandom.com/wiki/V_for_Valentine-detta,THE SHUT UP AND SWISS ME BURGER,THE SHUT UP AND SWISS ME BURGER,
+8,Y Tu Ga-Ga Tambien,https://bobs-burgers.fandom.com/wiki/Y_Tu_Ga-Ga_Tambien,STEP INTO THE OKRA-TAGON BURGER,STEP INTO THE OKRA-TAGON BURGER,
+8,Y Tu Ga-Ga Tambien,https://bobs-burgers.fandom.com/wiki/Y_Tu_Ga-Ga_Tambien,HAVARTI LIKE IT'S 1999 BURGER,HAVARTI LIKE IT'S 1999 BURGER,
+8,Y Tu Ga-Ga Tambien,https://bobs-burgers.fandom.com/wiki/Y_Tu_Ga-Ga_Tambien,SMELLS LIKE BEAN SPIRIT BURGER,SMELLS LIKE BEAN SPIRIT BURGER,
+8,Y Tu Ga-Ga Tambien,https://bobs-burgers.fandom.com/wiki/Y_Tu_Ga-Ga_Tambien,CORN THIS WAY BURGER,CORN THIS WAY BURGER,
+8,The Secret Ceramics Room of Secrets,https://bobs-burgers.fandom.com/wiki/The_Secret_Ceramics_Room_of_Secrets,THE SOUS-VIDE AND THE BANSHEES BURGER,THE SOUS-VIDE AND THE BANSHEES BURGER,
+8,The Secret Ceramics Room of Secrets,https://bobs-burgers.fandom.com/wiki/The_Secret_Ceramics_Room_of_Secrets,THE FULL HEAD OF HEIR-LOOM TOMATO BURGER,THE FULL HEAD OF HEIR-LOOM TOMATO BURGER,
+8,The Secret Ceramics Room of Secrets,https://bobs-burgers.fandom.com/wiki/The_Secret_Ceramics_Room_of_Secrets,THE WHAT'S KALA-MATA YOU BURGER,THE WHAT'S KALA-MATA YOU BURGER,
+8,The Secret Ceramics Room of Secrets,https://bobs-burgers.fandom.com/wiki/The_Secret_Ceramics_Room_of_Secrets,THE WE BOUGHT A ZUCCHINI BURGER,THE WE BOUGHT A ZUCCHINI BURGER,
+8,Sleeping with the Frenemy,https://bobs-burgers.fandom.com/wiki/Sleeping_with_the_Frenemy,THE TURN TH... ...S AROUND,THE TURN TH... ...S AROUND,
+8,Sleeping with the Frenemy,https://bobs-burgers.fandom.com/wiki/Sleeping_with_the_Frenemy,THE OLIVE WHAT SHE'S HAVING BURGER,THE OLIVE WHAT SHE'S HAVING BURGER,
+8,Sleeping with the Frenemy,https://bobs-burgers.fandom.com/wiki/Sleeping_with_the_Frenemy,THE ROSEMARY'S BABY SPINACH BURGER,THE ROSEMARY'S BABY SPINACH BURGER,
+8,The Hurt Soccer,https://bobs-burgers.fandom.com/wiki/The_Hurt_Soccer,THE WASABI WITH YOU? BURGER,THE WASABI WITH YOU? BURGER,
+8,The Hurt Soccer,https://bobs-burgers.fandom.com/wiki/The_Hurt_Soccer,THE HEIRLOOM WHERE IT HAPPENS BURGER,THE HEIRLOOM WHERE IT HAPPENS BURGER,
+8,"Cheer Up, Sleepy Gene","https://bobs-burgers.fandom.com/wiki/Cheer_Up,_Sleepy_Gene",JUDY GARLIC BURGER (Comes with garlic tapenade),JUDY GARLIC BURGER,Comes with garlic tapenade
+8,The Trouble with Doubles,https://bobs-burgers.fandom.com/wiki/The_Trouble_with_Doubles,None,None,
+8,Go Tina on the Mountain,https://bobs-burgers.fandom.com/wiki/Go_Tina_on_the_Mountain,THE YOU WON'T BELIEVE ... OT BUTTERNUT ... SH BURGER (... zucchini),THE YOU WON'T BELIEVE ... OT BUTTERNUT ... SH BURGER,... zucchini
+8,Go Tina on the Mountain,https://bobs-burgers.fandom.com/wiki/Go_Tina_on_the_Mountain,THE PAPRIKA SMURF BURGER (Comes with blue potato fries),THE PAPRIKA SMURF BURGER,Comes with blue potato fries
+8,"Are You There Bob? It's Me, Birthday","https://bobs-burgers.fandom.com/wiki/Are_You_There_Bob%3F_It%27s_Me,_Birthday",THE HERE I AM BROCCOLI LIKE A HURRICANE BURGER,THE HERE I AM BROCCOLI LIKE A HURRICANE BURGER,
+8,"Are You There Bob? It's Me, Birthday","https://bobs-burgers.fandom.com/wiki/Are_You_There_Bob%3F_It%27s_Me,_Birthday",...E OLDER WITH ...E EGGS-PERIENCE BURGER (...-aged burger with a fried egg on top),...E OLDER WITH ...E EGGS-PERIENCE BURGER,...-aged burger with a fried egg on top
+8,Boywatch,https://bobs-burgers.fandom.com/wiki/Boywatch,PORTABELLO THE BELT BURGER,PORTABELLO THE BELT BURGER,
+8,Boywatch,https://bobs-burgers.fandom.com/wiki/Boywatch,WALK THIS WAIOLI BURGER (Comes with Wasabi Aioli),WALK THIS WAIOLI BURGER,Comes with Wasabi Aioli
+8,Boywatch,https://bobs-burgers.fandom.com/wiki/Boywatch,SHISHITO CORLEONE BURGER (Comes with Shishito Peppers),SHISHITO CORLEONE BURGER,Comes with Shishito Peppers
+8,Boywatch,https://bobs-burgers.fandom.com/wiki/Boywatch,QUANTUM OF SAL- BURGER (Comes ...mpote),QUANTUM OF SAL- BURGER,Comes ...mpote
+8,Boywatch,https://bobs-burgers.fandom.com/wiki/Boywatch,THE GOUDA WIFE BURGER (Comes with Mature Gouda),THE GOUDA WIFE BURGER,Comes with Mature Gouda
+8,As I Walk Through the Alley of the Shadow of Ramps,https://bobs-burgers.fandom.com/wiki/As_I_Walk_Through_the_Alley_of_the_Shadow_of_Ramps,THE SUN'LL COME OUT TO-MARROW BURGER (Comes with bone marrow),THE SUN'LL COME OUT TO-MARROW BURGER,Comes with bone marrow
+8,As I Walk Through the Alley of the Shadow of Ramps,https://bobs-burgers.fandom.com/wiki/As_I_Walk_Through_the_Alley_of_the_Shadow_of_Ramps,THE SNEAKIN' CELERY DOWN THE ALLEY BURGER,THE SNEAKIN' CELERY DOWN THE ALLEY BURGER,
+8,As I Walk Through the Alley of the Shadow of Ramps,https://bobs-burgers.fandom.com/wiki/As_I_Walk_Through_the_Alley_of_the_Shadow_of_Ramps,THE 500 GLAZE OF SUMMER BURGER (Comes with Pomegranate Glaze),THE 500 GLAZE OF SUMMER BURGER,Comes with Pomegranate Glaze
+8,Mo Mommy Mo Problems,https://bobs-burgers.fandom.com/wiki/Mo_Mommy_Mo_Problems,None,None,
+8,Mission Impos-slug-ble,https://bobs-burgers.fandom.com/wiki/Mission_Impos-slug-ble,THE I'M GETTING TOO OLD FOR THIS SHISHITO BURGER,THE I'M GETTING TOO OLD FOR THIS SHISHITO BURGER,
+8,Mission Impos-slug-ble,https://bobs-burgers.fandom.com/wiki/Mission_Impos-slug-ble,THE ... N'T DREAM ... S OKRA ... RGER,THE ... N'T DREAM ... S OKRA ... RGER,
+8,"Something Old, Something New, Something Bob Caters for You","https://bobs-burgers.fandom.com/wiki/Something_Old,_Something_New,_Something_Bob_Caters_for_You",THE STOP OR MY MOM WILL SHOOTS BURGER (Topped with pea shoots),THE STOP OR MY MOM WILL SHOOTS BURGER,Topped with pea shoots
+8,"Something Old, Something New, Something Bob Caters for You","https://bobs-burgers.fandom.com/wiki/Something_Old,_Something_New,_Something_Bob_Caters_for_You","THE RING-GRUYÈRE-ER BURGER (Comes with a side of Farro salad, Gruyère cheese and an onion ring)",THE RING-GRUYÈRE-ER BURGER,"Comes with a side of Farro salad, Gruyère cheese and an onion ring"
+9,Just One of the Boyz 4 Now for Now,https://bobs-burgers.fandom.com/wiki/Just_One_of_the_Boyz_4_Now_for_Now,THE DRAGON FRUIT ME TO HELL BURGER,THE DRAGON FRUIT ME TO HELL BURGER,
+9,The Taking of Funtime One Two Three,https://bobs-burgers.fandom.com/wiki/The_Taking_of_Funtime_One_Two_Three,WON'T BAGUETTE FOOLED AGAIN BURGER,WON'T BAGUETTE FOOLED AGAIN BURGER,
+9,Tweentrepreneurs,https://bobs-burgers.fandom.com/wiki/Tweentrepreneurs,TURMERIC-A THE BEAUTIFUL BURGER,TURMERIC-A THE BEAUTIFUL BURGER,
+9,Tweentrepreneurs,https://bobs-burgers.fandom.com/wiki/Tweentrepreneurs,THE FINDERS CAPERS BURGER,THE FINDERS CAPERS BURGER,
+9,Tweentrepreneurs,https://bobs-burgers.fandom.com/wiki/Tweentrepreneurs,THE COPS AND RABE-ERS BURGER (Topped with Broccoli Rabe),THE COPS AND RABE-ERS BURGER,Topped with Broccoli Rabe
+9,Tweentrepreneurs,https://bobs-burgers.fandom.com/wiki/Tweentrepreneurs,THE LITTLE CHOP OF HORSERADISH BURGER,THE LITTLE CHOP OF HORSERADISH BURGER,
+9,Nightmare on Ocean Avenue Street,https://bobs-burgers.fandom.com/wiki/Nightmare_on_Ocean_Avenue_Street,MY BLOODY KALE-ENTINE BURGER,MY BLOODY KALE-ENTINE BURGER,
+9,Live and Let Fly,https://bobs-burgers.fandom.com/wiki/Live_and_Let_Fly,THE ABSENTEE SHALLOT BURGER (Comes with crispy shallots),THE ABSENTEE SHALLOT BURGER,Comes with crispy shallots
+9,Live and Let Fly,https://bobs-burgers.fandom.com/wiki/Live_and_Let_Fly,THE LAND OF THE SLAW-ST BURGER (Comes with pickle slaw),THE LAND OF THE SLAW-ST BURGER,Comes with pickle slaw
+9,Bobby Driver,https://bobs-burgers.fandom.com/wiki/Bobby_Driver,FOCACCIA RED HANDED BURGER (On focaccia with beets),FOCACCIA RED HANDED BURGER,On focaccia with beets
+9,I Bob Your Pardon,https://bobs-burgers.fandom.com/wiki/I_Bob_Your_Pardon,None,None,
+9,Roller? I Hardly Know Her!,https://bobs-burgers.fandom.com/wiki/Roller%3F_I_Hardly_Know_Her!,THE FRANKIE GOES TO HOLLANDAISE BURGER,THE FRANKIE GOES TO HOLLANDAISE BURGER,
+9,Roller? I Hardly Know Her!,https://bobs-burgers.fandom.com/wiki/Roller%3F_I_Hardly_Know_Her!,THE FIFTY GLAZE TO EAT YOUR BURGER,THE FIFTY GLAZE TO EAT YOUR BURGER,
+9,Roller? I Hardly Know Her!,https://bobs-burgers.fandom.com/wiki/Roller%3F_I_Hardly_Know_Her!,THE THROW YOUR HANDS IN THE HEIRLOOM BURGER,THE THROW YOUR HANDS IN THE HEIRLOOM BURGER,
+9,UFO No You Didn't,https://bobs-burgers.fandom.com/wiki/UFO_No_You_Didn%27t,THE COLBY BY YOUR NAME BURGER,THE COLBY BY YOUR NAME BURGER,
+9,UFO No You Didn't,https://bobs-burgers.fandom.com/wiki/UFO_No_You_Didn%27t,THE AROUND THE WORLD IN EIGHTY DATES BURGER,THE AROUND THE WORLD IN EIGHTY DATES BURGER,
+9,UFO No You Didn't,https://bobs-burgers.fandom.com/wiki/UFO_No_You_Didn%27t,THE FIGGIE SMALLS BURGER,THE FIGGIE SMALLS BURGER,
+9,UFO No You Didn't,https://bobs-burgers.fandom.com/wiki/UFO_No_You_Didn%27t,THE DILL CRAZY AFTER ALL THESE GRUYERES BURGER,THE DILL CRAZY AFTER ALL THESE GRUYERES BURGER,
+9,Better Off Sled,https://bobs-burgers.fandom.com/wiki/Better_Off_Sled,THE SMILLA'S SENSE OF SNOWPEAS BURGER,THE SMILLA'S SENSE OF SNOWPEAS BURGER,
+9,Better Off Sled,https://bobs-burgers.fandom.com/wiki/Better_Off_Sled,THE SANTA SLAWS IS COMING TO TOWN BURGER,THE SANTA SLAWS IS COMING TO TOWN BURGER,
+9,"Lorenzo's Oil? No, Linda's","https://bobs-burgers.fandom.com/wiki/Lorenzo%27s_Oil%3F_No,_Linda%27s",THE BRUSSEL AND FLOW BURGER (Served with Brussel Sprouts),THE BRUSSEL AND FLOW BURGER,Served with Brussel Sprouts
+9,The Helen Hunt,https://bobs-burgers.fandom.com/wiki/The_Helen_Hunt,THE MUSH-AROOM ABOUT NOTHING BURGER,THE MUSH-AROOM ABOUT NOTHING BURGER,
+9,"Bed, Bob & Beyond","https://bobs-burgers.fandom.com/wiki/Bed,_Bob_%26_Beyond",None,None,
+9,Every Which Way but Goose,https://bobs-burgers.fandom.com/wiki/Every_Which_Way_but_Goose,THE THROW YOUR HANDS IN THE GRUYERE BURGER,THE THROW YOUR HANDS IN THE GRUYERE BURGER,
+9,Every Which Way but Goose,https://bobs-burgers.fandom.com/wiki/Every_Which_Way_but_Goose,THE SEALED WITH A SWISS BURGER,THE SEALED WITH A SWISS BURGER,
+9,Every Which Way but Goose,https://bobs-burgers.fandom.com/wiki/Every_Which_Way_but_Goose,THE TWO LEFT BEET BURGER,THE TWO LEFT BEET BURGER,
+9,Every Which Way but Goose,https://bobs-burgers.fandom.com/wiki/Every_Which_Way_but_Goose,THE I LOVE YOU JUST THE WHEY YOU ARE BURGER,THE I LOVE YOU JUST THE WHEY YOU ARE BURGER,
+9,The Fresh Princ-ipal,https://bobs-burgers.fandom.com/wiki/The_Fresh_Princ-ipal,VIDEO KILLED THE RADICCHIO STAR BURGER,VIDEO KILLED THE RADICCHIO STAR BURGER,
+9,Roamin' Bob-iday,https://bobs-burgers.fandom.com/wiki/Roamin%27_Bob-iday,THE I HATE TO SEE YOU BRIE-VE BUT I LOVE TO WATCH YOU GO BURGER,THE I HATE TO SEE YOU BRIE-VE BUT I LOVE TO WATCH YOU GO BURGER,
+9,Roamin' Bob-iday,https://bobs-burgers.fandom.com/wiki/Roamin%27_Bob-iday,"MURDER, KIMCHI WROTE BURGER","MURDER, KIMCHI WROTE BURGER",
+9,What About Blob?,https://bobs-burgers.fandom.com/wiki/What_About_Blob%3F,THE CHEVRE LITTLE THING SHE DOES IS MAGIC BURGER,THE CHEVRE LITTLE THING SHE DOES IS MAGIC BURGER,
+9,What About Blob?,https://bobs-burgers.fandom.com/wiki/What_About_Blob%3F,THE GORGON-BABY-GONE BURGER (Comes with gorgonzola cheese),THE GORGON-BABY-GONE BURGER,Comes with gorgonzola cheese
+9,What About Blob?,https://bobs-burgers.fandom.com/wiki/What_About_Blob%3F,THE STRAIGHT AND MARROW BURGER (Comes with bone marrow),THE STRAIGHT AND MARROW BURGER,Comes with bone marrow
+9,What About Blob?,https://bobs-burgers.fandom.com/wiki/What_About_Blob%3F,THE ALL HOT AND COLLARD BURGER,THE ALL HOT AND COLLARD BURGER,
+9,What About Blob?,https://bobs-burgers.fandom.com/wiki/What_About_Blob%3F,THE SOMEONE RACLETTE THE BED BURGER (Comes with raclette cheese),THE SOMEONE RACLETTE THE BED BURGER,Comes with raclette cheese
+9,"If You Love It So Much, Why Don't You Marionette?","https://bobs-burgers.fandom.com/wiki/If_You_Love_It_So_Much,_Why_Don%27t_You_Marionette%3F",THE RUTH TOMATER GINSBURGER (Comes with heirloom tomatoes and pickled ginger),THE RUTH TOMATER GINSBURGER,Comes with heirloom tomatoes and pickled ginger
+9,"Long Time Listener, First Time Bob","https://bobs-burgers.fandom.com/wiki/Long_Time_Listener,_First_Time_Bob",THE DEVIL'S AVOCADO-CATE BURGER,THE DEVIL'S AVOCADO-CATE BURGER,
+9,"Long Time Listener, First Time Bob","https://bobs-burgers.fandom.com/wiki/Long_Time_Listener,_First_Time_Bob","THE FLEETWOOD JACK BURGER (Comes with sweet little fries pies, jack cheese)",THE FLEETWOOD JACK BURGER,"Comes with sweet little fries pies, jack cheese"
+9,The Gene Mile,https://bobs-burgers.fandom.com/wiki/The_Gene_Mile,THE JUDGE BRINE-HOLD BURGER,THE JUDGE BRINE-HOLD BURGER,
+9,P.T.A. It Ain't So,https://bobs-burgers.fandom.com/wiki/P.T.A._It_Ain%27t_So,ONE FLEW OKRA THE COUSCOUS NEST BURGER,ONE FLEW OKRA THE COUSCOUS NEST BURGER,
+9,P.T.A. It Ain't So,https://bobs-burgers.fandom.com/wiki/P.T.A._It_Ain%27t_So,"LORDY, LORDY, LOOK WHO'S ROQUEFORT-Y BURGER","LORDY, LORDY, LOOK WHO'S ROQUEFORT-Y BURGER",
+9,P.T.A. It Ain't So,https://bobs-burgers.fandom.com/wiki/P.T.A._It_Ain%27t_So,THE HICKORY CHICORY GUAC BURGER,THE HICKORY CHICORY GUAC BURGER,
+9,Yes Without My Zeke,https://bobs-burgers.fandom.com/wiki/Yes_Without_My_Zeke,THE PEA-BRIE'S BIG ADVENTURE BURGER (Pea Protein Burger w/ Brie),THE PEA-BRIE'S BIG ADVENTURE BURGER,Pea Protein Burger w/ Brie
+10,The Ring (But Not Scary),https://bobs-burgers.fandom.com/wiki/The_Ring_(But_Not_Scary),"THE OLIVE ME, WHY NOT TAKE OLIVE ME? BURGER","THE OLIVE ME, WHY NOT TAKE OLIVE ME? BURGER",
+10,Boys Just Wanna Have Fungus,https://bobs-burgers.fandom.com/wiki/Boys_Just_Wanna_Have_Fungus,THE HUNT FOR RED ONION-TOBER BURGER,THE HUNT FOR RED ONION-TOBER BURGER,
+10,"Motor, She Boat","https://bobs-burgers.fandom.com/wiki/Motor,_She_Boat",THE WHAT IF PEAPOD WAS ONE OF US BURGER,THE WHAT IF PEAPOD WAS ONE OF US BURGER,
+10,Pig Trouble in Little Tina,https://bobs-burgers.fandom.com/wiki/Pig_Trouble_in_Little_Tina,THE 28 MAIZE LATER BURGER (Comes with corn salsa),THE 28 MAIZE LATER BURGER,Comes with corn salsa
+10,Pig Trouble in Little Tina,https://bobs-burgers.fandom.com/wiki/Pig_Trouble_in_Little_Tina,THE CORN-JURING TWO BURGER (Comes with even more corn salsa),THE CORN-JURING TWO BURGER,Comes with even more corn salsa
+10,Legends of the Mall,https://bobs-burgers.fandom.com/wiki/Legends_of_the_Mall,None,None,
+10,The Hawkening: Look Who's Hawking Now!,https://bobs-burgers.fandom.com/wiki/The_Hawkening:_Look_Who%27s_Hawking_Now!,THE THOUSAND CHARD STARE BURGER (Comes with thousand island dressing and swiss chard),THE THOUSAND CHARD STARE BURGER,Comes with thousand island dressing and swiss chard
+10,The Hawkening: Look Who's Hawking Now!,https://bobs-burgers.fandom.com/wiki/The_Hawkening:_Look_Who%27s_Hawking_Now!,THE HAWK & CHICKPEAS BURGER,THE HAWK & CHICKPEAS BURGER,
+10,Land of the Loft,https://bobs-burgers.fandom.com/wiki/Land_of_the_Loft,THE TWISTED SWISS-STER BURGER,THE TWISTED SWISS-STER BURGER,
+10,Now We're Not Cooking with Gas,https://bobs-burgers.fandom.com/wiki/Now_We%27re_Not_Cooking_with_Gas,None,None,
+10,All That Gene,https://bobs-burgers.fandom.com/wiki/All_That_Gene,THE OAXACA WAKA WAKA BURGER (Comes with oaxaca cheese),THE OAXACA WAKA WAKA BURGER,Comes with oaxaca cheese
+10,All That Gene,https://bobs-burgers.fandom.com/wiki/All_That_Gene,THE CREME FRAICHE PRINCE OF BELL PEPPERS BURGER,THE CREME FRAICHE PRINCE OF BELL PEPPERS BURGER,
+10,All That Gene,https://bobs-burgers.fandom.com/wiki/All_That_Gene,THE FRIED OFF INTO THE SUNSET BURGER (Comes with a fried egg),THE FRIED OFF INTO THE SUNSET BURGER (Comes with a fried egg),THE FRIED OFF INTO THE SUNSET BURGER (Comes with a fried egg)
+10,Have Yourself a Maily Linda Christmas,https://bobs-burgers.fandom.com/wiki/Have_Yourself_a_Maily_Linda_Christmas,None,None,
+10,Drumforgiven,https://bobs-burgers.fandom.com/wiki/Drumforgiven,THE BER-GOUDA TRIANGLE BURGER,THE BER-GOUDA TRIANGLE BURGER,
+10,Drumforgiven,https://bobs-burgers.fandom.com/wiki/Drumforgiven,MAMA SAID THERE'D BE GLAZE LIKE THIS BURGER (Comes with a Worcestershire glaze),MAMA SAID THERE'D BE GLAZE LIKE THIS BURGER,Comes with a Worcestershire glaze
+10,Drumforgiven,https://bobs-burgers.fandom.com/wiki/Drumforgiven,"THE EASY COME, ASIAGO BURGER","THE EASY COME, ASIAGO BURGER",
+10,A Fish Called Tina,https://bobs-burgers.fandom.com/wiki/A_Fish_Called_Tina,THE RANDOM JACKS OF CHIVE-NESS BURGER (With Monterey Jack cheese and chives),THE RANDOM JACKS OF CHIVE-NESS BURGER,With Monterey Jack cheese and chives
+10,A Fish Called Tina,https://bobs-burgers.fandom.com/wiki/A_Fish_Called_Tina,THE IF IT'S YELLOW LET IT PORTOBELLO BURGER (With yellow peppers and portobello mushrooms),THE IF IT'S YELLOW LET IT PORTOBELLO BURGER,With yellow peppers and portobello mushrooms
+10,A Fish Called Tina,https://bobs-burgers.fandom.com/wiki/A_Fish_Called_Tina,THE THIN RED PEPPER BURGER,THE THIN RED PEPPER BURGER,
+10,Three Girls and a Little Wharfy,https://bobs-burgers.fandom.com/wiki/Three_Girls_and_a_Little_Wharfy,THE GOAT TELL IT ON THE MOUNTAIN BURGER (Comes with goat cheese),THE GOAT TELL IT ON THE MOUNTAIN BURGER,Comes with goat cheese
+10,Three Girls and a Little Wharfy,https://bobs-burgers.fandom.com/wiki/Three_Girls_and_a_Little_Wharfy,- (Whiskey glazed and infused with bacon),-,Whiskey glazed and infused with bacon
+10,Three Girls and a Little Wharfy,https://bobs-burgers.fandom.com/wiki/Three_Girls_and_a_Little_Wharfy,THE GLAZED AND INFUSED BURGER (Bourbon glazed and infused with bacon),THE GLAZED AND INFUSED BURGER,Bourbon glazed and infused with bacon
+10,Wag the Song,https://bobs-burgers.fandom.com/wiki/Wag_the_Song,THE 'SHROOM WHERE IT HAPPENS BURGER,THE 'SHROOM WHERE IT HAPPENS BURGER,
+10,Wag the Song,https://bobs-burgers.fandom.com/wiki/Wag_the_Song,CLOVES ENCOUNTERS BURGER,CLOVES ENCOUNTERS BURGER,
+10,Wag the Song,https://bobs-burgers.fandom.com/wiki/Wag_the_Song,IN RICOTTA DA VIDA BURGER,IN RICOTTA DA VIDA BURGER,
+10,Wag the Song,https://bobs-burgers.fandom.com/wiki/Wag_the_Song,NICE GUYS SPINACH LAST BURGER,NICE GUYS SPINACH LAST BURGER,
+10,Yurty Rotten Scoundrels,https://bobs-burgers.fandom.com/wiki/Yurty_Rotten_Scoundrels,THIS IS WHAT IT SOUNDS LIKE WHEN CLOVES FRY BURGER (With fried garlic cloves),THIS IS WHAT IT SOUNDS LIKE WHEN CLOVES FRY BURGER,With fried garlic cloves
+10,Flat-Top o' the Morning to Ya,https://bobs-burgers.fandom.com/wiki/Flat-Top_o%27_the_Morning_to_Ya,THE HAPPY PAINT PATTY'S DAY BURGER (Whiskey brushed patty),THE HAPPY PAINT PATTY'S DAY BURGER,Whiskey brushed patty
+10,Just the Trip,https://bobs-burgers.fandom.com/wiki/Just_the_Trip,THE HOLLANDAISE RO-O-OH-O-OH-O-OH-OH-OH-OLL BURGER (Comes with hollandaise sauce on a Kaiser roll),THE HOLLANDAISE RO-O-OH-O-OH-O-OH-OH-OH-OLL BURGER,Comes with hollandaise sauce on a Kaiser roll
+10,Tappy Tappy Tappy Tap Tap Tap,https://bobs-burgers.fandom.com/wiki/Tappy_Tappy_Tappy_Tap_Tap_Tap,BETTER CAULIFLOWER SAUL BURGER,BETTER CAULIFLOWER SAUL BURGER,
+10,The Handyman Can,https://bobs-burgers.fandom.com/wiki/The_Handyman_Can,THE CHILI-DELPHIA STORY BURGER,THE CHILI-DELPHIA STORY BURGER,
+10,The Handyman Can,https://bobs-burgers.fandom.com/wiki/The_Handyman_Can,THE DEEP BLUE BRIE BURGER (Comes with blue cheese and brie),THE DEEP BLUE BRIE BURGER,Comes with blue cheese and brie
+10,The Handyman Can,https://bobs-burgers.fandom.com/wiki/The_Handyman_Can,THE STAYIN' A-CHIVE BURGER,THE STAYIN' A-CHIVE BURGER,
+10,The Handyman Can,https://bobs-burgers.fandom.com/wiki/The_Handyman_Can,THE ALMOND BUTTERS BAND BURGER (Comes with toasted almond butter),THE ALMOND BUTTERS BAND BURGER,Comes with toasted almond butter
+10,Poops!… I Didn't Do It Again,https://bobs-burgers.fandom.com/wiki/Poops!%E2%80%A6_I_Didn%27t_Do_It_Again,AVOCA-DON'T YOU WANT ME BABY? BURGER,AVOCA-DON'T YOU WANT ME BABY? BURGER,
+10,Poops!… I Didn't Do It Again,https://bobs-burgers.fandom.com/wiki/Poops!%E2%80%A6_I_Didn%27t_Do_It_Again,TAKE A PICTURE FIG'LL LAST LONGER BURGER,TAKE A PICTURE FIG'LL LAST LONGER BURGER,
+10,Local She-ro,https://bobs-burgers.fandom.com/wiki/Local_She-ro,THE INTO THIN HEIRLOOM BURGER,THE INTO THIN HEIRLOOM BURGER,
+10,Prank You for Being a Friend,https://bobs-burgers.fandom.com/wiki/Prank_You_for_Being_a_Friend,"BRIGHT LEEKS, BIG CITY BURGER (Comes with grilled leeks)","BRIGHT LEEKS, BIG CITY BURGER",Comes with grilled leeks
+11,Dream a Little Bob of Bob,https://bobs-burgers.fandom.com/wiki/Dream_a_Little_Bob_of_Bob,THE WHAT'S THE MATTER-HORN BURGER (With Swiss cheese crisps),THE WHAT'S THE MATTER-HORN BURGER,With Swiss cheese crisps
+11,Worms of In-Rear-ment,https://bobs-burgers.fandom.com/wiki/Worms_of_In-Rear-ment,None,None,
+11,Copa-Bob-bana,https://bobs-burgers.fandom.com/wiki/Copa-Bob-bana,PAINT IT BLACKBERRY BURGER,PAINT IT BLACKBERRY BURGER,
+11,Copa-Bob-bana,https://bobs-burgers.fandom.com/wiki/Copa-Bob-bana,PLAY IT AGAIN YAM BURGER,PLAY IT AGAIN YAM BURGER,
+11,Heartbreak Hotel-oween,https://bobs-burgers.fandom.com/wiki/Heartbreak_Hotel-oween,THE NIGHT-PEAR ON ELM BEET BURGER (Comes with pear and beet relish),THE NIGHT-PEAR ON ELM BEET BURGER,Comes with pear and beet relish
+11,Fast Time Capsules at Wagstaff School,https://bobs-burgers.fandom.com/wiki/Fast_Time_Capsules_at_Wagstaff_School,THE BLEU COLLARD BURGER,THE BLEU COLLARD BURGER,
+11,Fast Time Capsules at Wagstaff School,https://bobs-burgers.fandom.com/wiki/Fast_Time_Capsules_at_Wagstaff_School,THE UNBREAKABLE KIMCHI SCHMIDT BURGER,THE UNBREAKABLE KIMCHI SCHMIDT BURGER,
+11,"Bob Belcher and the Terrible, Horrible, No Good, Very Bad Kids","https://bobs-burgers.fandom.com/wiki/Bob_Belcher_and_the_Terrible,_Horrible,_No_Good,_Very_Bad_Kids",THE CHIMICHURRI UP AND WAIT BURGER,THE CHIMICHURRI UP AND WAIT BURGER,
+11,"Bob Belcher and the Terrible, Horrible, No Good, Very Bad Kids","https://bobs-burgers.fandom.com/wiki/Bob_Belcher_and_the_Terrible,_Horrible,_No_Good,_Very_Bad_Kids",THE GUAC! OR MY MOM WILL SHOOT BURGER,THE GUAC! OR MY MOM WILL SHOOT BURGER,
+11,Diarrhea of a Poopy Kid,https://bobs-burgers.fandom.com/wiki/Diarrhea_of_a_Poopy_Kid,None,None,
+11,The Terminalator II: Terminals of Endearment,https://bobs-burgers.fandom.com/wiki/The_Terminalator_II:_Terminals_of_Endearment,THE EGGPLANT ONE ON ME BURGER,THE EGGPLANT ONE ON ME BURGER,
+11,Mommy Boy,https://bobs-burgers.fandom.com/wiki/Mommy_Boy,THE RYE OF THE STORM BURGER (Served with a balsamic drizzle on a rye bun),THE RYE OF THE STORM BURGER,Served with a balsamic drizzle on a rye bun
+11,Mommy Boy,https://bobs-burgers.fandom.com/wiki/Mommy_Boy,ASIAGO FOR BROKE BURGER,ASIAGO FOR BROKE BURGER,
+11,Yachty or Nice,https://bobs-burgers.fandom.com/wiki/Yachty_or_Nice,I’M BRIE-ING OF A WHITE CRISP-MAS SLIDERS (With Brie and crispy onions),I’M BRIE-ING OF A WHITE CRISP-MAS SLIDERS,With Brie and crispy onions
+11,Romancing the Beef,https://bobs-burgers.fandom.com/wiki/Romancing_the_Beef,THE TIKKA LOOK AT ME NOW BURGER,THE TIKKA LOOK AT ME NOW BURGER,
+11,"Die Card, or Card Trying","https://bobs-burgers.fandom.com/wiki/Die_Card,_or_Card_Trying",None,None,
+11,An Incon-Wheelie-ent Truth,https://bobs-burgers.fandom.com/wiki/An_Incon-Wheelie-ent_Truth,THE FOR BUTTER OR FOR WURST BURGER (With butter pickles and sausage),THE FOR BUTTER OR FOR WURST BURGER,With butter pickles and sausage
+11,Mr. Lonely Farts,https://bobs-burgers.fandom.com/wiki/Mr._Lonely_Farts,THE GREEN A LITTLE BEAN OF ME BURGER,THE GREEN A LITTLE BEAN OF ME BURGER,
+11,Sheshank Redumption,https://bobs-burgers.fandom.com/wiki/Sheshank_Redumption,GRATERS OF THE SAUCED HAVART(i) BURGER,GRATERS OF THE SAUCED HAVART(i) BURGER,
+11,Y Tu Tina También,https://bobs-burgers.fandom.com/wiki/Y_Tu_Tina_Tambi%C3%A9n,THE PECORINO ON SOMEONE YOUR OWN SIZE BURGER (Comes with a pecorino crisp),THE PECORINO ON SOMEONE YOUR OWN SIZE BURGER,Comes with a pecorino crisp
+11,Y Tu Tina También,https://bobs-burgers.fandom.com/wiki/Y_Tu_Tina_Tambi%C3%A9n,THE THREE CHEEKS TO THE WIND BURGER (Comes with guanciale),THE THREE CHEEKS TO THE WIND BURGER,Comes with guanciale
+11,Fingers-loose,https://bobs-burgers.fandom.com/wiki/Fingers-loose,THE GROOVE IS IN THE CHARD BURGER,THE GROOVE IS IN THE CHARD BURGER,
+11,Fingers-loose,https://bobs-burgers.fandom.com/wiki/Fingers-loose,STEP UP 2: THE BEETS BURGER,STEP UP 2: THE BEETS BURGER,
+11,Some Kind of Fender Benderful,https://bobs-burgers.fandom.com/wiki/Some_Kind_of_Fender_Benderful,"THE MO, LARRY, AND CURRY BURGER","THE MO, LARRY, AND CURRY BURGER",
+11,Bridge Over Troubled Rudy,https://bobs-burgers.fandom.com/wiki/Bridge_Over_Troubled_Rudy,SHOULD I SAUTEE OR SHOULD I MANGO? BURGER (With sauteed onions and mango salsa),SHOULD I SAUTEE OR SHOULD I MANGO? BURGER,With sauteed onions and mango salsa
+11,Bridge Over Troubled Rudy,https://bobs-burgers.fandom.com/wiki/Bridge_Over_Troubled_Rudy,"DO THE CREMINI, DO THE THYME BURGER","DO THE CREMINI, DO THE THYME BURGER",
+11,Steal Magazine-olias,https://bobs-burgers.fandom.com/wiki/Steal_Magazine-olias,PARME-JEAN CLAUDE VAN HAMBURGER,PARME-JEAN CLAUDE VAN HAMBURGER,
+11,Tell Me Dumb Thing Good,https://bobs-burgers.fandom.com/wiki/Tell_Me_Dumb_Thing_Good,THE YOU CAN LEAD A HORSERADISH TO WATERCRESS BURGER,THE YOU CAN LEAD A HORSERADISH TO WATERCRESS BURGER,
+11,Tell Me Dumb Thing Good,https://bobs-burgers.fandom.com/wiki/Tell_Me_Dumb_Thing_Good,THE BREWSTER'S SCALLIONS BURGER,THE BREWSTER'S SCALLIONS BURGER,
+11,Tell Me Dumb Thing Good,https://bobs-burgers.fandom.com/wiki/Tell_Me_Dumb_Thing_Good,...YOU CALL ME BURGER (With mango chutney),...YOU CALL ME BURGER,With mango chutney
+11,Tell Me Dumb Thing Good,https://bobs-burgers.fandom.com/wiki/Tell_Me_Dumb_Thing_Good,THE TAKE A BITE OUT OF LIME BURGER (With lime chutney),THE TAKE A BITE OUT OF LIME BURGER,With lime chutney
+11,Tell Me Dumb Thing Good,https://bobs-burgers.fandom.com/wiki/Tell_Me_Dumb_Thing_Good,...I AM... FATHER...,...I AM... FATHER...,
+11,Vampire Disco Death Dance,https://bobs-burgers.fandom.com/wiki/Vampire_Disco_Death_Dance,STILTON CRAZY AFTER ALL THESE GRUYERES BURGER,STILTON CRAZY AFTER ALL THESE GRUYERES BURGER,
+12,Manic Pixie Crap Show,https://bobs-burgers.fandom.com/wiki/Manic_Pixie_Crap_Show,THE IF I HAD A (PUMPER)NICKEL BURGER,THE IF I HAD A (PUMPER)NICKEL BURGER,
+12,Crystal Mess,https://bobs-burgers.fandom.com/wiki/Crystal_Mess,THE YOU HAD ME AT HELLOKRA BURGER,THE YOU HAD ME AT HELLOKRA BURGER,
+12,Crystal Mess,https://bobs-burgers.fandom.com/wiki/Crystal_Mess,GRIN AND CARROT BURGER (Comes with carrot purée),GRIN AND CARROT BURGER,Comes with carrot purée
+12,The Pumpkinening,https://bobs-burgers.fandom.com/wiki/The_Pumpkinening,THE LEEK-Y CAULDRON BURGER,THE LEEK-Y CAULDRON BURGER,
+12,Driving Big Dummy,https://bobs-burgers.fandom.com/wiki/Driving_Big_Dummy,THE MARVELOUS MRS. BASIL BURGER,THE MARVELOUS MRS. BASIL BURGER,
+12,Seven-tween Again,https://bobs-burgers.fandom.com/wiki/Seven-tween_Again,SON OF A PEACH-ER MAN BURGER (Comes with peach glaze),SON OF A PEACH-ER MAN BURGER,Comes with peach glaze
+12,Seven-tween Again,https://bobs-burgers.fandom.com/wiki/Seven-tween_Again,LIVIN' ON A PEAR BURGER,LIVIN' ON A PEAR BURGER,
+12,Seven-tween Again,https://bobs-burgers.fandom.com/wiki/Seven-tween_Again,FULL NETTLE JACKET BURGER (Comes with sautéed nettles),FULL NETTLE JACKET BURGER,Comes with sautéed nettles
+12,Seven-tween Again,https://bobs-burgers.fandom.com/wiki/Seven-tween_Again,BABY GOT BOK CHOY BURGER,BABY GOT BOK CHOY BURGER,
+12,"Beach, Please","https://bobs-burgers.fandom.com/wiki/Beach,_Please",YOUR CRESS IS ON MY LIST BURGER (Comes with watercress),YOUR CRESS IS ON MY LIST BURGER,Comes with watercress
+12,Loft in Bedslation,https://bobs-burgers.fandom.com/wiki/Loft_in_Bedslation,I BEAN OF GREENIE BURGER (Comes with black bean parsley puree),I BEAN OF GREENIE BURGER,Comes with black bean parsley puree
+12,Stuck in the Kitchen with You,https://bobs-burgers.fandom.com/wiki/Stuck_in_the_Kitchen_with_You,None,None,
+12,FOMO You Didn't,https://bobs-burgers.fandom.com/wiki/FOMO_You_Didn%27t,A WRINKLE IN THYME BURGER,A WRINKLE IN THYME BURGER,
+12,FOMO You Didn't,https://bobs-burgers.fandom.com/wiki/FOMO_You_Didn%27t,IT'S CHIVE O'CLOCK SOME-PEAR BURGER,IT'S CHIVE O'CLOCK SOME-PEAR BURGER,
+12,FOMO You Didn't,https://bobs-burgers.fandom.com/wiki/FOMO_You_Didn%27t,THE LOST IN YAM-SLATION BURGER,THE LOST IN YAM-SLATION BURGER,
+12,Gene's Christmas Break,https://bobs-burgers.fandom.com/wiki/Gene%27s_Christmas_Break,THE CHALLAH AND THE CHIVE-Y BURGER,THE CHALLAH AND THE CHIVE-Y BURGER,
+12,Gene's Christmas Break,https://bobs-burgers.fandom.com/wiki/Gene%27s_Christmas_Break,"YOU CHEDDAR WATCH OUT, YOU CHEDDAR ON RYE BURGER","YOU CHEDDAR WATCH OUT, YOU CHEDDAR ON RYE BURGER",
+12,Gene's Christmas Break,https://bobs-burgers.fandom.com/wiki/Gene%27s_Christmas_Break,JINGLE BELL PEPPERS ROCK BURGER,JINGLE BELL PEPPERS ROCK BURGER,
+12,Gene's Christmas Break,https://bobs-burgers.fandom.com/wiki/Gene%27s_Christmas_Break,IT CAME UPON A MIDNIGHT GRUYERE BURGER,IT CAME UPON A MIDNIGHT GRUYERE BURGER,
+12,Touch of Eval(uations),https://bobs-burgers.fandom.com/wiki/Touch_of_Eval(uations),THROW CARDAMOM-MA FROM THE TRAIN BURGER,THROW CARDAMOM-MA FROM THE TRAIN BURGER,
+12,Ferry on My Wayward Bob and Linda,https://bobs-burgers.fandom.com/wiki/Ferry_on_My_Wayward_Bob_and_Linda,DON'T DREAM IT'S OKRA BURGER,DON'T DREAM IT'S OKRA BURGER,
+12,Frigate Me Knot,https://bobs-burgers.fandom.com/wiki/Frigate_Me_Knot,"None (A Burger of the Day can be seen in the episode, but it's impossible to read)",None,"A Burger of the Day can be seen in the episode, but it's impossible to read"
+12,Video Killed the Gene-io Star,https://bobs-burgers.fandom.com/wiki/Video_Killed_the_Gene-io_Star,HOUSE OF 1000 PORK-SES BURGER (Topped with ham and bacon),HOUSE OF 1000 PORK-SES BURGER,Topped with ham and bacon
+12,Video Killed the Gene-io Star,https://bobs-burgers.fandom.com/wiki/Video_Killed_the_Gene-io_Star,I STILTON HAVEN'T FOUND WHAT THYME LOOKING FOR BURGER,I STILTON HAVEN'T FOUND WHAT THYME LOOKING FOR BURGER,
+12,Ancient Misbehavin',https://bobs-burgers.fandom.com/wiki/Ancient_Misbehavin%27,THE CHIMI-CHURRI YOU CAN'T BE SERIOUS BURGER,THE CHIMI-CHURRI YOU CAN'T BE SERIOUS BURGER,
+12,Interview with a Pop-pop-pire,https://bobs-burgers.fandom.com/wiki/Interview_with_a_Pop-pop-pire,None,None,
+12,The Spider House Rules,https://bobs-burgers.fandom.com/wiki/The_Spider_House_Rules,THE RIB LONG AND PROSPER BURGER,THE RIB LONG AND PROSPER BURGER,
+12,The Spider House Rules,https://bobs-burgers.fandom.com/wiki/The_Spider_House_Rules,THE WHAT WE DILL IN THE SHADOWS BURGER,THE WHAT WE DILL IN THE SHADOWS BURGER,
+12,Clear and Present Ginger,https://bobs-burgers.fandom.com/wiki/Clear_and_Present_Ginger,"CELERY-BRATE GOOD TIMES, COME ON! BURGER","CELERY-BRATE GOOD TIMES, COME ON! BURGER",
+12,A-Sprout a Boy,https://bobs-burgers.fandom.com/wiki/A-Sprout_a_Boy,READY OR NOT HERE I PLUM BURGER,READY OR NOT HERE I PLUM BURGER,
+12,A-Sprout a Boy,https://bobs-burgers.fandom.com/wiki/A-Sprout_a_Boy,THE LITTLE SPROUTS ON THE PRAIRIE BURGER,THE LITTLE SPROUTS ON THE PRAIRIE BURGER,
+12,Sauce Side Story,https://bobs-burgers.fandom.com/wiki/Sauce_Side_Story,BURGER SHE GOAT (Comes with goat cheese),BURGER SHE GOAT,Comes with goat cheese
+12,Some Like It Bot Part 1: Eighth Grade Runner,https://bobs-burgers.fandom.com/wiki/Some_Like_It_Bot_Part_1:_Eighth_Grade_Runner,THE LEEK-Y TIKKI TAVI BURGER,THE LEEK-Y TIKKI TAVI BURGER,
+12,Some Like It Bot Part 1: Eighth Grade Runner,https://bobs-burgers.fandom.com/wiki/Some_Like_It_Bot_Part_1:_Eighth_Grade_Runner,THE SAGE OF INNOCENCE BURGER,THE SAGE OF INNOCENCE BURGER,
+12,Some Like It Bot Part 1: Eighth Grade Runner,https://bobs-burgers.fandom.com/wiki/Some_Like_It_Bot_Part_1:_Eighth_Grade_Runner,THE MAD FLAX CURRY ROAD BURGER,THE MAD FLAX CURRY ROAD BURGER,
+12,Some Like It Bot Part 2: Judge-bot Day,https://bobs-burgers.fandom.com/wiki/Some_Like_It_Bot_Part_2:_Judge-bot_Day,THE MR. SMITH GOES TO SQUASH-INGTON BURGER,THE MR. SMITH GOES TO SQUASH-INGTON BURGER,
+12,Some Like It Bot Part 2: Judge-bot Day,https://bobs-burgers.fandom.com/wiki/Some_Like_It_Bot_Part_2:_Judge-bot_Day,THE I AIN'T MESCLUN YOU AT ALL BURGER,THE I AIN'T MESCLUN YOU AT ALL BURGER,
+13,"To Bob, or Not to Bob","https://bobs-burgers.fandom.com/wiki/To_Bob,_or_Not_to_Bob",I LIKE WALNUTS AND I CANNOT LIE BURGER (Comes with walnut pesto),I LIKE WALNUTS AND I CANNOT LIE BURGER,Comes with walnut pesto
+13,"To Bob, or Not to Bob","https://bobs-burgers.fandom.com/wiki/To_Bob,_or_Not_to_Bob",MID-CUCUMBER NIGHT'S BRIE-M BURGER,MID-CUCUMBER NIGHT'S BRIE-M BURGER,
+13,"To Bob, or Not to Bob","https://bobs-burgers.fandom.com/wiki/To_Bob,_or_Not_to_Bob","DIRTY ROTTEN TENDRILS BURGER (Comes with pea tendrils, not rotten)",DIRTY ROTTEN TENDRILS BURGER,"Comes with pea tendrils, not rotten"
+13,"To Bob, or Not to Bob","https://bobs-burgers.fandom.com/wiki/To_Bob,_or_Not_to_Bob",CAULIFLOWER ME MAYBE BURGER,CAULIFLOWER ME MAYBE BURGER,
+13,"To Bob, or Not to Bob","https://bobs-burgers.fandom.com/wiki/To_Bob,_or_Not_to_Bob",ALL THE WORLD'S A SAGE BURGER,ALL THE WORLD'S A SAGE BURGER,
+13,The Reeky Lake Show,https://bobs-burgers.fandom.com/wiki/The_Reeky_Lake_Show,THE YOU BURRATA KNOW BURGER,THE YOU BURRATA KNOW BURGER,
+13,What About Job?,https://bobs-burgers.fandom.com/wiki/What_About_Job%3F,THE KIDS ARE ALL RYE BURGER,THE KIDS ARE ALL RYE BURGER,
+13,Comet-y of Errors,https://bobs-burgers.fandom.com/wiki/Comet-y_of_Errors,THE TAKE BANH MI BURGER,THE TAKE BANH MI BURGER,
+13,So You Stink You Can Dance,https://bobs-burgers.fandom.com/wiki/So_You_Stink_You_Can_Dance,CAUL-LOW YOUR BLISS BURGER (Served with fried cauliflower),CAUL-LOW YOUR BLISS BURGER,Served with fried cauliflower
+13,So You Stink You Can Dance,https://bobs-burgers.fandom.com/wiki/So_You_Stink_You_Can_Dance,SILENCE OF THE YAMS BURGER (Served with a mild yam drizzle),SILENCE OF THE YAMS BURGER,Served with a mild yam drizzle
+13,So You Stink You Can Dance,https://bobs-burgers.fandom.com/wiki/So_You_Stink_You_Can_Dance,GUAC-Y HORROR PICTURE SHOW BURGER (Smothered in guacamole),GUAC-Y HORROR PICTURE SHOW BURGER,Smothered in guacamole
+13,Apple Gore-chard! (But Not Gory),https://bobs-burgers.fandom.com/wiki/Apple_Gore-chard!_(But_Not_Gory),ROSEMARY'S BABY CORN BURGER (With Rosemary and baby corn),ROSEMARY'S BABY CORN BURGER,With Rosemary and baby corn
+13,Ready Player Gene,https://bobs-burgers.fandom.com/wiki/Ready_Player_Gene,I'M GUAC'ING HERE BURGER (Comes with Guacamole),I'M GUAC'ING HERE BURGER,Comes with Guacamole
+13,Ready Player Gene,https://bobs-burgers.fandom.com/wiki/Ready_Player_Gene,SURELY YOU ZEST BURGER (Comes with lemon zest),SURELY YOU ZEST BURGER,Comes with lemon zest
+13,Ready Player Gene,https://bobs-burgers.fandom.com/wiki/Ready_Player_Gene,CHEDDAR SAFE THAN CHARD-Y BURGER,CHEDDAR SAFE THAN CHARD-Y BURGER,
+13,Putts-giving,https://bobs-burgers.fandom.com/wiki/Putts-giving,None,None,
+13,Show Mama from the Grave,https://bobs-burgers.fandom.com/wiki/Show_Mama_from_the_Grave,None,None,
+13,The Plight Before Christmas,https://bobs-burgers.fandom.com/wiki/The_Plight_Before_Christmas,THE PINEAPPLE ON 34TH STREET BURGER,THE PINEAPPLE ON 34TH STREET BURGER,
+13,Cheaty Cheaty Bang Bang,https://bobs-burgers.fandom.com/wiki/Cheaty_Cheaty_Bang_Bang,None,None,
+13,Oh Row You Didn't,https://bobs-burgers.fandom.com/wiki/Oh_Row_You_Didn%27t,THE MOLD MAN AND THE SEA BURGER (Comes with blue cheese),THE MOLD MAN AND THE SEA BURGER,Comes with blue cheese
+13,Stop! Or My Mom Will Sleuth!,https://bobs-burgers.fandom.com/wiki/Stop!_Or_My_Mom_Will_Sleuth!,THE THAT GIRL IS HOISIN BURGER,THE THAT GIRL IS HOISIN BURGER,
+13,These Boots Are Made for Stalking,https://bobs-burgers.fandom.com/wiki/These_Boots_Are_Made_for_Stalking,THE IT'S MY PARSLEY AND I'LL CHIVE IF I WANT TO BURGER,THE IT'S MY PARSLEY AND I'LL CHIVE IF I WANT TO BURGER,
+13,These Boots Are Made for Stalking,https://bobs-burgers.fandom.com/wiki/These_Boots_Are_Made_for_Stalking,THE SMELLS LIKE POUTINE SPIRIT BURGER,THE SMELLS LIKE POUTINE SPIRIT BURGER,
+13,These Boots Are Made for Stalking,https://bobs-burgers.fandom.com/wiki/These_Boots_Are_Made_for_Stalking,THE WHOA OH! LIVIN' ON GRUYERE BURGER,THE WHOA OH! LIVIN' ON GRUYERE BURGER,
+13,These Boots Are Made for Stalking,https://bobs-burgers.fandom.com/wiki/These_Boots_Are_Made_for_Stalking,THE YOU HAVARTI THE RIGHT TO ROMAINE SHALLOT BURGER,THE YOU HAVARTI THE RIGHT TO ROMAINE SHALLOT BURGER,
+13,These Boots Are Made for Stalking,https://bobs-burgers.fandom.com/wiki/These_Boots_Are_Made_for_Stalking,THE OLIVE AND LET RYE BURGER,THE OLIVE AND LET RYE BURGER,
+13,These Boots Are Made for Stalking,https://bobs-burgers.fandom.com/wiki/These_Boots_Are_Made_for_Stalking,THE ROMANCING THE PRUNE BURGER,THE ROMANCING THE PRUNE BURGER,
+13,The Show (and Tell) Must Go On,https://bobs-burgers.fandom.com/wiki/The_Show_(and_Tell)_Must_Go_On,THE EDAM AND WEEP BURGER (Served with edam cheese and raw onion),THE EDAM AND WEEP BURGER,Served with edam cheese and raw onion
+13,What a (April) Fool Believes,https://bobs-burgers.fandom.com/wiki/What_a_(April)_Fool_Believes,CAT-SUP WITH THAT? BURGER,CAT-SUP WITH THAT? BURGER,
+13,What a (April) Fool Believes,https://bobs-burgers.fandom.com/wiki/What_a_(April)_Fool_Believes,THE POS-ONION ADVENTURE BURGER,THE POS-ONION ADVENTURE BURGER,
+13,What a (April) Fool Believes,https://bobs-burgers.fandom.com/wiki/What_a_(April)_Fool_Believes,GUAC-APELLA BURGER,GUAC-APELLA BURGER,
+13,What a (April) Fool Believes,https://bobs-burgers.fandom.com/wiki/What_a_(April)_Fool_Believes,LETTUCE IT SNOW! BURGER,LETTUCE IT SNOW! BURGER,
+13,What a (April) Fool Believes,https://bobs-burgers.fandom.com/wiki/What_a_(April)_Fool_Believes,RYE WIIIIFE BURGER (W/ RYE BUN),RYE WIIIIFE BURGER,W/ RYE BUN
+13,What a (April) Fool Believes,https://bobs-burgers.fandom.com/wiki/What_a_(April)_Fool_Believes,SWISS-TER ACT 2 BURGER,SWISS-TER ACT 2 BURGER,
+13,Crows Encounters of the Bird Kind,https://bobs-burgers.fandom.com/wiki/Crows_Encounters_of_the_Bird_Kind,RYE HERE RYE NOW BURGER,RYE HERE RYE NOW BURGER,
+13,Gift Card or Buy Trying,https://bobs-burgers.fandom.com/wiki/Gift_Card_or_Buy_Trying,... HEY MR. ... MAN ...,... HEY MR. ... MAN ...,
+13,Crab-solutely Fabulous,https://bobs-burgers.fandom.com/wiki/Crab-solutely_Fabulous,THE CHIVE EASY PEAS-ES BURGER,THE CHIVE EASY PEAS-ES BURGER,
+13,Crab-solutely Fabulous,https://bobs-burgers.fandom.com/wiki/Crab-solutely_Fabulous,THE LET’S GET CHEDDAR TO RUMBLE BURGER,THE LET’S GET CHEDDAR TO RUMBLE BURGER,
+13,Crab-solutely Fabulous,https://bobs-burgers.fandom.com/wiki/Crab-solutely_Fabulous,THE BRUSSEL-MANIA BURGER,THE BRUSSEL-MANIA BURGER,
+13,Radio No You Didn't,https://bobs-burgers.fandom.com/wiki/Radio_No_You_Didn%27t,None,None,
+13,Mother Author Laser Pointer,https://bobs-burgers.fandom.com/wiki/Mother_Author_Laser_Pointer,"THE ANYTHING YUZU CAN DO, RYE CAN DO CHEDDAR BURGER","THE ANYTHING YUZU CAN DO, RYE CAN DO CHEDDAR BURGER",
+13,Amelia,https://bobs-burgers.fandom.com/wiki/Amelia,THE PLUM FRY WITH ME BURGER,THE PLUM FRY WITH ME BURGER,
+13,Amelia,https://bobs-burgers.fandom.com/wiki/Amelia,THE MAMMA TOLD ME GNOCCHI COME BURGER,THE MAMMA TOLD ME GNOCCHI COME BURGER,
+14,Fight at the Not Okay Chore-ral,https://bobs-burgers.fandom.com/wiki/Fight_at_the_Not_Okay_Chore-ral,None,None,
+14,The Amazing Rudy,https://bobs-burgers.fandom.com/wiki/The_Amazing_Rudy,None,None,
+14,The Pickleorette,https://bobs-burgers.fandom.com/wiki/The_Pickleorette,A LEAGUE OF PEAR OWN BURGER,A LEAGUE OF PEAR OWN BURGER,
+14,The Pickleorette,https://bobs-burgers.fandom.com/wiki/The_Pickleorette,LAMB! I WISH I WAS YOUR BURGER,LAMB! I WISH I WAS YOUR BURGER,
+14,Running Down a Gene,https://bobs-burgers.fandom.com/wiki/Running_Down_a_Gene,None,None,
+14,Bully-ieve It or Not,https://bobs-burgers.fandom.com/wiki/Bully-ieve_It_or_Not,THE BURGER BALL PIT,THE BURGER BALL PIT,
+14,Escape from Which Island?,https://bobs-burgers.fandom.com/wiki/Escape_from_Which_Island%3F,THE CORN IDENTITY BURGER (Comes with corn relish),THE CORN IDENTITY BURGER,Comes with corn relish
+14,The (Raccoon) King and I,https://bobs-burgers.fandom.com/wiki/The_(Raccoon)_King_and_I,EVERYTHING EVERYWHERE ALL AT QUINCE BURGER,EVERYTHING EVERYWHERE ALL AT QUINCE BURGER,
+14,"Wharf, Me Worry?","https://bobs-burgers.fandom.com/wiki/Wharf,_Me_Worry%3F",THE ELECTRIC LIGHT OKRA-SLAW BURGER,THE ELECTRIC LIGHT OKRA-SLAW BURGER,
+14,"Wharf, Me Worry?","https://bobs-burgers.fandom.com/wiki/Wharf,_Me_Worry%3F",THE GOOD THYME BURGER,THE GOOD THYME BURGER,
+14,"Wharf, Me Worry?","https://bobs-burgers.fandom.com/wiki/Wharf,_Me_Worry%3F",THE PEARY ... BURGER,THE PEARY ... BURGER,
+14,Fraud of the Dead: Zombie-docu-pocalypse,https://bobs-burgers.fandom.com/wiki/Fraud_of_the_Dead:_Zombie-docu-pocalypse,BROCCOLI RABE-IN HOOD BURGER,BROCCOLI RABE-IN HOOD BURGER,
+14,The Nightmare 2 Days Before Christmas,https://bobs-burgers.fandom.com/wiki/The_Nightmare_2_Days_Before_Christmas,None,None,
+14,Mission Impossi-Bob,https://bobs-burgers.fandom.com/wiki/Mission_Impossi-Bob,MRS. KRAUTFIRE BURGER,MRS. KRAUTFIRE BURGER,
+14,Jade in the Shade,https://bobs-burgers.fandom.com/wiki/Jade_in_the_Shade,SWISS CONGENIALITY BURGER,SWISS CONGENIALITY BURGER,
+14,Jade in the Shade,https://bobs-burgers.fandom.com/wiki/Jade_in_the_Shade,THE SCARLET CHEDDAR BURGER (Served with Burgundy Reduction),THE SCARLET CHEDDAR BURGER,Served with Burgundy Reduction
+14,Butt Sweat and Fears,https://bobs-burgers.fandom.com/wiki/Butt_Sweat_and_Fears_(episode),"THE ONCE, TWICE, THREE TIMES A MARMA-LADY BURGER","THE ONCE, TWICE, THREE TIMES A MARMA-LADY BURGER",
+14,The Big Stieblitzki,https://bobs-burgers.fandom.com/wiki/The_Big_Stieblitzki,None,None,
+14,The Right Tough Stuff,https://bobs-burgers.fandom.com/wiki/The_Right_Tough_Stuff,A CHARD DAY'S BITE BURGER,A CHARD DAY'S BITE BURGER,
+14,The Right Tough Stuff,https://bobs-burgers.fandom.com/wiki/The_Right_Tough_Stuff,THE HOT BUN IN THE SUMMER-THYME BURGER,THE HOT BUN IN THE SUMMER-THYME BURGER,
+14,To Catch a Beef,https://bobs-burgers.fandom.com/wiki/To_Catch_a_Beef,YOUR SWISS IS ON MY LIST BURGER,YOUR SWISS IS ON MY LIST BURGER,
+15,The Tina Table: The Tables Have Tina-ed,https://bobs-burgers.fandom.com/wiki/The_Tina_Table:_The_Tables_Have_Tina-ed,THE BROTHER CAN YOU ASPARAGUS A DIME? BURGER,THE BROTHER CAN YOU ASPARAGUS A DIME? BURGER,
+15,The Tina Table: The Tables Have Tina-ed,https://bobs-burgers.fandom.com/wiki/The_Tina_Table:_The_Tables_Have_Tina-ed,THE CIABATTA BE KIDDING ME BURGER,THE CIABATTA BE KIDDING ME BURGER,
+15,The Tina Table: The Tables Have Tina-ed,https://bobs-burgers.fandom.com/wiki/The_Tina_Table:_The_Tables_Have_Tina-ed,THE CURRY DUTY BURGER,THE CURRY DUTY BURGER,
+15,The Tina Table: The Tables Have Tina-ed,https://bobs-burgers.fandom.com/wiki/The_Tina_Table:_The_Tables_Have_Tina-ed,THE ARUGULAS OF ENGAGEMENT BURGER,THE ARUGULAS OF ENGAGEMENT BURGER,
+15,The Tina Table: The Tables Have Tina-ed,https://bobs-burgers.fandom.com/wiki/The_Tina_Table:_The_Tables_Have_Tina-ed,MOZZ LANDING BURGER,MOZZ LANDING BURGER,
+15,Saving Favorite Drive-In,https://bobs-burgers.fandom.com/wiki/Saving_Favorite_Drive-In,None,None,
+15,Colon-ly the Dronely,https://bobs-burgers.fandom.com/wiki/Colon-ly_the_Dronely,A ROMA WITH A VIEW BURGER,A ROMA WITH A VIEW BURGER,
+15,For Whom the Doll Toes,https://bobs-burgers.fandom.com/wiki/For_Whom_the_Doll_Toes,None,None,
+15,Don't Stop Be-cheesin',https://bobs-burgers.fandom.com/wiki/Don%27t_Stop_Be-cheesin%27,GOLDILOCKS AND THE THREE CAMEMBERTS,GOLDILOCKS AND THE THREE CAMEMBERTS,
+15,Don't Stop Be-cheesin',https://bobs-burgers.fandom.com/wiki/Don%27t_Stop_Be-cheesin%27,I'M BO... SUNSHINE BURGER (Topped with sa...),I'M BO... SUNSHINE BURGER,Topped with sa...
+15,Don't Stop Be-cheesin',https://bobs-burgers.fandom.com/wiki/Don%27t_Stop_Be-cheesin%27,THE CHALLAH LOT OF LOVE BURGER,THE CHALLAH LOT OF LOVE BURGER,
+15,Hope N' Mic Night,https://bobs-burgers.fandom.com/wiki/Hope_N%27_Mic_Night,THE NO KIMCHI FOR OLD MEN BURGER,THE NO KIMCHI FOR OLD MEN BURGER,
+15,Hope N' Mic Night,https://bobs-burgers.fandom.com/wiki/Hope_N%27_Mic_Night,THE L.A. PRAWN-FIDENTIAL BURGER,THE L.A. PRAWN-FIDENTIAL BURGER,
+15,Hope N' Mic Night,https://bobs-burgers.fandom.com/wiki/Hope_N%27_Mic_Night,THE CHILI-DELPHIA STORY BURGER,THE CHILI-DELPHIA STORY BURGER,
+15,Boogie Days,https://bobs-burgers.fandom.com/wiki/Boogie_Days,THE SLAW-SLAW LAND BURGER,THE SLAW-SLAW LAND BURGER,
+15,Boogie Days,https://bobs-burgers.fandom.com/wiki/Boogie_Days,THE MANGO NO YOU FIG-N'T BURGER,THE MANGO NO YOU FIG-N'T BURGER,
+15,Boogie Days,https://bobs-burgers.fandom.com/wiki/Boogie_Days,THE FIVE CHEESY PIECES BURGER,THE FIVE CHEESY PIECES BURGER,
+15,"They Slug Horses, Don't They?","https://bobs-burgers.fandom.com/wiki/They_Slug_Horses,_Don%27t_They%3F",None,None,
+15,Dog Christmas Day After Afternoon,https://bobs-burgers.fandom.com/wiki/Dog_Christmas_Day_After_Afternoon,None,None,
+15,Advice Things Are Ad-Nice,https://bobs-burgers.fandom.com/wiki/Advice_Things_Are_Ad-Nice,THE HAVARTI BOYS BURGER,THE HAVARTI BOYS BURGER,
+15,Advice Things Are Ad-Nice,https://bobs-burgers.fandom.com/wiki/Advice_Things_Are_Ad-Nice,THE GRAPE DAYS A LEEK BURGER,THE GRAPE DAYS A LEEK BURGER,
+15,Advice Things Are Ad-Nice,https://bobs-burgers.fandom.com/wiki/Advice_Things_Are_Ad-Nice,CARROT BUELLER'S DAY OFF BURGER,CARROT BUELLER'S DAY OFF BURGER,
+15,Advice Things Are Ad-Nice,https://bobs-burgers.fandom.com/wiki/Advice_Things_Are_Ad-Nice,THE RAISIN ON MY PARADE BURGER,THE RAISIN ON MY PARADE BURGER,
+15,Mr. Fischoeder's Opus,https://bobs-burgers.fandom.com/wiki/Mr._Fischoeder%27s_Opus,I SLAW HER STANDING THERE BURGER,I SLAW HER STANDING THERE BURGER,
+15,Like a Candle in the Gym,https://bobs-burgers.fandom.com/wiki/Like_a_Candle_in_the_Gym,None,None,
+15,Snackface,https://bobs-burgers.fandom.com/wiki/Snackface,IN-GOUDA-IOUS BASTERDS BURGER,IN-GOUDA-IOUS BASTERDS BURGER,
+15,The Place Beyond the Pinecones,https://bobs-burgers.fandom.com/wiki/The_Place_Beyond_the_Pinecones,None,None,
+15,The Lost City of Atlantic,https://bobs-burgers.fandom.com/wiki/The_Lost_City_of_Atlantic,None,None,
+15,The Shell Game,https://bobs-burgers.fandom.com/wiki/The_Shell_Game,OLIVE BOK 'N' ROLL BURGER,OLIVE BOK 'N' ROLL BURGER,
+15,Wild Steal-ions,https://bobs-burgers.fandom.com/wiki/Wild_Steal-ions,WORKIN' NINE TO CHIVE BURGER,WORKIN' NINE TO CHIVE BURGER,
+15,Wild Steal-ions,https://bobs-burgers.fandom.com/wiki/Wild_Steal-ions,THE CREATURE FROM THE BLACK LEGUME BURGER,THE CREATURE FROM THE BLACK LEGUME BURGER,
+15,Wild Steal-ions,https://bobs-burgers.fandom.com/wiki/Wild_Steal-ions,RYES WITHOUT A FACE BURGER (Comes open-faced),RYES WITHOUT A FACE BURGER,Comes open-faced
+15,"Don't Worry, Be Hoopy","https://bobs-burgers.fandom.com/wiki/Don%27t_Worry,_Be_Hoopy",I GOUDA BEEN A CONTENDER BURGER,I GOUDA BEEN A CONTENDER BURGER,
+15,"Don't Worry, Be Hoopy","https://bobs-burgers.fandom.com/wiki/Don%27t_Worry,_Be_Hoopy",THE RICOTTA GIVE IT UP BURGER,THE RICOTTA GIVE IT UP BURGER,
+15,The Dead Bo-ats Society,https://bobs-burgers.fandom.com/wiki/The_Dead_Bo-ats_Society,THE KARMA CHA-MELON BURGER,THE KARMA CHA-MELON BURGER,
+15,Dad-urday Kite Fever,https://bobs-burgers.fandom.com/wiki/Dad-urday_Kite_Fever,"WORK CHARD, PLAY CHARD BURGER","WORK CHARD, PLAY CHARD BURGER",
+15,Mr. Safebody,https://bobs-burgers.fandom.com/wiki/Mr._Safebody,MAMA SAID KNOCK YOU KRAUT BURGER,MAMA SAID KNOCK YOU KRAUT BURGER,
+15,InsomniBob,https://bobs-burgers.fandom.com/wiki/InsomniBob,THE MANCHEGO OF SLA-MANCHA BURGER,THE MANCHEGO OF SLA-MANCHA BURGER,
+15,InsomniBob,https://bobs-burgers.fandom.com/wiki/InsomniBob,"ASIAGO WEST, YOUNG HAM BURGER","ASIAGO WEST, YOUNG HAM BURGER",
+15,InsomniBob,https://bobs-burgers.fandom.com/wiki/InsomniBob,SHIITAKE IT 'TIL YOU MAKE IT BURGER,SHIITAKE IT 'TIL YOU MAKE IT BURGER,
+15,InsomniBob,https://bobs-burgers.fandom.com/wiki/InsomniBob,COURAGE UNDER WORCESTERSHIRE BURGER,COURAGE UNDER WORCESTERSHIRE BURGER,
+15,InsomniBob,https://bobs-burgers.fandom.com/wiki/InsomniBob,BRIE KIND REWIND BURGER,BRIE KIND REWIND BURGER,
+16,Grand Pre-Pre-Pre-Opening,https://bobs-burgers.fandom.com/wiki/Grand_Pre-Pre-Pre-Opening,GRAND O-PAPAYA-NING BURGER,GRAND O-PAPAYA-NING BURGER,
+16,Grand Pre-Pre-Pre-Opening,https://bobs-burgers.fandom.com/wiki/Grand_Pre-Pre-Pre-Opening,THE BEYOND A REASONABLE SPROUT BURGER,THE BEYOND A REASONABLE SPROUT BURGER,
+16,'Til Death Do Us Art,https://bobs-burgers.fandom.com/wiki/%27Til_Death_Do_Us_Art,"I AM A GUAC, I AM AN (1,000) ISLAND BURGER","I AM A GUAC, I AM AN (1,000) ISLAND BURGER",
+16,The Twinnening,https://bobs-burgers.fandom.com/wiki/The_Twinnening,PHANTOM OF THE OKRA BURGER,PHANTOM OF THE OKRA BURGER,
+16,The Skids in the Hall,https://bobs-burgers.fandom.com/wiki/The_Skids_in_the_Hall,DO YOU BAY LEAF IN MIRACLES BURGER,DO YOU BAY LEAF IN MIRACLES BURGER,
+16,The Skids in the Hall,https://bobs-burgers.fandom.com/wiki/The_Skids_in_the_Hall,THE SOMEDAY MY QUINCE WILL COME BURGER,THE SOMEDAY MY QUINCE WILL COME BURGER,
+16,The Secret Guardin',https://bobs-burgers.fandom.com/wiki/The_Secret_Guardin%27,MOLÈ MONEY MOLÈ PROBLEMS BURGER (With molè sauce),MOLÈ MONEY MOLÈ PROBLEMS BURGER,With molè sauce
+16,Get Her to the Zeke,https://bobs-burgers.fandom.com/wiki/Get_Her_to_the_Zeke,AN OFFICER AND A FENNEL-MAN BURGER,AN OFFICER AND A FENNEL-MAN BURGER,
+16,Tube for Tina,https://bobs-burgers.fandom.com/wiki/Tube_for_Tina,ON GOLDEN PONZU BURGER,ON GOLDEN PONZU BURGER,
+16,Tube for Tina,https://bobs-burgers.fandom.com/wiki/Tube_for_Tina,GRUYERE COMES THE SUNDRIED TOMATO BURGER,GRUYERE COMES THE SUNDRIED TOMATO BURGER,
+16,Les Lizárdables,https://bobs-burgers.fandom.com/wiki/Les_Liz%C3%A1rdables,THE BICE... ... BURGER,THE BICE... ... BURGER,
+16,Les Lizárdables,https://bobs-burgers.fandom.com/wiki/Les_Liz%C3%A1rdables,THE ELECTRIC GRAVY LAND BURGER,THE ELECTRIC GRAVY LAND BURGER,
+16,It's a Stunterful Life,https://bobs-burgers.fandom.com/wiki/It%27s_a_Stunterful_Life,None,None,
+16,Heist Things Are Heist,https://bobs-burgers.fandom.com/wiki/Heist_Things_Are_Heist,BOK TO THE FUTURE BURGER,BOK TO THE FUTURE BURGER,
+16,Louise and the Chalkboard,https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard,MUENSTER MASH BURGER (Comes with Muenster Cheese),MUENSTER MASH BURGER,Comes with Muenster Cheese
+16,Louise and the Chalkboard,https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard,Muenster-al Cramp Burger (Comes with Muenster Cheese),Muenster-al Cramp Burger,Comes with Muenster Cheese
+16,Louise and the Chalkboard,https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard,The Orgy Burger (Comes with Crabs),The Orgy Burger,Comes with Crabs
+16,Louise and the Chalkboard,https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard,The Stool Sample (Comes with Corn),The Stool Sample,Comes with Corn
+16,Louise and the Chalkboard,https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard,The Mammogram Burger (Comes with Melons),The Mammogram Burger,Comes with Melons
+16,Louise and the Chalkboard,https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard,Louise compares her family members to burgers and draws them onto the chalkboard:,Louise compares her family members to burgers and draws them onto the chalkboard:,
+16,Louise and the Chalkboard,https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard,Gene: Musical Fruit Burger,Gene:,Musical Fruit Burger
+16,Louise and the Chalkboard,https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard,Tina: Horse Whisp-Burger,Tina:,Horse Whisp-Burger
+16,Louise and the Chalkboard,https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard,Linda: S-Motherly Love Burger,Linda:,S-Motherly Love Burger
+16,Louise and the Chalkboard,https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard,Louise (herself): ALFALFA OMEGA BURGER,Louise (herself):,ALFALFA OMEGA BURGER
+16,Louise and the Chalkboard,https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard,Bob: World's Worsteshire Boss Burger (Besteshire Dad),Bob:,World's Worsteshire Boss Burger (Besteshire Dad)
+16,Bored,https://bobs-burgers.fandom.com/wiki/Bored,THE SOCIAL SWISS-TANCING BURGER,THE SOCIAL SWISS-TANCING BURGER,
+16,My Butt Has a Fever,https://bobs-burgers.fandom.com/wiki/My_Butt_Has_a_Fever_(short),THE FRANKLY GRUYERE I DON'T GIVE A YAM BURGER,THE FRANKLY GRUYERE I DON'T GIVE A YAM BURGER,
+16,Archer,https://bobs-burgers.fandom.com/wiki/Archer,"""Thomas Elphinstone Hambledurger"" with Manning Coleslaw","""Thomas Elphinstone Hambledurger""",with Manning Coleslaw
+16,Archer,https://bobs-burgers.fandom.com/wiki/Archer,Émile Gorgonzola Burger with J'accusecumbers,Émile Gorgonzola Burger,with J'accusecumbers
+16,The Simpsons,https://bobs-burgers.fandom.com/wiki/The_Simpsons,SHORT PEOPLE GOT NO BRAISIN' TO RIB BURGER,SHORT PEOPLE GOT NO BRAISIN' TO RIB BURGER,
+16,The Simpsons,https://bobs-burgers.fandom.com/wiki/The_Simpsons,THE EAT MY SHORT RIBS BURGER,THE EAT MY SHORT RIBS BURGER,
+16,The Simpsons,https://bobs-burgers.fandom.com/wiki/The_Simpsons,TRILOGY OF TERROR-YAKI BURGER,TRILOGY OF TERROR-YAKI BURGER,
+16,Family Guy,https://bobs-burgers.fandom.com/wiki/Family_Guy,KEVIN-BACON BURGER WITH EVERYTHING TILL MADOFF LOST IT,KEVIN-BACON BURGER WITH EVERYTHING TILL MADOFF LOST IT,

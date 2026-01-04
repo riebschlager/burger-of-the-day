@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import csv
 import json
 import re
 from datetime import datetime, timezone
@@ -152,9 +153,29 @@ def scrape(url):
     return records
 
 
+def write_csv(records, output_path):
+    fieldnames = [
+        "season",
+        "episode_title",
+        "episode_url",
+        "burger_of_the_day",
+        "burger_name",
+        "burger_description",
+    ]
+
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with output_path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        for record in records:
+            writer.writerow({key: record.get(key) for key in fieldnames})
+
+
 def main():
     parser = argparse.ArgumentParser(
-        description="Scrape Burger of the Day entries into JSON."
+        description="Scrape Burger of the Day entries into JSON and CSV."
     )
     parser.add_argument(
         "--url",
@@ -165,6 +186,11 @@ def main():
         "--output",
         default="data/burger-of-the-day.json",
         help="Output JSON path.",
+    )
+    parser.add_argument(
+        "--csv-output",
+        default="data/burger-of-the-day.csv",
+        help="Output CSV path.",
     )
     args = parser.parse_args()
 
@@ -182,7 +208,10 @@ def main():
         json.dump(payload, handle, indent=2, ensure_ascii=False)
         handle.write("\n")
 
+    write_csv(records, args.csv_output)
+
     print(f"Wrote {len(records)} records to {output_path}")
+    print(f"Wrote {len(records)} records to {args.csv_output}")
 
 
 if __name__ == "__main__":

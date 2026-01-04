@@ -9,7 +9,7 @@ https://bobs-burgers.fandom.com/wiki/Burger_of_the_Day
 
 ## Data
 
-- `data/burger-of-the-day.csv`: initial manual capture
+- `data/burger-of-the-day.csv`: generated output from the scraper
 - `data/burger-of-the-day.json`: generated output from the scraper
 
 ## Docker workflow
@@ -32,5 +32,5 @@ docker run --rm -v "$PWD":/work burger-of-the-day-scraper
 The scraper supports optional overrides:
 
 ```bash
-python scripts/scrape.py --url https://bobs-burgers.fandom.com/wiki/Burger_of_the_Day --output data/burger-of-the-day.json
+python scripts/scrape.py --url https://bobs-burgers.fandom.com/wiki/Burger_of_the_Day --output data/burger-of-the-day.json --csv-output data/burger-of-the-day.csv
 ```
