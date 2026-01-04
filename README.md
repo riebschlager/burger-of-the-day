@@ -31,6 +31,8 @@ docker run --rm -v "$PWD":/work burger-of-the-day-scraper
 
 By default the scraper also pulls TVMaze episode metadata; use `--skip-tvmaze`
 to disable.
+By default the scraper skips the "Shorts" and "Other TV Shows" sections;
+use `--include-extra-sections` to include them.
 
 ## Script options
 

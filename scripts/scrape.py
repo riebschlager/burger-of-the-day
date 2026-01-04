@@ -16,6 +16,12 @@ TVMAZE_SINGLESEARCH_URL = "https://api.tvmaze.com/singlesearch/shows"
 TVMAZE_EPISODES_URL = "https://api.tvmaze.com/shows/{show_id}/episodes"
 DEFAULT_TVMAZE_QUERY = "Bob's Burgers"
 USER_AGENT = "burger-of-the-day-scraper/1.0"
+EXTRA_SECTION_TITLES = {
+    "shorts",
+    "other tv shows",
+    "other tv show",
+    "other tv series",
+}
 
 
 def clean_whitespace(text):
@@ -134,6 +140,20 @@ def parse_season(heading):
     return None
 
 
+def heading_text(heading):
+    span = heading.find("span", class_="mw-headline")
+    if span:
+        return clean_whitespace(span.get_text(" ", strip=True))
+    return clean_whitespace(heading.get_text(" ", strip=True))
+
+
+def is_extra_section(title):
+    if not title:
+        return False
+    normalized = normalize_title(title)
+    return normalized in EXTRA_SECTION_TITLES
+
+
 def parse_table(table, season):
     entries = []
     current_episode = None
@@ -180,7 +200,7 @@ def parse_table(table, season):
     return entries
 
 
-def scrape(url):
+def scrape(url, include_extras=False):
     response = requests.get(url, timeout=30, headers={"User-Agent": USER_AGENT})
     response.raise_for_status()
 
@@ -189,11 +209,15 @@ def scrape(url):
     records = []
     current_season = None
 
-    for element in soup.find_all(["h2", "table"]):
-        if element.name == "h2":
+    for element in soup.find_all(["h2", "h3", "table"]):
+        if element.name in {"h2", "h3"}:
             season = parse_season(element)
             if season is not None:
                 current_season = season
+                continue
+
+            if not include_extras and is_extra_section(heading_text(element)):
+                current_season = None
             continue
 
         if element.name == "table" and "BOTD" in (element.get("class") or []):
@@ -375,13 +399,18 @@ def main():
         help="Output JSON path for TVMaze show and episode data.",
     )
     parser.add_argument(
+        "--include-extra-sections",
+        action="store_true",
+        help="Include Shorts and Other TV Shows sections from the source page.",
+    )
+    parser.add_argument(
         "--skip-tvmaze",
         action="store_true",
         help="Skip TVMaze enrichment.",
     )
     args = parser.parse_args()
 
-    records = scrape(args.url)
+    records = scrape(args.url, include_extras=args.include_extra_sections)
 
     tvmaze_payload = None
     if not args.skip_tvmaze:
