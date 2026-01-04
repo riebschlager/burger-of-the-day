@@ -50,6 +50,14 @@ def strip_wrapping_quotes(text):
     return text
 
 
+def clean_reference_text(text):
+    cleaned = clean_whitespace(text)
+    if not cleaned:
+        return ""
+    cleaned = re.sub(r"\[\s*\d+\s*\]", "", cleaned)
+    return clean_whitespace(cleaned)
+
+
 def is_episode_cell(cell):
     bold = cell.find("b")
     if not bold:
@@ -133,6 +141,28 @@ def extract_burger(cell):
     return full_text, burger_name, burger_description
 
 
+def extract_reference_notes(cell):
+    if not cell:
+        return []
+
+    for sup in cell.find_all("sup"):
+        sup.decompose()
+
+    notes = []
+    for item in cell.find_all("li"):
+        note = clean_reference_text(item.get_text(" ", strip=True))
+        if note:
+            notes.append(note)
+
+    if notes:
+        return notes
+
+    fallback = clean_reference_text(cell.get_text(" ", strip=True))
+    if fallback and fallback not in {"-", "—", "N/A"}:
+        return [fallback]
+    return []
+
+
 def parse_season(heading):
     span = heading.find("span", class_="mw-headline")
     if not span:
@@ -160,6 +190,7 @@ def is_extra_section(title):
 
 def parse_table(table, season):
     entries = []
+    contexts = []
     current_episode = None
     current_episode_url = None
 
@@ -169,9 +200,10 @@ def parse_table(table, season):
             continue
 
         burger_cell = None
+        reference_cell = None
 
         if len(cells) == 3:
-            episode_cell, burger_cell, _reference_cell = cells
+            episode_cell, burger_cell, reference_cell = cells
             if is_episode_cell(episode_cell):
                 current_episode, current_episode_url = extract_episode(episode_cell)
         elif len(cells) == 2:
@@ -181,6 +213,7 @@ def parse_table(table, season):
                 burger_cell = second
             else:
                 burger_cell = first
+                reference_cell = second
         elif len(cells) == 1:
             burger_cell = cells[0]
 
@@ -203,7 +236,21 @@ def parse_table(table, season):
             }
         )
 
-    return entries
+        notes = extract_reference_notes(reference_cell)
+        if notes:
+            contexts.append(
+                {
+                    "season": season,
+                    "episode_title": current_episode,
+                    "episode_url": current_episode_url,
+                    "burger_of_the_day": burger_text,
+                    "burger_name": burger_name,
+                    "burger_description": burger_description,
+                    "notes": notes,
+                }
+            )
+
+    return entries, contexts
 
 
 def scrape(url, include_extras=False):
@@ -213,6 +260,7 @@ def scrape(url, include_extras=False):
     soup = BeautifulSoup(response.text, "html.parser")
 
     records = []
+    context_records = []
     current_season = None
 
     for element in soup.find_all(["h2", "h3", "table"]):
@@ -229,12 +277,14 @@ def scrape(url, include_extras=False):
         if element.name == "table" and "BOTD" in (element.get("class") or []):
             if current_season is None:
                 continue
-            records.extend(parse_table(element, current_season))
+            table_records, table_contexts = parse_table(element, current_season)
+            records.extend(table_records)
+            context_records.extend(table_contexts)
 
     if not records:
         raise RuntimeError("No burger records found. The page layout may have changed.")
 
-    return records
+    return records, context_records
 
 
 def fetch_tvmaze(show_query):
@@ -375,6 +425,21 @@ def write_csv(records, output_path):
             writer.writerow({key: record.get(key) for key in fieldnames})
 
 
+def write_context(records, output_path, source_url, scraped_at):
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    payload = {
+        "source_url": source_url,
+        "scraped_at": scraped_at,
+        "records": records,
+    }
+
+    with output_path.open("w", encoding="utf-8") as handle:
+        json.dump(payload, handle, indent=2, ensure_ascii=False)
+        handle.write("\n")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Scrape Burger of the Day entries into JSON and CSV."
@@ -405,6 +470,11 @@ def main():
         help="Output JSON path for TVMaze show and episode data.",
     )
     parser.add_argument(
+        "--context-output",
+        default="data/burger-of-the-day-context.json",
+        help="Output JSON path for burger reference notes.",
+    )
+    parser.add_argument(
         "--include-extra-sections",
         action="store_true",
         help="Include Shorts and Other TV Shows sections from the source page.",
@@ -416,7 +486,8 @@ def main():
     )
     args = parser.parse_args()
 
-    records = scrape(args.url, include_extras=args.include_extra_sections)
+    records, context_records = scrape(args.url, include_extras=args.include_extra_sections)
+    scraped_at = datetime.now(timezone.utc).isoformat()
 
     tvmaze_payload = None
     if not args.skip_tvmaze:
@@ -428,7 +499,7 @@ def main():
 
     payload = {
         "source_url": args.url,
-        "scraped_at": datetime.now(timezone.utc).isoformat(),
+        "scraped_at": scraped_at,
         "records": records,
     }
 
@@ -458,9 +529,11 @@ def main():
         handle.write("\n")
 
     write_csv(records, args.csv_output)
+    write_context(context_records, args.context_output, args.url, scraped_at)
 
     print(f"Wrote {len(records)} records to {output_path}")
     print(f"Wrote {len(records)} records to {args.csv_output}")
+    print(f"Wrote {len(context_records)} reference notes to {args.context_output}")
     if tvmaze_payload:
         print(f"Wrote TVMaze data to {args.tvmaze_output}")
 

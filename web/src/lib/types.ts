@@ -28,6 +28,22 @@ export interface BurgerDataFile {
   };
 }
 
+export interface BurgerContextRecord {
+  season: number;
+  episode_title: string;
+  episode_url: string | null;
+  burger_of_the_day: string;
+  burger_name: string | null;
+  burger_description: string | null;
+  notes: string[];
+}
+
+export interface BurgerContextFile {
+  source_url: string;
+  scraped_at: string;
+  records: BurgerContextRecord[];
+}
+
 export interface TvmazeEpisode {
   id: number;
   url?: string;

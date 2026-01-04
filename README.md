@@ -21,6 +21,8 @@ a Vue 3 + Vite single-page app.
 - `data/burger-of-the-day.json`: `source_url`, `scraped_at`, `records[]`, and a
   `tvmaze` summary block.
 - `data/burger-of-the-day.csv`: flat table of burger records.
+- `data/burger-of-the-day-context.json`: cleaned reference notes per burger,
+  keyed by season, episode title, and burger text.
 - `data/tvmaze-episodes.json`: raw TVMaze show + episode payload.
 
 Record fields (JSON/CSV):
@@ -42,7 +44,8 @@ Record fields (JSON/CSV):
 
 The scraper parses the Fandom table by season, skips "Shorts" and "Other TV
 Shows" sections by default, and optionally enriches records with TVMaze episode
-metadata (exact or fuzzy title matching).
+metadata (exact or fuzzy title matching). It also extracts the reference column
+notes into `data/burger-of-the-day-context.json`.
 
 ### Docker
 
@@ -75,6 +78,7 @@ python3 scripts/scrape.py \
   --csv-output data/burger-of-the-day.csv \
   --tvmaze-show-query "Bob's Burgers" \
   --tvmaze-output data/tvmaze-episodes.json \
+  --context-output data/burger-of-the-day-context.json \
   --include-extra-sections \
   --skip-tvmaze
 ```
@@ -82,6 +86,7 @@ python3 scripts/scrape.py \
 Notes:
 - `--skip-tvmaze` disables TVMaze enrichment.
 - `--include-extra-sections` includes "Shorts" and "Other TV Shows".
+- `--context-output` sets the reference notes JSON output path.
 
 ## Web app
 
