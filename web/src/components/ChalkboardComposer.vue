@@ -10,12 +10,14 @@ const props = withDefaults(
     heading?: string;
     copy?: string;
     showHeader?: boolean;
+    offsetX?: number;
   }>(),
   {
     label: "Chalkboard capture",
     heading: "Download the chalkboard",
     copy: "Grab a shareable image with the burger title on the board.",
     showHeader: true,
+    offsetX: 10,
   }
 );
 
@@ -93,7 +95,7 @@ const formatDescription = (text?: string | null) => {
   return `(${trimmed})`;
 };
 
-const seededAngle = (seed: string, min = -5, max = 5) => {
+const seededAngle = (seed: string, min = -3, max = 3) => {
   let hash = 0;
   for (let i = 0; i < seed.length; i += 1) {
     hash = (hash * 31 + seed.charCodeAt(i)) % 100000;
@@ -271,7 +273,7 @@ const render = async () => {
     }) => {
       const centerY = blockStartY - fontSize + blockHeight / 2;
       ctx.save();
-      ctx.translate(width / 2, centerY);
+      ctx.translate(width / 2 + props.offsetX, centerY);
       ctx.rotate((angle * Math.PI) / 180);
       lines.forEach((line, index) => {
         const y = blockStartY + index * lineHeight - centerY;
