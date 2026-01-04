@@ -1,6 +1,6 @@
 {
   "source_url": "https://bobs-burgers.fandom.com/wiki/Burger_of_the_Day",
-  "scraped_at": "2026-01-04T05:45:22.955844+00:00",
+  "scraped_at": "2026-01-04T07:23:34.051211+00:00",
   "records": [
     {
       "season": 1,
@@ -8084,8 +8084,8 @@
       "season": 16,
       "episode_title": "Louise and the Chalkboard",
       "episode_url": "https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard",
-      "burger_of_the_day": "Louise compares her family members to burgers and draws them onto the chalkboard:",
-      "burger_name": "Louise compares her family members to burgers and draws them onto the chalkboard:",
+      "burger_of_the_day": "Musical Fruit Burger",
+      "burger_name": "Musical Fruit Burger",
       "burger_description": null,
       "tvmaze_episode_id": null,
       "tvmaze_episode_name": null,
@@ -8098,9 +8098,9 @@
       "season": 16,
       "episode_title": "Louise and the Chalkboard",
       "episode_url": "https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard",
-      "burger_of_the_day": "Gene: Musical Fruit Burger",
-      "burger_name": "Gene:",
-      "burger_description": "Musical Fruit Burger",
+      "burger_of_the_day": "Horse Whisp-Burger",
+      "burger_name": "Horse Whisp-Burger",
+      "burger_description": null,
       "tvmaze_episode_id": null,
       "tvmaze_episode_name": null,
       "tvmaze_episode_number": null,
@@ -8112,9 +8112,9 @@
       "season": 16,
       "episode_title": "Louise and the Chalkboard",
       "episode_url": "https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard",
-      "burger_of_the_day": "Tina: Horse Whisp-Burger",
-      "burger_name": "Tina:",
-      "burger_description": "Horse Whisp-Burger",
+      "burger_of_the_day": "S-Motherly Love Burger",
+      "burger_name": "S-Motherly Love Burger",
+      "burger_description": null,
       "tvmaze_episode_id": null,
       "tvmaze_episode_name": null,
       "tvmaze_episode_number": null,
@@ -8126,9 +8126,9 @@
       "season": 16,
       "episode_title": "Louise and the Chalkboard",
       "episode_url": "https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard",
-      "burger_of_the_day": "Linda: S-Motherly Love Burger",
-      "burger_name": "Linda:",
-      "burger_description": "S-Motherly Love Burger",
+      "burger_of_the_day": "ALFALFA OMEGA BURGER",
+      "burger_name": "ALFALFA OMEGA BURGER",
+      "burger_description": null,
       "tvmaze_episode_id": null,
       "tvmaze_episode_name": null,
       "tvmaze_episode_number": null,
@@ -8140,23 +8140,9 @@
       "season": 16,
       "episode_title": "Louise and the Chalkboard",
       "episode_url": "https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard",
-      "burger_of_the_day": "Louise (herself): ALFALFA OMEGA BURGER",
-      "burger_name": "Louise (herself):",
-      "burger_description": "ALFALFA OMEGA BURGER",
-      "tvmaze_episode_id": null,
-      "tvmaze_episode_name": null,
-      "tvmaze_episode_number": null,
-      "tvmaze_episode_url": null,
-      "tvmaze_match_type": "missing",
-      "tvmaze_match_score": null
-    },
-    {
-      "season": 16,
-      "episode_title": "Louise and the Chalkboard",
-      "episode_url": "https://bobs-burgers.fandom.com/wiki/Louise_and_the_Chalkboard",
-      "burger_of_the_day": "Bob: World's Worsteshire Boss Burger (Besteshire Dad)",
-      "burger_name": "Bob:",
-      "burger_description": "World's Worsteshire Boss Burger (Besteshire Dad)",
+      "burger_of_the_day": "World's Worsteshire Boss Burger (Besteshire Dad)",
+      "burger_name": "World's Worsteshire Boss Burger",
+      "burger_description": "Besteshire Dad",
       "tvmaze_episode_id": null,
       "tvmaze_episode_name": null,
       "tvmaze_episode_number": null,
@@ -8279,7 +8265,7 @@
   ],
   "tvmaze": {
     "show_query": "Bob's Burgers",
-    "retrieved_at": "2026-01-04T05:45:22.909984+00:00",
+    "retrieved_at": "2026-01-04T07:23:34.023666+00:00",
     "show_id": 107,
     "show_name": "Bob's Burgers",
     "episode_count": 308,
@@ -8287,7 +8273,7 @@
     "match_counts": {
       "exact": 546,
       "fuzzy": 22,
-      "missing": 23
+      "missing": 22
     }
   }
 }

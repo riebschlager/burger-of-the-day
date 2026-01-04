@@ -66,12 +66,47 @@ def extract_episode(cell):
 def extract_burger(cell):
     full_text = clean_whitespace(cell.get_text(" ", strip=True))
 
+    if not full_text:
+        return None, None, None
+
     burger_name = None
     burger_description = None
 
-    bold = cell.find("b")
-    if bold:
-        burger_name = clean_whitespace(bold.get_text(" ", strip=True))
+    bolds = cell.find_all("b")
+    if bolds:
+        bold_texts = [clean_whitespace(bold.get_text(" ", strip=True)) for bold in bolds]
+        first_bold = bold_texts[0]
+
+        if len(bold_texts) == 1 and first_bold.endswith(":") and full_text == first_bold:
+            return None, None, None
+
+        if first_bold.endswith(":") and len(bold_texts) > 1:
+            burger_name = next((text for text in bold_texts[1:] if text), None)
+            parts = [clean_whitespace(s) for s in cell.stripped_strings]
+
+            extra = []
+            skipped_label = False
+            skipped_burger = False
+            for part in parts:
+                if not skipped_label and part == first_bold:
+                    skipped_label = True
+                    continue
+                if not skipped_burger and burger_name and part == burger_name:
+                    skipped_burger = True
+                    continue
+                extra.append(part)
+
+            description = " ".join(extra).strip()
+            if description.startswith("(") and description.endswith(")"):
+                description = description[1:-1].strip()
+            burger_description = description or None
+
+            burger_text = burger_name or full_text
+            if burger_description:
+                burger_text = f"{burger_text} ({burger_description})"
+            return burger_text, burger_name or burger_text, burger_description
+
+        burger_name = first_bold
         parts = [clean_whitespace(s) for s in cell.stripped_strings]
         if parts:
             if parts[0] == burger_name:
@@ -129,6 +164,8 @@ def parse_table(table, season):
             continue
 
         burger_text, burger_name, burger_description = extract_burger(burger_cell)
+        if burger_text is None:
+            continue
         entries.append(
             {
                 "season": season,
