@@ -16,32 +16,39 @@ onMounted(() => {
 const code = computed(() => String(route.params.code || "").toLowerCase());
 
 const episode = computed(() => {
-  if (!data.value) return null;
-  return data.value.episodesByCode.get(code.value) ?? null;
+  const bundle = data.value;
+  if (!bundle) return null;
+  return bundle.episodesByCode.get(code.value) ?? null;
 });
 
 const episodeIndex = computed(() => {
-  if (!data.value || !episode.value) return -1;
-  return data.value.episodes.findIndex((item) => item.id === episode.value?.id);
+  const bundle = data.value;
+  const currentEpisode = episode.value;
+  if (!bundle || !currentEpisode) return -1;
+  return bundle.episodes.findIndex((item) => item.id === currentEpisode.id);
 });
 
 const prevEpisode = computed(() => {
-  if (!data.value || episodeIndex.value <= 0) return null;
-  return data.value.episodes[episodeIndex.value - 1] ?? null;
+  const bundle = data.value;
+  if (!bundle || episodeIndex.value <= 0) return null;
+  return bundle.episodes[episodeIndex.value - 1] ?? null;
 });
 
 const nextEpisode = computed(() => {
-  if (!data.value || episodeIndex.value < 0) return null;
-  return data.value.episodes[episodeIndex.value + 1] ?? null;
+  const bundle = data.value;
+  if (!bundle || episodeIndex.value < 0) return null;
+  return bundle.episodes[episodeIndex.value + 1] ?? null;
 });
 
 const burgerList = computed(() => {
-  if (!data.value || !episode.value) return [];
-  const fromId = data.value.burgersByEpisodeId.get(episode.value.id);
+  const bundle = data.value;
+  const currentEpisode = episode.value;
+  if (!bundle || !currentEpisode) return [];
+  const fromId = bundle.burgersByEpisodeId.get(currentEpisode.id);
   if (fromId && fromId.length) return fromId;
 
-  const episodeSlug = slugify(episode.value.name);
-  return data.value.records.filter(
+  const episodeSlug = slugify(currentEpisode.name);
+  return bundle.records.filter(
     (record) => slugify(record.episode_title) === episodeSlug
   );
 });
@@ -137,12 +144,6 @@ const burgerList = computed(() => {
                 >
                   {{ record.burgerDisplay }}
                 </router-link>
-                <p class="text-sm text-text/70">
-                  {{ record.burger_of_the_day }}
-                </p>
-                <p v-if="record.burger_description" class="text-sm text-text/70">
-                  {{ record.burger_description }}
-                </p>
               </div>
               <span class="chip">Season {{ record.season }}</span>
             </div>

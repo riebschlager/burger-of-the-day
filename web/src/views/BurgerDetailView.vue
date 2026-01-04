@@ -17,14 +17,16 @@ onMounted(() => {
 const slug = computed(() => String(route.params.slug || ""));
 
 const matches = computed(() => {
-  if (!data.value) return [];
-  return data.value.burgersBySlug.get(slug.value) ?? [];
+  const bundle = data.value;
+  if (!bundle) return [];
+  return bundle.burgersBySlug.get(slug.value) ?? [];
 });
 
 const burgerCatalog = computed(() => {
-  if (!data.value) return [];
+  const bundle = data.value;
+  if (!bundle) return [];
   const map = new Map<string, BurgerRecordView>();
-  for (const record of data.value.records) {
+  for (const record of bundle.records) {
     if (!map.has(record.burgerSlug)) {
       map.set(record.burgerSlug, record);
     }
@@ -78,9 +80,10 @@ const uniqueSeasons = computed(() => {
 });
 
 const earliestAirdate = computed(() => {
-  if (!data.value) return null;
+  const bundle = data.value;
+  if (!bundle) return null;
   const dated = sortedMatches.value
-    .map((record) => data.value.episodesById.get(record.tvmaze_episode_id || 0))
+    .map((record) => bundle.episodesById.get(record.tvmaze_episode_id || 0))
     .filter((episode) => episode && episode.airdate)
     .map((episode) => parseAirdate(episode?.airdate))
     .filter((date): date is Date => Boolean(date));
@@ -90,8 +93,9 @@ const earliestAirdate = computed(() => {
 });
 
 const episodeForRecord = (record: BurgerRecordView) => {
-  if (!data.value) return null;
-  return data.value.episodesById.get(record.tvmaze_episode_id || 0) ?? null;
+  const bundle = data.value;
+  if (!bundle) return null;
+  return bundle.episodesById.get(record.tvmaze_episode_id || 0) ?? null;
 };
 </script>
 
@@ -175,10 +179,10 @@ const episodeForRecord = (record: BurgerRecordView) => {
                 {{ record.episode_title }}
               </span>
               <p class="mt-2 text-sm text-text/70">
-                {{ record.burger_of_the_day }}
+                {{ record.burger_name }}
               </p>
               <p v-if="record.burger_description" class="text-sm text-text/70">
-                {{ record.burger_description }}
+                ({{ record.burger_description }})
               </p>
               <p v-if="episodeForRecord(record)?.summaryText" class="mt-3 text-sm text-text/70">
                 {{ episodeForRecord(record)?.summaryText }}

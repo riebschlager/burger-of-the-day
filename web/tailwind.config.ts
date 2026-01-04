@@ -15,7 +15,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ["Fraunces", "serif"],
+        display: ["Zain", "sans-serif"],
         body: ["Space Grotesk", "sans-serif"],
       },
       colors: {

@@ -35,7 +35,8 @@ const realBurgerRecords = computed(() =>
 );
 
 const weekBurgers = computed(() => {
-  if (!data.value) return [];
+  const bundle = data.value;
+  if (!bundle) return [];
   const results: Array<{
     burger: typeof realBurgerRecords.value[number];
     airdate: string | null | undefined;
@@ -44,7 +45,7 @@ const weekBurgers = computed(() => {
   for (const episode of episodes.value) {
     const airdate = parseAirdate(episode.airdate);
     if (!airdate || !isWithinWeekOfToday(airdate)) continue;
-    const episodeBurgers = data.value.burgersByEpisodeId.get(episode.id) ?? [];
+    const episodeBurgers = bundle.burgersByEpisodeId.get(episode.id) ?? [];
     episodeBurgers.forEach((burger) => {
       if (burger.burgerDisplay.toLowerCase().startsWith("none")) return;
       results.push({ burger, airdate: episode.airdate });
@@ -66,8 +67,10 @@ const dailyEpisode = computed(() => {
 });
 
 const dailyEpisodeBurgerCount = computed(() => {
-  if (!dailyEpisode.value || !data.value) return 0;
-  return data.value.burgersByEpisodeId.get(dailyEpisode.value.id)?.length ?? 0;
+  const bundle = data.value;
+  const currentEpisode = dailyEpisode.value;
+  if (!currentEpisode || !bundle) return 0;
+  return bundle.burgersByEpisodeId.get(currentEpisode.id)?.length ?? 0;
 });
 
 const handleRandomBurger = () => {

@@ -1,6 +1,6 @@
 {
   "source_url": "https://bobs-burgers.fandom.com/wiki/Burger_of_the_Day",
-  "scraped_at": "2026-01-04T15:29:35.708630+00:00",
+  "scraped_at": "2026-01-04T15:41:36.793373+00:00",
   "records": [
     {
       "season": 1,
@@ -8013,7 +8013,7 @@
   ],
   "tvmaze": {
     "show_query": "Bob's Burgers",
-    "retrieved_at": "2026-01-04T15:29:35.667374+00:00",
+    "retrieved_at": "2026-01-04T15:41:36.768627+00:00",
     "show_id": 107,
     "show_name": "Bob's Burgers",
     "episode_count": 308,
