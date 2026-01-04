@@ -184,6 +184,19 @@ const episodeForRecord = (record: BurgerRecordView) => {
               <p v-if="record.burger_description" class="text-sm text-text/70">
                 ({{ record.burger_description }})
               </p>
+              <div v-if="record.referenceNotes?.length" class="mt-3">
+                <p class="text-xs uppercase tracking-[0.3em] text-text/60">
+                  Notes
+                </p>
+                <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-text/70">
+                  <li
+                    v-for="(note, index) in record.referenceNotes"
+                    :key="`${record.burgerSlug}-${record.episodeCode}-${index}`"
+                  >
+                    {{ note }}
+                  </li>
+                </ul>
+              </div>
               <p v-if="episodeForRecord(record)?.summaryText" class="mt-3 text-sm text-text/70">
                 {{ episodeForRecord(record)?.summaryText }}
               </p>

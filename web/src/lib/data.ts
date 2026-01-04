@@ -1,12 +1,19 @@
 import { slugify } from "./slug";
 import { formatEpisodeCode } from "./date";
 import { stripHtml, stripWrappingQuotes, toSentenceCase } from "./text";
-import type { BurgerDataFile, BurgerRecord, TvmazeEpisode, TvmazePayload } from "./types";
+import type {
+  BurgerContextFile,
+  BurgerDataFile,
+  BurgerRecord,
+  TvmazeEpisode,
+  TvmazePayload,
+} from "./types";
 
 export interface BurgerRecordView extends BurgerRecord {
   burgerSlug: string;
   burgerDisplay: string;
   episodeCode: string;
+  referenceNotes?: string[];
 }
 
 export interface EpisodeView extends TvmazeEpisode {
@@ -38,7 +45,16 @@ function buildEpisodeView(episode: TvmazeEpisode): EpisodeView {
   };
 }
 
-function buildRecordView(record: BurgerRecord): BurgerRecordView {
+const normalizeKeyPart = (value: string) =>
+  value.trim().replace(/\s+/g, " ").toLowerCase();
+
+const buildContextKey = (season: number, episodeTitle: string, burgerOfTheDay: string) =>
+  `${season}::${normalizeKeyPart(episodeTitle)}::${normalizeKeyPart(burgerOfTheDay)}`;
+
+function buildRecordView(
+  record: BurgerRecord,
+  contextNotesByKey?: Map<string, string[]>
+): BurgerRecordView {
   const rawName = record.burger_name ? stripWrappingQuotes(record.burger_name) : null;
   const rawOfTheDay = record.burger_of_the_day
     ? stripWrappingQuotes(record.burger_of_the_day)
@@ -59,6 +75,12 @@ function buildRecordView(record: BurgerRecord): BurgerRecordView {
   const normalizedOfTheDay = normalizedDescription
     ? `${normalizedName} (${normalizedDescription})`
     : normalizedName;
+  const contextKey = buildContextKey(
+    record.season,
+    record.episode_title,
+    record.burger_of_the_day
+  );
+  const referenceNotes = contextNotesByKey?.get(contextKey);
 
   return {
     ...record,
@@ -68,6 +90,7 @@ function buildRecordView(record: BurgerRecord): BurgerRecordView {
     burgerDisplay: normalizedName,
     burgerSlug: slugify(normalizedName),
     episodeCode: formatEpisodeCode(record.season, record.tvmaze_episode_number),
+    referenceNotes,
   };
 }
 
@@ -81,14 +104,25 @@ async function fetchJson<T>(path: string): Promise<T> {
   return (await response.json()) as T;
 }
 
+async function fetchOptionalJson<T>(path: string): Promise<T | null> {
+  const base = import.meta.env.BASE_URL || "/";
+  const url = `${base.replace(/\/$/, "")}/${path.replace(/^\//, "")}`;
+  const response = await fetch(url, { cache: "no-store" });
+  if (!response.ok) {
+    return null;
+  }
+  return (await response.json()) as T;
+}
+
 export async function loadBurgerData(): Promise<BurgerDataBundle> {
   if (cachedBundle) return cachedBundle;
   if (pendingPromise) return pendingPromise;
 
   pendingPromise = (async () => {
-    const [burgerFile, tvmazeFile] = await Promise.all([
+    const [burgerFile, tvmazeFile, contextFile] = await Promise.all([
       fetchJson<BurgerDataFile>("data/burger-of-the-day.json"),
       fetchJson<TvmazePayload>("data/tvmaze-episodes.json"),
+      fetchOptionalJson<BurgerContextFile>("data/burger-of-the-day-context.json"),
     ]);
 
     const episodes = tvmazeFile.episodes.map(buildEpisodeView).sort((a, b) => {
@@ -103,7 +137,22 @@ export async function loadBurgerData(): Promise<BurgerDataBundle> {
       episodesByCode.set(episode.code, episode);
     });
 
-    const records = burgerFile.records.map(buildRecordView);
+    const contextNotesByKey = new Map<string, string[]>();
+    if (contextFile) {
+      contextFile.records.forEach((record) => {
+        if (!record.notes?.length) return;
+        const key = buildContextKey(
+          record.season,
+          record.episode_title,
+          record.burger_of_the_day
+        );
+        contextNotesByKey.set(key, record.notes);
+      });
+    }
+
+    const records = burgerFile.records.map((record) =>
+      buildRecordView(record, contextNotesByKey)
+    );
 
     const burgersBySlug = new Map<string, BurgerRecordView[]>();
     const burgersByEpisodeId = new Map<number, BurgerRecordView[]>();
