@@ -104,7 +104,6 @@ const burgerList = computed(() => {
           </p>
           <div class="mt-4 flex flex-wrap gap-3 text-sm text-text/70">
             <span class="chip">Aired {{ formatAirdate(episode.airdate) }}</span>
-            <span class="chip">Runtime {{ episode.runtime ?? "?" }} min</span>
             <span class="chip">
               Rating {{ episode.ratingValue ?? "N/A" }}
             </span>

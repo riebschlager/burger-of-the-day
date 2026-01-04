@@ -28,7 +28,7 @@ const errorMessage = ref<string | null>(null);
 const FONT_FAMILY = '"Kalam", "Chalkboard SE", "Comic Sans MS", cursive';
 const FONT_WEIGHT = "300";
 const TEXT_COLOR = "rgb(244 241 234)";
-const STROKE_COLOR = "rgba(255, 255, 255, 0.4)";
+const STROKE_COLOR = "rgba(255, 255, 255, 1)";
 
 const loadImage = async () => {
   if (imageRef.value) return imageRef.value;
@@ -231,6 +231,7 @@ const render = async () => {
 
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
+    ctx.imageSmoothingEnabled = false;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.clearRect(0, 0, width, height);
     ctx.drawImage(image, 0, 0, width, height);
