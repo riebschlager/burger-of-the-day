@@ -11,9 +11,10 @@ const canvasRef = ref<HTMLCanvasElement | null>(null);
 const imageRef = ref<HTMLImageElement | null>(null);
 const errorMessage = ref<string | null>(null);
 
-const FONT_FAMILY = '"Permanent Marker", "Chalkboard SE", "Comic Sans MS", cursive';
+const FONT_FAMILY = '"Kalam", "Chalkboard SE", "Comic Sans MS", cursive';
+const FONT_WEIGHT = "300";
 const TEXT_COLOR = "rgb(244 241 234)";
-const STROKE_COLOR = "rgba(255, 255, 255, 0.6)";
+const STROKE_COLOR = "rgba(255, 255, 255, 0.4)";
 
 const loadImage = async () => {
   if (imageRef.value) return imageRef.value;
@@ -78,6 +79,15 @@ const formatDescription = (text?: string | null) => {
     return trimmed;
   }
   return `(${trimmed})`;
+};
+
+const seededAngle = (seed: string, min = -5, max = 5) => {
+  let hash = 0;
+  for (let i = 0; i < seed.length; i += 1) {
+    hash = (hash * 31 + seed.charCodeAt(i)) % 100000;
+  }
+  const ratio = hash / 100000;
+  return min + ratio * (max - min);
 };
 
 const fitText = (
@@ -194,7 +204,7 @@ const render = async () => {
   try {
     const image = await loadImage();
     if (document.fonts) {
-      await document.fonts.load(`48px ${FONT_FAMILY}`);
+      await document.fonts.load(`${FONT_WEIGHT} 48px ${FONT_FAMILY}`);
       await document.fonts.ready;
     }
 
@@ -211,7 +221,7 @@ const render = async () => {
     ctx.clearRect(0, 0, width, height);
     ctx.drawImage(image, 0, 0, width, height);
 
-    const paddingX = width * 0.12;
+    const paddingX = width * 0.144;
     const paddingTop = height * 0.27;
     const paddingBottom = height * 0.12;
 
@@ -222,37 +232,71 @@ const render = async () => {
 
     const startY =
       paddingTop + (textHeight - layout.totalHeight) / 2 + layout.title.fontSize;
+    const titleBlockHeight = layout.title.lines.length * layout.title.lineHeight;
+    const titleStartY = startY;
 
     ctx.textAlign = "center";
     ctx.textBaseline = "alphabetic";
     ctx.fillStyle = TEXT_COLOR;
     ctx.strokeStyle = STROKE_COLOR;
     ctx.shadowColor = "rgba(255, 255, 255, 0.25)";
-    ctx.shadowBlur = Math.round(layout.title.fontSize * 0.08);
+    ctx.shadowBlur = Math.round(layout.title.fontSize * 0.05);
 
-    ctx.font = `${layout.title.fontSize}px ${FONT_FAMILY}`;
-    ctx.lineWidth = Math.max(2, Math.round(layout.title.fontSize * 0.08));
+    const drawBlock = ({
+      lines,
+      lineHeight,
+      fontSize,
+      blockStartY,
+      blockHeight,
+      angle,
+    }: {
+      lines: string[];
+      lineHeight: number;
+      fontSize: number;
+      blockStartY: number;
+      blockHeight: number;
+      angle: number;
+    }) => {
+      const centerY = blockStartY - fontSize + blockHeight / 2;
+      ctx.save();
+      ctx.translate(width / 2, centerY);
+      ctx.rotate((angle * Math.PI) / 180);
+      lines.forEach((line, index) => {
+        const y = blockStartY + index * lineHeight - centerY;
+        ctx.strokeText(line, 0, y);
+        ctx.fillText(line, 0, y);
+      });
+      ctx.restore();
+    };
 
-    layout.title.lines.forEach((line, index) => {
-      const y = startY + index * layout.title.lineHeight;
-      ctx.strokeText(line, width / 2, y);
-      ctx.fillText(line, width / 2, y);
+    ctx.font = `${FONT_WEIGHT} ${layout.title.fontSize}px ${FONT_FAMILY}`;
+    ctx.lineWidth = Math.max(1, Math.round(layout.title.fontSize * 0.05));
+
+    drawBlock({
+      lines: layout.title.lines,
+      lineHeight: layout.title.lineHeight,
+      fontSize: layout.title.fontSize,
+      blockStartY: titleStartY,
+      blockHeight: titleBlockHeight,
+      angle: seededAngle(`${text}-title`),
     });
 
     if (layout.subtitle) {
-      ctx.font = `${layout.subtitle.fontSize}px ${FONT_FAMILY}`;
-      ctx.lineWidth = Math.max(1, Math.round(layout.subtitle.fontSize * 0.06));
-      ctx.shadowBlur = Math.round(layout.subtitle.fontSize * 0.05);
+      ctx.font = `${FONT_WEIGHT} ${layout.subtitle.fontSize}px ${FONT_FAMILY}`;
+      ctx.lineWidth = Math.max(1, Math.round(layout.subtitle.fontSize * 0.045));
+      ctx.shadowBlur = Math.round(layout.subtitle.fontSize * 0.04);
 
-      const subtitleStartY =
-        startY +
-        layout.title.lines.length * layout.title.lineHeight +
-        layout.gap;
+      const subtitleStartY = titleStartY + titleBlockHeight + layout.gap;
+      const subtitleBlockHeight =
+        layout.subtitle.lines.length * layout.subtitle.lineHeight;
 
-      layout.subtitle.lines.forEach((line, index) => {
-        const y = subtitleStartY + index * layout.subtitle.lineHeight;
-        ctx.strokeText(line, width / 2, y);
-        ctx.fillText(line, width / 2, y);
+      drawBlock({
+        lines: layout.subtitle.lines,
+        lineHeight: layout.subtitle.lineHeight,
+        fontSize: layout.subtitle.fontSize,
+        blockStartY: subtitleStartY,
+        blockHeight: subtitleBlockHeight,
+        angle: seededAngle(`${text}-${description}-subtitle`),
       });
     }
 
