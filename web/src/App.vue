@@ -45,9 +45,15 @@ import AppHeader from "./components/AppHeader.vue";
           </a>
           +
           <a class="underline decoration-white/40 hover:text-text" href="https://www.tvmaze.com">
-            TVMaze
+            TVMaze.
           </a>
-          . Not affiliated with Fox or Disney.
+            Not affiliated with Fox or Disney. Open source on
+          <a
+            class="underline decoration-white/40 hover:text-text"
+            href="https://github.com/riebschlager/burger-of-the-day"
+          >
+            GitHub.
+          </a>
         </p>
       </div>
     </footer>
