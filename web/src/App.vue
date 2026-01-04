@@ -32,9 +32,22 @@ import AppHeader from "./components/AppHeader.vue";
 
     <footer class="relative border-t border-white/10 px-6 py-8 text-sm text-text/60">
       <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4">
-        <p>Built with love for the punniest burger board in animation.</p>
         <p>
-          Data sources: Fandom + TVMaze. Not affiliated with Fox or Disney.
+          Built with love by
+          <a class="underline decoration-white/40 hover:text-text" href="http://the816.com">
+            Chris Riebschlager
+          </a>
+        </p>
+        <p>
+          Data sources:
+          <a class="underline decoration-white/40 hover:text-text" href="https://bobs-burgers.fandom.com">
+            Fandom
+          </a>
+          +
+          <a class="underline decoration-white/40 hover:text-text" href="https://www.tvmaze.com">
+            TVMaze
+          </a>
+          . Not affiliated with Fox or Disney.
         </p>
       </div>
     </footer>
