@@ -39,3 +39,16 @@ The scraper supports optional overrides:
 ```bash
 python scripts/scrape.py --url https://bobs-burgers.fandom.com/wiki/Burger_of_the_Day --output data/burger-of-the-day.json --csv-output data/burger-of-the-day.csv --tvmaze-show-query "Bob's Burgers" --tvmaze-output data/tvmaze-episodes.json
 ```
+
+## Web app
+
+The Vue + Vite SPA lives in `web/`. It copies the generated JSON into
+`web/public/data` during the build so the UI can fetch it at runtime.
+
+```bash
+cd web
+npm install
+npm run dev
+```
+
+Build output is configured for Netlify with `netlify.toml` at the repo root.

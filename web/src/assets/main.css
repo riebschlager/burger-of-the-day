@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-base: 246 241 231;
+  --color-surface: 255 250 242;
+  --color-muted: 231 224 212;
+  --color-text: 29 27 22;
+  --color-accent: 240 138 36;
+  --color-accent-2: 42 157 143;
+  --color-ring: 29 27 22;
+}
+
+.dark {
+  --color-base: 16 22 33;
+  --color-surface: 20 28 41;
+  --color-muted: 31 42 58;
+  --color-text: 247 244 238;
+  --color-accent: 255 159 28;
+  --color-accent-2: 60 184 164;
+  --color-ring: 247 244 238;
+}
+
+@layer base {
+  html {
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  body {
+    @apply bg-base text-text;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Fraunces", serif;
+  }
+
+  ::selection {
+    background: rgb(var(--color-accent));
+    color: #0f0f0f;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply rounded-3xl border border-white/20 bg-surface/80 shadow-glow backdrop-blur;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-muted/70 px-3 py-1 text-xs font-medium uppercase tracking-widest;
+  }
+
+  .button-base {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-accent px-4 py-2 text-sm font-semibold text-black transition hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+  }
+
+  .button-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-transparent px-4 py-2 text-sm font-semibold text-text transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+  }
+}
