@@ -142,10 +142,9 @@ watch(
   <section class="grid gap-8">
     <div class="glass-card p-8">
       <div class="flex flex-col gap-6">
-        <p class="chip">Data-fueled burger chaos</p>
         <div>
           <h1 class="text-4xl font-semibold leading-tight md:text-5xl">
-            The Bob's Burgers Burgerboard Archive
+            The Bob's Burgers Burger of the Day Archive
           </h1>
           <p class="mt-4 max-w-2xl text-base text-text/70">
             Browse every pun, ingredient, and chalkboard surprise. Tap into

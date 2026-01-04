@@ -24,7 +24,6 @@ const isActive = (path: string) =>
         >
           <span class="font-display text-2xl">Burger of the Day</span>
         </router-link>
-        <span class="chip">Bob's Burgers data lab</span>
       </div>
       <nav class="flex items-center gap-4 text-sm font-semibold">
         <router-link
