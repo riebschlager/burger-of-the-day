@@ -1,6 +1,6 @@
 import { slugify } from "./slug";
 import { formatEpisodeCode } from "./date";
-import { stripHtml, stripWrappingQuotes } from "./text";
+import { stripHtml, stripWrappingQuotes, toSentenceCase } from "./text";
 import type { BurgerDataFile, BurgerRecord, TvmazeEpisode, TvmazePayload } from "./types";
 
 export interface BurgerRecordView extends BurgerRecord {
@@ -39,13 +39,34 @@ function buildEpisodeView(episode: TvmazeEpisode): EpisodeView {
 }
 
 function buildRecordView(record: BurgerRecord): BurgerRecordView {
-  const displaySource = record.burger_name || record.burger_of_the_day || "Unknown";
+  const rawName = record.burger_name ? stripWrappingQuotes(record.burger_name) : null;
+  const rawOfTheDay = record.burger_of_the_day
+    ? stripWrappingQuotes(record.burger_of_the_day)
+    : null;
+  const displaySource = rawName || rawOfTheDay || "Unknown";
   const display = stripWrappingQuotes(displaySource);
+
+  const trailingDescriptionMatch = rawOfTheDay?.match(/\(([^)]+)\)\s*$/);
+  const descriptionSource =
+    record.burger_description ||
+    (rawName && rawOfTheDay && rawOfTheDay.startsWith(rawName) && trailingDescriptionMatch
+      ? trailingDescriptionMatch[1]
+      : null);
+  const normalizedName = display.toUpperCase();
+  const normalizedDescription = descriptionSource
+    ? toSentenceCase(stripWrappingQuotes(descriptionSource))
+    : null;
+  const normalizedOfTheDay = normalizedDescription
+    ? `${normalizedName} (${normalizedDescription})`
+    : normalizedName;
 
   return {
     ...record,
-    burgerDisplay: display,
-    burgerSlug: slugify(display),
+    burger_name: rawName ? normalizedName : null,
+    burger_of_the_day: normalizedOfTheDay,
+    burger_description: normalizedDescription,
+    burgerDisplay: normalizedName,
+    burgerSlug: slugify(normalizedName),
     episodeCode: formatEpisodeCode(record.season, record.tvmaze_episode_number),
   };
 }

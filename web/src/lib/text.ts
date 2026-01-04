@@ -10,3 +10,10 @@ export function stripWrappingQuotes(input: string): string {
   }
   return trimmed;
 }
+
+export function toSentenceCase(input: string): string {
+  const trimmed = input.trim();
+  if (!trimmed) return "";
+  const lower = trimmed.toLowerCase();
+  return lower[0].toUpperCase() + lower.slice(1);
+}
