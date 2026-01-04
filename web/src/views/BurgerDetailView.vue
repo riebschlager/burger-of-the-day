@@ -2,6 +2,7 @@
 import { computed, onMounted } from "vue";
 import { useRoute } from "vue-router";
 import DataState from "../components/DataState.vue";
+import ChalkboardComposer from "../components/ChalkboardComposer.vue";
 import { ensureBurgerData, useBurgerData } from "../composables/useBurgerData";
 import { formatAirdate, parseAirdate } from "../lib/date";
 import type { BurgerRecordView } from "../lib/data";
@@ -56,16 +57,20 @@ const episodeForRecord = (record: BurgerRecordView) => {
   <section class="grid gap-8">
     <DataState :loading="loading" :error="error" />
 
-    <div v-if="data" class="glass-card p-6">
-      <p class="text-xs uppercase tracking-[0.3em] text-text/60">Burger detail</p>
-      <h1 class="mt-2 text-4xl font-semibold">{{ burgerName }}</h1>
-      <div class="mt-4 flex flex-wrap gap-4 text-sm text-text/70">
-        <span class="chip">{{ sortedMatches.length }} appearances</span>
-        <span class="chip">Seasons {{ uniqueSeasons.join(", ") }}</span>
-        <span class="chip" v-if="earliestAirdate">
-          First served {{ earliestAirdate.toLocaleDateString() }}
-        </span>
+    <div v-if="data" class="grid gap-6">
+      <div class="glass-card p-6">
+        <p class="text-xs uppercase tracking-[0.3em] text-text/60">Burger detail</p>
+        <h1 class="mt-2 text-4xl font-semibold">{{ burgerName }}</h1>
+        <div class="mt-4 flex flex-wrap gap-4 text-sm text-text/70">
+          <span class="chip">{{ sortedMatches.length }} appearances</span>
+          <span class="chip">Seasons {{ uniqueSeasons.join(", ") }}</span>
+          <span class="chip" v-if="earliestAirdate">
+            First served {{ earliestAirdate.toLocaleDateString() }}
+          </span>
+        </div>
       </div>
+
+      <ChalkboardComposer :title="burgerName" />
     </div>
 
     <div v-if="data" class="grid gap-6">
