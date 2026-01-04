@@ -4,6 +4,7 @@ import { slugify } from "../lib/slug";
 
 const props = defineProps<{
   title: string;
+  description?: string | null;
 }>();
 
 const canvasRef = ref<HTMLCanvasElement | null>(null);
@@ -69,6 +70,16 @@ const wrapText = (
   return lines;
 };
 
+const formatDescription = (text?: string | null) => {
+  if (!text) return "";
+  const trimmed = text.trim();
+  if (!trimmed) return "";
+  if (trimmed.startsWith("(") && trimmed.endsWith(")")) {
+    return trimmed;
+  }
+  return `(${trimmed})`;
+};
+
 const fitText = (
   ctx: CanvasRenderingContext2D,
   text: string,
@@ -94,11 +105,91 @@ const fitText = (
   return { fontSize: minSize, lines, lineHeight: minSize * 1.2 };
 };
 
+const layoutText = (
+  ctx: CanvasRenderingContext2D,
+  title: string,
+  description: string,
+  maxWidth: number,
+  maxHeight: number
+) => {
+  const subtitleText = formatDescription(description);
+  if (!subtitleText) {
+    const titleLayout = fitText(ctx, title, maxWidth, maxHeight);
+    return {
+      title: titleLayout,
+      subtitle: null,
+      totalHeight: titleLayout.lines.length * titleLayout.lineHeight,
+      gap: 0,
+    };
+  }
+
+  let titleSize = Math.round(maxWidth * 0.12);
+  const minTitle = 20;
+  const minSubtitle = 12;
+
+  while (titleSize >= minTitle) {
+    ctx.font = `${titleSize}px ${FONT_FAMILY}`;
+    const titleLines = wrapText(
+      title,
+      maxWidth,
+      (value) => ctx.measureText(value).width
+    );
+    const titleLineHeight = titleSize * 1.2;
+    const titleHeight = titleLines.length * titleLineHeight;
+
+    let subtitleSize = Math.max(Math.round(titleSize * 0.55), minSubtitle);
+    let subtitleLines: string[] = [];
+    let subtitleLineHeight = subtitleSize * 1.2;
+    let subtitleHeight = 0;
+    const gap = Math.max(8, Math.round(titleSize * 0.35));
+
+    while (subtitleSize >= minSubtitle) {
+      ctx.font = `${subtitleSize}px ${FONT_FAMILY}`;
+      subtitleLines = wrapText(
+        subtitleText,
+        maxWidth * 0.92,
+        (value) => ctx.measureText(value).width
+      );
+      subtitleLineHeight = subtitleSize * 1.2;
+      subtitleHeight = subtitleLines.length * subtitleLineHeight;
+
+      if (titleHeight + gap + subtitleHeight <= maxHeight) {
+        return {
+          title: {
+            fontSize: titleSize,
+            lines: titleLines,
+            lineHeight: titleLineHeight,
+          },
+          subtitle: {
+            fontSize: subtitleSize,
+            lines: subtitleLines,
+            lineHeight: subtitleLineHeight,
+          },
+          totalHeight: titleHeight + gap + subtitleHeight,
+          gap,
+        };
+      }
+      subtitleSize -= 2;
+    }
+
+    titleSize -= 2;
+  }
+
+  const fallbackTitle = fitText(ctx, title, maxWidth, maxHeight);
+  return {
+    title: fallbackTitle,
+    subtitle: null,
+    totalHeight: fallbackTitle.lines.length * fallbackTitle.lineHeight,
+    gap: 0,
+  };
+};
+
 const render = async () => {
   const canvas = canvasRef.value;
   if (!canvas) return;
 
   const text = props.title?.trim() || "Burger of the Day";
+  const description = props.description?.trim() || "";
 
   try {
     const image = await loadImage();
@@ -127,31 +218,43 @@ const render = async () => {
     const textWidth = width - paddingX * 2;
     const textHeight = height - paddingTop - paddingBottom;
 
-    const { fontSize, lines, lineHeight } = fitText(
-      ctx,
-      text,
-      textWidth,
-      textHeight
-    );
+    const layout = layoutText(ctx, text, description, textWidth, textHeight);
 
-    const blockHeight = lines.length * lineHeight;
-    const startY = paddingTop + (textHeight - blockHeight) / 2 + fontSize;
+    const startY =
+      paddingTop + (textHeight - layout.totalHeight) / 2 + layout.title.fontSize;
 
     ctx.textAlign = "center";
     ctx.textBaseline = "alphabetic";
     ctx.fillStyle = TEXT_COLOR;
     ctx.strokeStyle = STROKE_COLOR;
-    ctx.lineWidth = Math.max(2, Math.round(fontSize * 0.08));
     ctx.shadowColor = "rgba(255, 255, 255, 0.25)";
-    ctx.shadowBlur = Math.round(fontSize * 0.08);
+    ctx.shadowBlur = Math.round(layout.title.fontSize * 0.08);
 
-    ctx.font = `${fontSize}px ${FONT_FAMILY}`;
+    ctx.font = `${layout.title.fontSize}px ${FONT_FAMILY}`;
+    ctx.lineWidth = Math.max(2, Math.round(layout.title.fontSize * 0.08));
 
-    lines.forEach((line, index) => {
-      const y = startY + index * lineHeight;
+    layout.title.lines.forEach((line, index) => {
+      const y = startY + index * layout.title.lineHeight;
       ctx.strokeText(line, width / 2, y);
       ctx.fillText(line, width / 2, y);
     });
+
+    if (layout.subtitle) {
+      ctx.font = `${layout.subtitle.fontSize}px ${FONT_FAMILY}`;
+      ctx.lineWidth = Math.max(1, Math.round(layout.subtitle.fontSize * 0.06));
+      ctx.shadowBlur = Math.round(layout.subtitle.fontSize * 0.05);
+
+      const subtitleStartY =
+        startY +
+        layout.title.lines.length * layout.title.lineHeight +
+        layout.gap;
+
+      layout.subtitle.lines.forEach((line, index) => {
+        const y = subtitleStartY + index * layout.subtitle.lineHeight;
+        ctx.strokeText(line, width / 2, y);
+        ctx.fillText(line, width / 2, y);
+      });
+    }
 
     errorMessage.value = null;
   } catch (error) {
@@ -174,7 +277,7 @@ onMounted(() => {
 });
 
 watch(
-  () => props.title,
+  () => [props.title, props.description],
   () => {
     render();
   }

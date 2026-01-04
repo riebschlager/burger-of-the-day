@@ -30,6 +30,20 @@ const sortedMatches = computed(() =>
 
 const burgerName = computed(() => sortedMatches.value[0]?.burgerDisplay ?? "Burger");
 
+const chalkboardDescription = computed(() => {
+  for (const record of sortedMatches.value) {
+    if (record.burger_description) return record.burger_description;
+  }
+
+  const fallback = sortedMatches.value[0];
+  if (!fallback) return "";
+  if (fallback.burger_of_the_day && fallback.burger_of_the_day !== fallback.burgerDisplay) {
+    const match = fallback.burger_of_the_day.match(/\(([^)]+)\)/);
+    return match ? match[1] : "";
+  }
+  return "";
+});
+
 const uniqueSeasons = computed(() => {
   const set = new Set(sortedMatches.value.map((record) => record.season));
   return Array.from(set);
@@ -70,7 +84,7 @@ const episodeForRecord = (record: BurgerRecordView) => {
         </div>
       </div>
 
-      <ChalkboardComposer :title="burgerName" />
+      <ChalkboardComposer :title="burgerName" :description="chalkboardDescription" />
     </div>
 
     <div v-if="data" class="grid gap-6">
