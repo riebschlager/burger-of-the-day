@@ -110,6 +110,7 @@ const customBurgerPrice = ref("");
 const customTitleSizeAdjust = ref(0);
 const customDescriptionSizeAdjust = ref(0);
 const customPriceSizeAdjust = ref(0);
+const customPriceScale = 0.75;
 
 const SIZE_ADJUST_MIN = -6;
 const SIZE_ADJUST_MAX = 6;
@@ -434,6 +435,7 @@ watch(
         :title-size-adjust="customTitleSizeAdjust"
         :description-size-adjust="customDescriptionSizeAdjust"
         :price-size-adjust="customPriceSizeAdjust"
+        :price-scale="customPriceScale"
         label="Custom chalkboard"
         heading="Download your burger"
         copy="Share the chalkboard image with your custom burger."

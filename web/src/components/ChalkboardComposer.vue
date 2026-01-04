@@ -7,6 +7,7 @@ const props = withDefaults(
     title: string;
     description?: string | null;
     price?: string | null;
+    priceScale?: number;
     titleSizeAdjust?: number;
     descriptionSizeAdjust?: number;
     priceSizeAdjust?: number;
@@ -23,6 +24,7 @@ const props = withDefaults(
     showHeader: true,
     offsetX: 10,
     price: null,
+    priceScale: 0.42,
     titleSizeAdjust: 0,
     descriptionSizeAdjust: 0,
     priceSizeAdjust: 0,
@@ -181,6 +183,7 @@ const layoutText = (
     SIZE_LIMITS.price.min,
     SIZE_LIMITS.price.max
   );
+  const priceScale = props.priceScale ?? 0.42;
   const subtitleText = formatDescription(description);
   const priceText = formatPrice(price);
   const hasSubtitle = Boolean(subtitleText);
@@ -224,7 +227,7 @@ const layoutText = (
     const titleHeight = titleLines.length * titleLineHeight;
 
     const gapAfterTitle = Math.max(8, Math.round(titleSize * 0.35));
-    const gapAfterSubtitle = Math.max(6, Math.round(titleSize * 0.25));
+    const gapAfterSubtitle = Math.max(6, Math.round(titleSize * 0.4));
     let subtitleSize = hasSubtitle
       ? Math.max(Math.round(titleSize * 0.55) + descriptionAdjust, minSubtitle)
       : 0;
@@ -246,7 +249,7 @@ const layoutText = (
       }
 
       let priceSize = hasPrice
-        ? Math.max(Math.round(titleSize * 0.42) + priceAdjust, minPrice)
+        ? Math.max(Math.round(titleSize * priceScale) + priceAdjust, minPrice)
         : 0;
 
       while (!hasPrice || priceSize >= minPrice) {
@@ -483,6 +486,7 @@ watch(
     props.title,
     props.description,
     props.price,
+    props.priceScale,
     props.offsetX,
     props.titleSizeAdjust,
     props.descriptionSizeAdjust,
