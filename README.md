@@ -1,7 +1,8 @@
 # burger-of-the-day
 
 This repo collects the "Burger of the Day" gags from Bob's Burgers and
-provides a scraper that normalizes the data into JSON.
+provides a scraper that normalizes the data into JSON and CSV, plus
+TVMaze episode metadata.
 
 Source page:
 
@@ -11,6 +12,7 @@ https://bobs-burgers.fandom.com/wiki/Burger_of_the_Day
 
 - `data/burger-of-the-day.csv`: generated output from the scraper
 - `data/burger-of-the-day.json`: generated output from the scraper
+- `data/tvmaze-episodes.json`: full TVMaze show + episode metadata (generated)
 
 ## Docker workflow
 
@@ -27,10 +29,13 @@ docker build -t burger-of-the-day-scraper .
 docker run --rm -v "$PWD":/work burger-of-the-day-scraper
 ```
 
+By default the scraper also pulls TVMaze episode metadata; use `--skip-tvmaze`
+to disable.
+
 ## Script options
 
 The scraper supports optional overrides:
 
 ```bash
-python scripts/scrape.py --url https://bobs-burgers.fandom.com/wiki/Burger_of_the_Day --output data/burger-of-the-day.json --csv-output data/burger-of-the-day.csv
+python scripts/scrape.py --url https://bobs-burgers.fandom.com/wiki/Burger_of_the_Day --output data/burger-of-the-day.json --csv-output data/burger-of-the-day.csv --tvmaze-show-query "Bob's Burgers" --tvmaze-output data/tvmaze-episodes.json
 ```

@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 import argparse
 import csv
+import difflib
 import json
 import re
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -10,10 +12,25 @@ import requests
 from bs4 import BeautifulSoup
 
 SOURCE_URL = "https://bobs-burgers.fandom.com/wiki/Burger_of_the_Day"
+TVMAZE_SINGLESEARCH_URL = "https://api.tvmaze.com/singlesearch/shows"
+TVMAZE_EPISODES_URL = "https://api.tvmaze.com/shows/{show_id}/episodes"
+DEFAULT_TVMAZE_QUERY = "Bob's Burgers"
+USER_AGENT = "burger-of-the-day-scraper/1.0"
 
 
 def clean_whitespace(text):
     return re.sub(r"\s+", " ", text or "").strip()
+
+
+def normalize_title(text):
+    if not text:
+        return ""
+    text = unicodedata.normalize("NFKD", text)
+    text = text.encode("ascii", "ignore").decode("ascii")
+    text = text.lower()
+    text = text.replace("&", "and")
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return clean_whitespace(text)
 
 
 def strip_wrapping_quotes(text):
@@ -127,7 +144,7 @@ def parse_table(table, season):
 
 
 def scrape(url):
-    response = requests.get(url, timeout=30)
+    response = requests.get(url, timeout=30, headers={"User-Agent": USER_AGENT})
     response.raise_for_status()
 
     soup = BeautifulSoup(response.text, "html.parser")
@@ -153,6 +170,118 @@ def scrape(url):
     return records
 
 
+def fetch_tvmaze(show_query):
+    response = requests.get(
+        TVMAZE_SINGLESEARCH_URL,
+        params={"q": show_query, "embed": "episodes"},
+        headers={"User-Agent": USER_AGENT},
+        timeout=30,
+    )
+    response.raise_for_status()
+
+    show = response.json()
+    episodes = show.get("_embedded", {}).get("episodes")
+    if episodes is None:
+        show_id = show.get("id")
+        if show_id is None:
+            raise RuntimeError("TVMaze response missing show id.")
+        episodes_response = requests.get(
+            TVMAZE_EPISODES_URL.format(show_id=show_id),
+            headers={"User-Agent": USER_AGENT},
+            timeout=30,
+        )
+        episodes_response.raise_for_status()
+        episodes = episodes_response.json()
+
+    return show, episodes
+
+
+def write_tvmaze(show, episodes, output_path, show_query):
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    show_data = dict(show)
+    show_data.pop("_embedded", None)
+
+    payload = {
+        "show_query": show_query,
+        "retrieved_at": datetime.now(timezone.utc).isoformat(),
+        "show": show_data,
+        "episodes": episodes,
+    }
+
+    with output_path.open("w", encoding="utf-8") as handle:
+        json.dump(payload, handle, indent=2, ensure_ascii=False)
+        handle.write("\n")
+
+    return payload
+
+
+def build_tvmaze_index(episodes):
+    index = {}
+    for episode in episodes:
+        season = episode.get("season")
+        name = episode.get("name")
+        if season is None or not name:
+            continue
+        key = normalize_title(name)
+        if not key:
+            continue
+        index.setdefault(season, {}).setdefault(key, []).append(episode)
+    return index
+
+
+def match_tvmaze_episode(record, index):
+    season = record.get("season")
+    title = record.get("episode_title")
+    if season is None or not title:
+        return None, "missing", None
+
+    season_index = index.get(season, {})
+    if not season_index:
+        return None, "missing", None
+
+    normalized = normalize_title(title)
+    if not normalized:
+        return None, "missing", None
+
+    exact = season_index.get(normalized)
+    if exact:
+        return exact[0], "exact", 1.0
+
+    best_episode = None
+    best_score = 0.0
+    for key, episodes in season_index.items():
+        score = difflib.SequenceMatcher(None, normalized, key).ratio()
+        if score > best_score:
+            best_score = score
+            best_episode = episodes[0]
+
+    if best_episode and best_score >= 0.86:
+        return best_episode, "fuzzy", round(best_score, 3)
+
+    return None, "missing", None
+
+
+def enrich_records_with_tvmaze(records, episodes):
+    index = build_tvmaze_index(episodes)
+    for record in records:
+        episode, match_type, match_score = match_tvmaze_episode(record, index)
+        if episode:
+            record["tvmaze_episode_id"] = episode.get("id")
+            record["tvmaze_episode_name"] = episode.get("name")
+            record["tvmaze_episode_number"] = episode.get("number")
+            record["tvmaze_episode_url"] = episode.get("url")
+        else:
+            record["tvmaze_episode_id"] = None
+            record["tvmaze_episode_name"] = None
+            record["tvmaze_episode_number"] = None
+            record["tvmaze_episode_url"] = None
+
+        record["tvmaze_match_type"] = match_type
+        record["tvmaze_match_score"] = match_score
+
+
 def write_csv(records, output_path):
     fieldnames = [
         "season",
@@ -161,6 +290,12 @@ def write_csv(records, output_path):
         "burger_of_the_day",
         "burger_name",
         "burger_description",
+        "tvmaze_episode_id",
+        "tvmaze_episode_name",
+        "tvmaze_episode_number",
+        "tvmaze_episode_url",
+        "tvmaze_match_type",
+        "tvmaze_match_score",
     ]
 
     output_path = Path(output_path)
@@ -192,14 +327,56 @@ def main():
         default="data/burger-of-the-day.csv",
         help="Output CSV path.",
     )
+    parser.add_argument(
+        "--tvmaze-show-query",
+        default=DEFAULT_TVMAZE_QUERY,
+        help="Show name to search on TVMaze.",
+    )
+    parser.add_argument(
+        "--tvmaze-output",
+        default="data/tvmaze-episodes.json",
+        help="Output JSON path for TVMaze show and episode data.",
+    )
+    parser.add_argument(
+        "--skip-tvmaze",
+        action="store_true",
+        help="Skip TVMaze enrichment.",
+    )
     args = parser.parse_args()
 
     records = scrape(args.url)
+
+    tvmaze_payload = None
+    if not args.skip_tvmaze:
+        tvmaze_show, tvmaze_episodes = fetch_tvmaze(args.tvmaze_show_query)
+        tvmaze_payload = write_tvmaze(
+            tvmaze_show, tvmaze_episodes, args.tvmaze_output, args.tvmaze_show_query
+        )
+        enrich_records_with_tvmaze(records, tvmaze_episodes)
+
     payload = {
         "source_url": args.url,
         "scraped_at": datetime.now(timezone.utc).isoformat(),
         "records": records,
     }
+
+    if tvmaze_payload:
+        match_counts = {"exact": 0, "fuzzy": 0, "missing": 0}
+        for record in records:
+            match_type = record.get("tvmaze_match_type") or "missing"
+            if match_type not in match_counts:
+                match_counts[match_type] = 0
+            match_counts[match_type] += 1
+
+        payload["tvmaze"] = {
+            "show_query": args.tvmaze_show_query,
+            "retrieved_at": tvmaze_payload["retrieved_at"],
+            "show_id": tvmaze_payload["show"].get("id"),
+            "show_name": tvmaze_payload["show"].get("name"),
+            "episode_count": len(tvmaze_payload["episodes"]),
+            "output": args.tvmaze_output,
+            "match_counts": match_counts,
+        }
 
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -212,6 +389,8 @@ def main():
 
     print(f"Wrote {len(records)} records to {output_path}")
     print(f"Wrote {len(records)} records to {args.csv_output}")
+    if tvmaze_payload:
+        print(f"Wrote TVMaze data to {args.tvmaze_output}")
 
 
 if __name__ == "__main__":
