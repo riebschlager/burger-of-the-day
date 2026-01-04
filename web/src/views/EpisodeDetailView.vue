@@ -20,6 +20,21 @@ const episode = computed(() => {
   return data.value.episodesByCode.get(code.value) ?? null;
 });
 
+const episodeIndex = computed(() => {
+  if (!data.value || !episode.value) return -1;
+  return data.value.episodes.findIndex((item) => item.id === episode.value?.id);
+});
+
+const prevEpisode = computed(() => {
+  if (!data.value || episodeIndex.value <= 0) return null;
+  return data.value.episodes[episodeIndex.value - 1] ?? null;
+});
+
+const nextEpisode = computed(() => {
+  if (!data.value || episodeIndex.value < 0) return null;
+  return data.value.episodes[episodeIndex.value + 1] ?? null;
+});
+
 const burgerList = computed(() => {
   if (!data.value || !episode.value) return [];
   const fromId = data.value.burgersByEpisodeId.get(episode.value.id);
@@ -35,6 +50,40 @@ const burgerList = computed(() => {
 <template>
   <section class="grid gap-8">
     <DataState :loading="loading" :error="error" />
+
+    <div v-if="data && episode" class="flex flex-wrap items-center justify-between gap-4">
+      <router-link class="button-ghost" to="/episodes">Back to episodes</router-link>
+      <div class="flex items-center gap-2">
+        <router-link
+          v-if="prevEpisode"
+          class="button-ghost"
+          :to="`/episodes/${prevEpisode.code}`"
+        >
+          Previous episode
+        </router-link>
+        <span
+          v-else
+          class="button-ghost cursor-not-allowed opacity-40"
+          aria-disabled="true"
+        >
+          Previous episode
+        </span>
+        <router-link
+          v-if="nextEpisode"
+          class="button-ghost"
+          :to="`/episodes/${nextEpisode.code}`"
+        >
+          Next episode
+        </router-link>
+        <span
+          v-else
+          class="button-ghost cursor-not-allowed opacity-40"
+          aria-disabled="true"
+        >
+          Next episode
+        </span>
+      </div>
+    </div>
 
     <div v-if="data && episode" class="glass-card p-6">
       <div class="flex flex-col gap-6 md:flex-row md:items-start">

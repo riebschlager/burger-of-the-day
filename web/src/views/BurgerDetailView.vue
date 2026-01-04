@@ -21,6 +21,34 @@ const matches = computed(() => {
   return data.value.burgersBySlug.get(slug.value) ?? [];
 });
 
+const burgerCatalog = computed(() => {
+  if (!data.value) return [];
+  const map = new Map<string, BurgerRecordView>();
+  for (const record of data.value.records) {
+    if (!map.has(record.burgerSlug)) {
+      map.set(record.burgerSlug, record);
+    }
+  }
+
+  return Array.from(map.values()).sort((a, b) =>
+    a.burgerDisplay.localeCompare(b.burgerDisplay)
+  );
+});
+
+const burgerIndex = computed(() => {
+  return burgerCatalog.value.findIndex((record) => record.burgerSlug === slug.value);
+});
+
+const prevBurger = computed(() => {
+  if (burgerIndex.value <= 0) return null;
+  return burgerCatalog.value[burgerIndex.value - 1] ?? null;
+});
+
+const nextBurger = computed(() => {
+  if (burgerIndex.value < 0) return null;
+  return burgerCatalog.value[burgerIndex.value + 1] ?? null;
+});
+
 const sortedMatches = computed(() =>
   [...matches.value].sort((a, b) => {
     if (a.season !== b.season) return a.season - b.season;
@@ -71,88 +99,124 @@ const episodeForRecord = (record: BurgerRecordView) => {
   <section class="grid gap-8">
     <DataState :loading="loading" :error="error" />
 
-    <div v-if="data" class="grid gap-6">
-      <div class="glass-card p-6">
-        <p class="text-xs uppercase tracking-[0.3em] text-text/60">Burger detail</p>
-        <h1 class="mt-2 text-4xl font-semibold">{{ burgerName }}</h1>
-        <div class="mt-4 flex flex-wrap gap-4 text-sm text-text/70">
-          <span class="chip">{{ sortedMatches.length }} appearances</span>
-          <span class="chip">Seasons {{ uniqueSeasons.join(", ") }}</span>
-          <span class="chip" v-if="earliestAirdate">
-            First served {{ earliestAirdate.toLocaleDateString() }}
-          </span>
-        </div>
+    <div v-if="data" class="flex flex-wrap items-center justify-between gap-4">
+      <router-link class="button-ghost" to="/burgers">Back to burgers</router-link>
+      <div class="flex items-center gap-2">
+        <router-link
+          v-if="prevBurger"
+          class="button-ghost"
+          :to="`/burgers/${prevBurger.burgerSlug}`"
+        >
+          Previous burger
+        </router-link>
+        <span
+          v-else
+          class="button-ghost cursor-not-allowed opacity-40"
+          aria-disabled="true"
+        >
+          Previous burger
+        </span>
+        <router-link
+          v-if="nextBurger"
+          class="button-ghost"
+          :to="`/burgers/${nextBurger.burgerSlug}`"
+        >
+          Next burger
+        </router-link>
+        <span
+          v-else
+          class="button-ghost cursor-not-allowed opacity-40"
+          aria-disabled="true"
+        >
+          Next burger
+        </span>
       </div>
-
-      <ChalkboardComposer :title="burgerName" :description="chalkboardDescription" />
     </div>
 
-    <div v-if="data" class="grid gap-6">
-      <div
-        v-for="record in sortedMatches"
-        :key="`${record.episodeCode}-${record.burgerDisplay}`"
-        class="glass-card p-5"
-      >
-        <div class="flex flex-wrap items-start justify-between gap-4">
-          <div class="flex-1">
-            <p class="text-xs uppercase tracking-[0.3em] text-text/60">
-              {{ record.episodeCode }}
-            </p>
-            <router-link
-              v-if="record.tvmaze_episode_id"
-              :to="`/episodes/${record.episodeCode}`"
-              class="mt-2 block text-xl font-semibold text-text hover:text-accent"
-            >
-              {{ record.episode_title }}
-            </router-link>
-            <span
-              v-else
-              class="mt-2 block text-xl font-semibold text-text/80"
-            >
-              {{ record.episode_title }}
-            </span>
-            <p class="mt-2 text-sm text-text/70">
-              {{ record.burger_of_the_day }}
-            </p>
-            <p v-if="record.burger_description" class="text-sm text-text/70">
-              {{ record.burger_description }}
-            </p>
-            <p v-if="episodeForRecord(record)?.summaryText" class="mt-3 text-sm text-text/70">
-              {{ episodeForRecord(record)?.summaryText }}
-            </p>
-          </div>
-          <div class="flex flex-col items-end gap-3 text-sm text-text/60">
-            <div class="h-24 w-24 overflow-hidden rounded-2xl border border-white/10 bg-muted/60">
-              <img
-                v-if="episodeForRecord(record)?.image?.medium"
-                :src="episodeForRecord(record)?.image?.medium"
-                :alt="record.episode_title"
-                class="h-full w-full object-cover"
-              />
-              <div
-                v-else
-                class="flex h-full items-center justify-center text-[0.65rem] uppercase tracking-[0.2em] text-text/50"
+    <div v-if="data" class="glass-card p-6">
+      <p class="text-xs uppercase tracking-[0.3em] text-text/60">Burger detail</p>
+      <h1 class="mt-2 text-4xl font-semibold">{{ burgerName }}</h1>
+      <div class="mt-4 flex flex-wrap gap-4 text-sm text-text/70">
+        <span class="chip">{{ sortedMatches.length }} appearances</span>
+        <span class="chip">Seasons {{ uniqueSeasons.join(", ") }}</span>
+        <span class="chip" v-if="earliestAirdate">
+          First served {{ earliestAirdate.toLocaleDateString() }}
+        </span>
+      </div>
+    </div>
+
+    <div v-if="data" class="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+      <div>
+        <ChalkboardComposer :title="burgerName" :description="chalkboardDescription" />
+      </div>
+
+      <div class="grid gap-6">
+        <div
+          v-for="record in sortedMatches"
+          :key="`${record.episodeCode}-${record.burgerDisplay}`"
+          class="glass-card p-5"
+        >
+          <div class="flex flex-wrap items-start justify-between gap-4">
+            <div class="flex-1">
+              <p class="text-xs uppercase tracking-[0.3em] text-text/60">
+                {{ record.episodeCode }}
+              </p>
+              <router-link
+                v-if="record.tvmaze_episode_id"
+                :to="`/episodes/${record.episodeCode}`"
+                class="mt-2 block text-xl font-semibold text-text hover:text-accent"
               >
-                No image
+                {{ record.episode_title }}
+              </router-link>
+              <span
+                v-else
+                class="mt-2 block text-xl font-semibold text-text/80"
+              >
+                {{ record.episode_title }}
+              </span>
+              <p class="mt-2 text-sm text-text/70">
+                {{ record.burger_of_the_day }}
+              </p>
+              <p v-if="record.burger_description" class="text-sm text-text/70">
+                {{ record.burger_description }}
+              </p>
+              <p v-if="episodeForRecord(record)?.summaryText" class="mt-3 text-sm text-text/70">
+                {{ episodeForRecord(record)?.summaryText }}
+              </p>
+            </div>
+            <div class="flex flex-col items-end gap-3 text-sm text-text/60">
+              <div class="h-24 w-24 overflow-hidden rounded-2xl border border-white/10 bg-muted/60">
+                <img
+                  v-if="episodeForRecord(record)?.image?.medium"
+                  :src="episodeForRecord(record)?.image?.medium"
+                  :alt="record.episode_title"
+                  class="h-full w-full object-cover"
+                />
+                <div
+                  v-else
+                  class="flex h-full items-center justify-center text-[0.65rem] uppercase tracking-[0.2em] text-text/50"
+                >
+                  No image
+                </div>
+              </div>
+              <div class="text-right">
+                <p>
+                  {{
+                    formatAirdate(
+                      data.episodesById.get(record.tvmaze_episode_id || 0)?.airdate
+                    )
+                  }}
+                </p>
+                <p class="mt-1">Season {{ record.season }}</p>
               </div>
             </div>
-            <div class="text-right">
-              <p>
-                {{
-                  formatAirdate(
-                    data.episodesById.get(record.tvmaze_episode_id || 0)?.airdate
-                  )
-                }}
-              </p>
-              <p class="mt-1">Season {{ record.season }}</p>
-            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div v-if="data && !sortedMatches.length" class="glass-card p-6">
-      <p class="text-sm text-text/70">Burger not found.</p>
+        <div v-if="!sortedMatches.length" class="glass-card p-6">
+          <p class="text-sm text-text/70">Burger not found.</p>
+        </div>
+      </div>
     </div>
   </section>
 </template>

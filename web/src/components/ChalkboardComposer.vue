@@ -330,19 +330,14 @@ watch(
 
 <template>
   <div class="glass-card p-6">
-    <div class="flex flex-wrap items-center justify-between gap-4">
-      <div>
-        <p class="text-xs uppercase tracking-[0.3em] text-text/60">
-          Chalkboard capture
-        </p>
-        <h2 class="mt-2 text-2xl font-semibold">Download the chalkboard</h2>
-        <p class="mt-2 text-sm text-text/70">
-          Grab a shareable image with the burger title on the board.
-        </p>
-      </div>
-      <button class="button-base" type="button" @click="downloadImage">
-        Download PNG
-      </button>
+    <div>
+      <p class="text-xs uppercase tracking-[0.3em] text-text/60">
+        Chalkboard capture
+      </p>
+      <h2 class="mt-2 text-2xl font-semibold">Download the chalkboard</h2>
+      <p class="mt-2 text-sm text-text/70">
+        Grab a shareable image with the burger title on the board.
+      </p>
     </div>
 
     <div class="mt-6 flex justify-center">
@@ -357,6 +352,12 @@ watch(
           {{ errorMessage }}
         </p>
       </div>
+    </div>
+
+    <div class="mt-6 flex justify-center">
+      <button class="button-base" type="button" @click="downloadImage">
+        Download PNG
+      </button>
     </div>
   </div>
 </template>
