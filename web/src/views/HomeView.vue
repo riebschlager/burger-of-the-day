@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import { computed, onMounted } from "vue";
+import { computed, onMounted, ref, watch } from "vue";
 import { useRouter } from "vue-router";
 import DataState from "../components/DataState.vue";
+import ChalkboardComposer from "../components/ChalkboardComposer.vue";
 import StatCard from "../components/StatCard.vue";
 import { ensureBurgerData, useBurgerData } from "../composables/useBurgerData";
 import { formatAirdate, isWithinWeekOfToday, parseAirdate } from "../lib/date";
+import { slugify } from "../lib/slug";
+import type { BurgerRecordView } from "../lib/data";
 
 const router = useRouter();
 const { data, loading, error } = useBurgerData();
@@ -33,6 +36,22 @@ const realBurgerRecords = computed(() =>
     (record) => !record.burgerDisplay.toLowerCase().startsWith("none")
   )
 );
+
+const chalkboardBurger = ref<BurgerRecordView | null>(null);
+
+const chalkboardEpisode = computed(() => {
+  const bundle = data.value;
+  const record = chalkboardBurger.value;
+  if (!bundle || !record) return null;
+  if (record.tvmaze_episode_id) {
+    return bundle.episodesById.get(record.tvmaze_episode_id) ?? null;
+  }
+  const episodeSlug = slugify(record.episode_title);
+  return (
+    bundle.episodes.find((episode) => slugify(episode.name) === episodeSlug) ??
+    null
+  );
+});
 
 const weekBurgers = computed(() => {
   const bundle = data.value;
@@ -73,12 +92,50 @@ const dailyEpisodeBurgerCount = computed(() => {
   return bundle.burgersByEpisodeId.get(currentEpisode.id)?.length ?? 0;
 });
 
-const handleRandomBurger = () => {
+const chalkboardTitle = computed(
+  () => chalkboardBurger.value?.burgerDisplay ?? "Burger of the Day"
+);
+
+const chalkboardDescription = computed(() => {
+  const record = chalkboardBurger.value;
+  if (!record) return "";
+  if (record.burger_description) return record.burger_description;
+  const match = record.burger_of_the_day?.match(/\(([^)]+)\)/);
+  return match ? match[1] : "";
+});
+
+const pickRandomBurger = () => {
   const pool = realBurgerRecords.value;
-  if (!pool.length) return;
-  const pick = pool[Math.floor(Math.random() * pool.length)];
+  if (!pool.length) return null;
+  return pool[Math.floor(Math.random() * pool.length)];
+};
+
+const spinChalkboard = () => {
+  const pick = pickRandomBurger();
+  if (!pick) return;
+  chalkboardBurger.value = pick;
+};
+
+const handleRandomBurger = () => {
+  const pick = pickRandomBurger();
+  if (!pick) return;
   router.push(`/burgers/${pick.burgerSlug}`);
 };
+
+watch(
+  realBurgerRecords,
+  (recordsList) => {
+    if (!recordsList.length) {
+      chalkboardBurger.value = null;
+      return;
+    }
+    if (!chalkboardBurger.value) {
+      chalkboardBurger.value =
+        recordsList[Math.floor(Math.random() * recordsList.length)];
+    }
+  },
+  { immediate: true }
+);
 </script>
 
 <template>
@@ -166,18 +223,39 @@ const handleRandomBurger = () => {
       </div>
 
       <div class="grid gap-6">
-        <div class="glass-card p-6">
-          <p class="text-xs uppercase tracking-[0.3em] text-text/60">
-            Burger roulette
-          </p>
-          <h2 class="mt-2 text-2xl font-semibold">Spin the chalkboard</h2>
-          <p class="mt-3 text-sm text-text/70">
-            Pull a random burger and jump straight to the details.
-          </p>
-          <button class="button-base mt-6 w-full" @click="handleRandomBurger">
-            Random burger
-          </button>
-        </div>
+        <ChalkboardComposer
+          :title="chalkboardTitle"
+          :description="chalkboardDescription"
+          label="Burger roulette"
+          heading="Spin the chalkboard"
+          copy="Spin for a random burger, then download the chalkboard."
+        >
+          <template #meta>
+            <div class="rounded-2xl border border-white/10 bg-muted/50 p-4 text-center">
+              <p class="text-xs uppercase tracking-[0.3em] text-text/60">
+                Episode
+              </p>
+              <router-link
+                v-if="chalkboardEpisode"
+                :to="`/episodes/${chalkboardEpisode.code}`"
+                class="mt-2 block text-base font-semibold text-text hover:text-accent"
+              >
+                {{ chalkboardEpisode.name }}
+              </router-link>
+              <p v-else class="mt-2 text-base font-semibold text-text/80">
+                {{ chalkboardBurger?.episode_title ?? "Episode unavailable" }}
+              </p>
+              <p class="mt-1 text-xs uppercase tracking-[0.2em] text-text/60">
+                Aired {{ formatAirdate(chalkboardEpisode?.airdate) }}
+              </p>
+            </div>
+          </template>
+          <template #actions>
+            <button class="button-ghost" type="button" @click="spinChalkboard">
+              Spin again
+            </button>
+          </template>
+        </ChalkboardComposer>
 
         <div v-if="dailyEpisode" class="glass-card p-6">
           <p class="text-xs uppercase tracking-[0.3em] text-text/60">

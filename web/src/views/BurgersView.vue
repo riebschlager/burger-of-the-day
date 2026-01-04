@@ -9,7 +9,6 @@ const { data, loading, error } = useBurgerData();
 
 const search = ref("");
 const selectedSeason = ref<number | null>(null);
-const hideMissing = ref(true);
 
 onMounted(() => {
   ensureBurgerData();
@@ -25,11 +24,9 @@ const seasons = computed(() => {
 const filteredRecords = computed(() => {
   let list = [...records.value];
 
-  if (hideMissing.value) {
-    list = list.filter(
-      (record) => !record.burgerDisplay.toLowerCase().startsWith("none")
-    );
-  }
+  list = list.filter(
+    (record) => !record.burgerDisplay.toLowerCase().startsWith("none")
+  );
 
   if (selectedSeason.value !== null) {
     list = list.filter((record) => record.season === selectedSeason.value);
@@ -132,10 +129,6 @@ watch(
               Next
             </button>
           </div>
-          <label class="flex items-center gap-2 text-sm text-text/70">
-            <input v-model="hideMissing" type="checkbox" class="accent-accent" />
-            Hide unreadable burgers
-          </label>
         </div>
       </div>
     </div>

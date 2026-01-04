@@ -1,6 +1,6 @@
 {
   "source_url": "https://bobs-burgers.fandom.com/wiki/Burger_of_the_Day",
-  "scraped_at": "2026-01-04T15:41:36.793373+00:00",
+  "scraped_at": "2026-01-04T16:18:37.274121+00:00",
   "records": [
     {
       "season": 1,
@@ -1977,20 +1977,6 @@
       "tvmaze_match_score": null
     },
     {
-      "season": 4,
-      "episode_title": "World Wharf II: The Wharfening",
-      "episode_url": "https://bobs-burgers.fandom.com/wiki/World_Wharf_II:_The_Wharfening",
-      "burger_of_the_day": "Same as Wharf Horse since both episodes take place on the same day.",
-      "burger_name": null,
-      "burger_description": null,
-      "tvmaze_episode_id": null,
-      "tvmaze_episode_name": null,
-      "tvmaze_episode_number": null,
-      "tvmaze_episode_url": null,
-      "tvmaze_match_type": "missing",
-      "tvmaze_match_score": null
-    },
-    {
       "season": 5,
       "episode_title": "Work Hard or Die Trying, Girl",
       "episode_url": "https://bobs-burgers.fandom.com/wiki/Work_Hard_or_Die_Trying,_Girl",
@@ -2533,20 +2519,6 @@
       "tvmaze_episode_name": "The Oeder Games",
       "tvmaze_episode_number": 21,
       "tvmaze_episode_url": "https://www.tvmaze.com/episodes/151676/bobs-burgers-5x21-the-oeder-games",
-      "tvmaze_match_type": "exact",
-      "tvmaze_match_score": 1.0
-    },
-    {
-      "season": 6,
-      "episode_title": "Sliding Bobs",
-      "episode_url": "https://bobs-burgers.fandom.com/wiki/Sliding_Bobs",
-      "burger_of_the_day": "There were no burgers of the day in this episode but in the Hugo 's Hot Dogs segment a Hot Dog of the Day appeared which was the \"A View to a Kielbasa Dog\" which is a reference to the 1985 James Bond movie \"A View to a Kill.\"",
-      "burger_name": null,
-      "burger_description": null,
-      "tvmaze_episode_id": 182393,
-      "tvmaze_episode_name": "Sliding Bobs",
-      "tvmaze_episode_number": 1,
-      "tvmaze_episode_url": "https://www.tvmaze.com/episodes/182393/bobs-burgers-6x01-sliding-bobs",
       "tvmaze_match_type": "exact",
       "tvmaze_match_score": 1.0
     },
@@ -8013,15 +7985,15 @@
   ],
   "tvmaze": {
     "show_query": "Bob's Burgers",
-    "retrieved_at": "2026-01-04T15:41:36.768627+00:00",
+    "retrieved_at": "2026-01-04T16:18:37.250339+00:00",
     "show_id": 107,
     "show_name": "Bob's Burgers",
     "episode_count": 308,
     "output": "data/tvmaze-episodes.json",
     "match_counts": {
-      "exact": 546,
+      "exact": 545,
       "fuzzy": 22,
-      "missing": 4
+      "missing": 3
     }
   }
 }

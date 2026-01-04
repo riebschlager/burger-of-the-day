@@ -22,6 +22,10 @@ EXTRA_SECTION_TITLES = {
     "other tv show",
     "other tv series",
 }
+EXCLUDED_BURGER_TEXTS = {
+    "same as wharf horse since both episodes take place on the same day",
+    "there were no burgers of the day in this episode but in the hugo s hot dogs segment a hot dog of the day appeared which was the a view to a kielbasa dog which is a reference to the 1985 james bond movie a view to a kill",
+}
 
 
 def clean_whitespace(text):
@@ -185,6 +189,8 @@ def parse_table(table, season):
 
         burger_text, burger_name, burger_description = extract_burger(burger_cell)
         if burger_text is None:
+            continue
+        if normalize_title(burger_text) in EXCLUDED_BURGER_TEXTS:
             continue
         entries.append(
             {

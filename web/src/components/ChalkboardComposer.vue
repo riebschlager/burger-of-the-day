@@ -2,10 +2,22 @@
 import { onMounted, ref, watch } from "vue";
 import { slugify } from "../lib/slug";
 
-const props = defineProps<{
-  title: string;
-  description?: string | null;
-}>();
+const props = withDefaults(
+  defineProps<{
+    title: string;
+    description?: string | null;
+    label?: string;
+    heading?: string;
+    copy?: string;
+    showHeader?: boolean;
+  }>(),
+  {
+    label: "Chalkboard capture",
+    heading: "Download the chalkboard",
+    copy: "Grab a shareable image with the burger title on the board.",
+    showHeader: true,
+  }
+);
 
 const canvasRef = ref<HTMLCanvasElement | null>(null);
 const imageRef = ref<HTMLImageElement | null>(null);
@@ -330,17 +342,17 @@ watch(
 
 <template>
   <div class="glass-card p-6">
-    <div>
+    <div v-if="props.showHeader">
       <p class="text-xs uppercase tracking-[0.3em] text-text/60">
-        Chalkboard capture
+        {{ props.label }}
       </p>
-      <h2 class="mt-2 text-2xl font-semibold">Download the chalkboard</h2>
+      <h2 class="mt-2 text-2xl font-semibold">{{ props.heading }}</h2>
       <p class="mt-2 text-sm text-text/70">
-        Grab a shareable image with the burger title on the board.
+        {{ props.copy }}
       </p>
     </div>
 
-    <div class="mt-6 flex justify-center">
+    <div :class="props.showHeader ? 'mt-6 flex justify-center' : 'flex justify-center'">
       <div class="w-full max-w-sm rounded-3xl border border-white/10 bg-muted/40 p-4">
         <canvas
           ref="canvasRef"
@@ -354,10 +366,21 @@ watch(
       </div>
     </div>
 
-    <div class="mt-6 flex justify-center">
+    <div v-if="$slots.meta" :class="props.showHeader ? 'mt-4' : 'mt-3'">
+      <slot name="meta" />
+    </div>
+
+    <div
+      :class="
+        props.showHeader
+          ? 'mt-6 flex flex-wrap justify-center gap-3'
+          : 'mt-4 flex flex-wrap justify-center gap-3'
+      "
+    >
       <button class="button-base" type="button" @click="downloadImage">
         Download PNG
       </button>
+      <slot name="actions" />
     </div>
   </div>
 </template>
