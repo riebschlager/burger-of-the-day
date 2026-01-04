@@ -4,6 +4,7 @@ import { useRoute } from "vue-router";
 import DataState from "../components/DataState.vue";
 import { ensureBurgerData, useBurgerData } from "../composables/useBurgerData";
 import { formatAirdate, parseAirdate } from "../lib/date";
+import type { BurgerRecordView } from "../lib/data";
 
 const route = useRoute();
 const { data, loading, error } = useBurgerData();
@@ -44,6 +45,11 @@ const earliestAirdate = computed(() => {
   if (!dated.length) return null;
   return new Date(Math.min(...dated.map((date) => date.getTime())));
 });
+
+const episodeForRecord = (record: BurgerRecordView) => {
+  if (!data.value) return null;
+  return data.value.episodesById.get(record.tvmaze_episode_id || 0) ?? null;
+};
 </script>
 
 <template>
@@ -69,7 +75,7 @@ const earliestAirdate = computed(() => {
         class="glass-card p-5"
       >
         <div class="flex flex-wrap items-start justify-between gap-4">
-          <div>
+          <div class="flex-1">
             <p class="text-xs uppercase tracking-[0.3em] text-text/60">
               {{ record.episodeCode }}
             </p>
@@ -92,16 +98,35 @@ const earliestAirdate = computed(() => {
             <p v-if="record.burger_description" class="text-sm text-text/70">
               {{ record.burger_description }}
             </p>
-          </div>
-          <div class="text-sm text-text/60">
-            <p>
-              {{
-                formatAirdate(
-                  data.episodesById.get(record.tvmaze_episode_id || 0)?.airdate
-                )
-              }}
+            <p v-if="episodeForRecord(record)?.summaryText" class="mt-3 text-sm text-text/70">
+              {{ episodeForRecord(record)?.summaryText }}
             </p>
-            <p class="mt-1">Season {{ record.season }}</p>
+          </div>
+          <div class="flex flex-col items-end gap-3 text-sm text-text/60">
+            <div class="h-24 w-24 overflow-hidden rounded-2xl border border-white/10 bg-muted/60">
+              <img
+                v-if="episodeForRecord(record)?.image?.medium"
+                :src="episodeForRecord(record)?.image?.medium"
+                :alt="record.episode_title"
+                class="h-full w-full object-cover"
+              />
+              <div
+                v-else
+                class="flex h-full items-center justify-center text-[0.65rem] uppercase tracking-[0.2em] text-text/50"
+              >
+                No image
+              </div>
+            </div>
+            <div class="text-right">
+              <p>
+                {{
+                  formatAirdate(
+                    data.episodesById.get(record.tvmaze_episode_id || 0)?.airdate
+                  )
+                }}
+              </p>
+              <p class="mt-1">Season {{ record.season }}</p>
+            </div>
           </div>
         </div>
       </div>

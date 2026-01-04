@@ -1,13 +1,14 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from "vue";
-import BurgerCard from "../components/BurgerCard.vue";
+import { computed, onMounted, ref, watch } from "vue";
 import DataState from "../components/DataState.vue";
 import { ensureBurgerData, useBurgerData } from "../composables/useBurgerData";
+import { formatAirdate } from "../lib/date";
+import type { BurgerRecordView } from "../lib/data";
 
 const { data, loading, error } = useBurgerData();
 
 const search = ref("");
-const selectedSeason = ref<string>("all");
+const selectedSeason = ref<number | null>(null);
 const hideMissing = ref(true);
 
 onMounted(() => {
@@ -30,9 +31,8 @@ const filteredRecords = computed(() => {
     );
   }
 
-  if (selectedSeason.value !== "all") {
-    const seasonNumber = Number(selectedSeason.value);
-    list = list.filter((record) => record.season === seasonNumber);
+  if (selectedSeason.value !== null) {
+    list = list.filter((record) => record.season === selectedSeason.value);
   }
 
   const query = search.value.trim().toLowerCase();
@@ -46,9 +46,47 @@ const filteredRecords = computed(() => {
 
   return list.sort((a, b) => {
     if (a.season !== b.season) return a.season - b.season;
+    if ((a.tvmaze_episode_number ?? 0) !== (b.tvmaze_episode_number ?? 0)) {
+      return (a.tvmaze_episode_number ?? 0) - (b.tvmaze_episode_number ?? 0);
+    }
     return a.burgerDisplay.localeCompare(b.burgerDisplay);
   });
 });
+
+const episodeForRecord = (record: BurgerRecordView) => {
+  return data.value?.episodesById.get(record.tvmaze_episode_id || 0) ?? null;
+};
+
+const seasonIndex = computed(() => {
+  if (selectedSeason.value === null) return -1;
+  return seasons.value.indexOf(selectedSeason.value);
+});
+
+const hasPrevSeason = computed(() => seasonIndex.value > 0);
+const hasNextSeason = computed(
+  () => seasonIndex.value >= 0 && seasonIndex.value < seasons.value.length - 1
+);
+
+const goPrevSeason = () => {
+  if (!hasPrevSeason.value) return;
+  selectedSeason.value = seasons.value[seasonIndex.value - 1];
+};
+
+const goNextSeason = () => {
+  if (!hasNextSeason.value) return;
+  selectedSeason.value = seasons.value[seasonIndex.value + 1];
+};
+
+watch(
+  seasons,
+  (newSeasons) => {
+    if (!newSeasons.length) return;
+    if (selectedSeason.value === null) {
+      selectedSeason.value = newSeasons[newSeasons.length - 1];
+    }
+  },
+  { immediate: true }
+);
 </script>
 
 <template>
@@ -71,15 +109,29 @@ const filteredRecords = computed(() => {
             placeholder="Search burgers or episodes"
             class="w-full rounded-2xl border border-white/10 bg-base/80 px-4 py-3 text-sm text-text placeholder:text-text/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 md:w-72"
           />
-          <select
-            v-model="selectedSeason"
-            class="rounded-2xl border border-white/10 bg-base/80 px-4 py-3 text-sm text-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-          >
-            <option value="all">All seasons</option>
-            <option v-for="season in seasons" :key="season" :value="season">
-              Season {{ season }}
-            </option>
-          </select>
+          <div class="flex items-center gap-2">
+            <button
+              type="button"
+              class="button-ghost px-3 py-2 text-xs uppercase tracking-[0.2em]"
+              :disabled="!hasPrevSeason"
+              :class="!hasPrevSeason ? 'opacity-40 cursor-not-allowed' : ''"
+              @click="goPrevSeason"
+            >
+              Prev
+            </button>
+            <span class="chip">
+              Season {{ selectedSeason ?? "—" }} of {{ seasons.length }}
+            </span>
+            <button
+              type="button"
+              class="button-ghost px-3 py-2 text-xs uppercase tracking-[0.2em]"
+              :disabled="!hasNextSeason"
+              :class="!hasNextSeason ? 'opacity-40 cursor-not-allowed' : ''"
+              @click="goNextSeason"
+            >
+              Next
+            </button>
+          </div>
           <label class="flex items-center gap-2 text-sm text-text/70">
             <input v-model="hideMissing" type="checkbox" class="accent-accent" />
             Hide unreadable burgers
@@ -92,18 +144,75 @@ const filteredRecords = computed(() => {
 
     <div v-if="data" class="flex items-center justify-between text-sm">
       <p class="text-text/70">
-        Showing {{ filteredRecords.length }} of {{ records.length }} entries
+        Showing {{ filteredRecords.length }} burgers in season
+        {{ selectedSeason ?? "—" }}
       </p>
       <p class="chip">{{ seasons.length }} seasons</p>
     </div>
 
-    <div v-if="data" class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-      <BurgerCard
-        v-for="record in filteredRecords"
-        :key="`${record.episodeCode}-${record.burgerSlug}-${record.burgerDisplay}`"
-        :record="record"
-        :episode="data.episodesById.get(record.tvmaze_episode_id || 0) || null"
-      />
+    <div v-if="data" class="glass-card overflow-hidden">
+      <div class="overflow-x-auto">
+        <table class="min-w-full text-left text-sm">
+          <thead class="bg-muted/80 text-xs uppercase tracking-[0.3em] text-text/60">
+            <tr>
+              <th class="px-6 py-4">Burger</th>
+              <th class="px-6 py-4">Episode</th>
+              <th class="px-6 py-4">Season</th>
+              <th class="px-6 py-4">Airdate</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-white/10">
+            <tr
+              v-for="record in filteredRecords"
+              :key="`${record.episodeCode}-${record.burgerSlug}-${record.burgerDisplay}`"
+              class="transition hover:bg-muted/40"
+            >
+              <td class="px-6 py-4 align-top">
+                <router-link
+                  :to="`/burgers/${record.burgerSlug}`"
+                  class="text-base font-semibold text-text hover:text-accent"
+                >
+                  {{ record.burgerDisplay }}
+                </router-link>
+                <p v-if="record.burger_description" class="mt-1 text-xs text-text/60">
+                  {{ record.burger_description }}
+                </p>
+                <p
+                  v-else-if="record.burger_of_the_day !== record.burgerDisplay"
+                  class="mt-1 text-xs text-text/60"
+                >
+                  {{ record.burger_of_the_day }}
+                </p>
+              </td>
+              <td class="px-6 py-4 align-top text-sm text-text/70">
+                <div v-if="episodeForRecord(record)">
+                  <router-link
+                    :to="`/episodes/${record.episodeCode}`"
+                    class="font-semibold text-text hover:text-accent"
+                  >
+                    {{ record.episode_title }}
+                  </router-link>
+                  <p class="mt-1 text-xs uppercase tracking-[0.3em] text-text/50">
+                    {{ record.episodeCode }}
+                  </p>
+                </div>
+                <div v-else>
+                  <p class="font-semibold text-text/80">{{ record.episode_title }}</p>
+                  <p class="mt-1 text-xs uppercase tracking-[0.3em] text-text/50">
+                    {{ record.episodeCode }}
+                  </p>
+                </div>
+              </td>
+              <td class="px-6 py-4 align-top text-text/70">
+                Season {{ record.season }}
+              </td>
+              <td class="px-6 py-4 align-top text-text/70">
+                {{ formatAirdate(episodeForRecord(record)?.airdate) }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 </template>
