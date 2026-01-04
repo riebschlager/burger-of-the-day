@@ -104,6 +104,44 @@ const chalkboardDescription = computed(() => {
   return match ? match[1] : "";
 });
 
+const customBurgerName = ref("The Make It Yours Burger");
+const customBurgerDescription = ref("Built with whatever you love.");
+const customBurgerPrice = ref("");
+const customTitleSizeAdjust = ref(0);
+const customDescriptionSizeAdjust = ref(0);
+const customPriceSizeAdjust = ref(0);
+
+const SIZE_ADJUST_MIN = -6;
+const SIZE_ADJUST_MAX = 6;
+
+const clampAdjust = (value: number) =>
+  Math.min(SIZE_ADJUST_MAX, Math.max(SIZE_ADJUST_MIN, value));
+
+const bumpSize = (target: "title" | "description" | "price", delta: number) => {
+  if (target === "title") {
+    customTitleSizeAdjust.value = clampAdjust(
+      customTitleSizeAdjust.value + delta
+    );
+    return;
+  }
+  if (target === "description") {
+    customDescriptionSizeAdjust.value = clampAdjust(
+      customDescriptionSizeAdjust.value + delta
+    );
+    return;
+  }
+  customPriceSizeAdjust.value = clampAdjust(customPriceSizeAdjust.value + delta);
+};
+
+const formatAdjust = (value: number) => {
+  if (value === 0) return "Normal";
+  return value > 0 ? `+${value}` : `${value}`;
+};
+
+const customTitle = computed(() => customBurgerName.value.trim() || "Your Burger");
+const customDescription = computed(() => customBurgerDescription.value.trim());
+const customPrice = computed(() => customBurgerPrice.value.trim());
+
 const pickRandomBurger = () => {
   const pool = realBurgerRecords.value;
   if (!pool.length) return null;
@@ -277,6 +315,129 @@ watch(
           </router-link>
         </div>
       </div>
+    </section>
+
+    <section class="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+      <div class="glass-card p-6">
+        <p class="text-xs uppercase tracking-[0.3em] text-text/60">
+          Make your own
+        </p>
+        <h2 class="mt-2 text-2xl font-semibold">Create a burger of the day</h2>
+        <p class="mt-2 text-sm text-text/70">
+          Add a name, description, and optional price to craft your own
+          chalkboard.
+        </p>
+        <div class="mt-6 grid gap-4">
+          <div class="grid gap-2 text-sm text-text/70">
+            <label for="custom-burger-name">Burger name</label>
+            <input
+              id="custom-burger-name"
+              v-model="customBurgerName"
+              type="text"
+              placeholder="The Make It Yours Burger"
+              class="w-full rounded-2xl border border-white/10 bg-base/80 px-4 py-3 text-sm text-text placeholder:text-text/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+            />
+            <div class="flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.2em] text-text/60">
+              <span>Size</span>
+              <button
+                type="button"
+                class="button-ghost px-2 py-1 text-[0.65rem] uppercase tracking-[0.2em]"
+                :disabled="customTitleSizeAdjust <= SIZE_ADJUST_MIN"
+                @click="bumpSize('title', -1)"
+              >
+                -
+              </button>
+              <span class="min-w-[3.5rem] text-center">
+                {{ formatAdjust(customTitleSizeAdjust) }}
+              </span>
+              <button
+                type="button"
+                class="button-ghost px-2 py-1 text-[0.65rem] uppercase tracking-[0.2em]"
+                :disabled="customTitleSizeAdjust >= SIZE_ADJUST_MAX"
+                @click="bumpSize('title', 1)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="grid gap-2 text-sm text-text/70">
+            <label for="custom-burger-description">Description</label>
+            <textarea
+              id="custom-burger-description"
+              v-model="customBurgerDescription"
+              rows="2"
+              placeholder="Built with whatever you love."
+              class="w-full resize-none rounded-2xl border border-white/10 bg-base/80 px-4 py-3 text-sm text-text placeholder:text-text/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+            ></textarea>
+            <div class="flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.2em] text-text/60">
+              <span>Size</span>
+              <button
+                type="button"
+                class="button-ghost px-2 py-1 text-[0.65rem] uppercase tracking-[0.2em]"
+                :disabled="customDescriptionSizeAdjust <= SIZE_ADJUST_MIN"
+                @click="bumpSize('description', -1)"
+              >
+                -
+              </button>
+              <span class="min-w-[3.5rem] text-center">
+                {{ formatAdjust(customDescriptionSizeAdjust) }}
+              </span>
+              <button
+                type="button"
+                class="button-ghost px-2 py-1 text-[0.65rem] uppercase tracking-[0.2em]"
+                :disabled="customDescriptionSizeAdjust >= SIZE_ADJUST_MAX"
+                @click="bumpSize('description', 1)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="grid gap-2 text-sm text-text/70">
+            <label for="custom-burger-price">Price (optional)</label>
+            <input
+              id="custom-burger-price"
+              v-model="customBurgerPrice"
+              type="text"
+              placeholder="$12.95"
+              class="w-full rounded-2xl border border-white/10 bg-base/80 px-4 py-3 text-sm text-text placeholder:text-text/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+            />
+            <div class="flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.2em] text-text/60">
+              <span>Size</span>
+              <button
+                type="button"
+                class="button-ghost px-2 py-1 text-[0.65rem] uppercase tracking-[0.2em]"
+                :disabled="customPriceSizeAdjust <= SIZE_ADJUST_MIN"
+                @click="bumpSize('price', -1)"
+              >
+                -
+              </button>
+              <span class="min-w-[3.5rem] text-center">
+                {{ formatAdjust(customPriceSizeAdjust) }}
+              </span>
+              <button
+                type="button"
+                class="button-ghost px-2 py-1 text-[0.65rem] uppercase tracking-[0.2em]"
+                :disabled="customPriceSizeAdjust >= SIZE_ADJUST_MAX"
+                @click="bumpSize('price', 1)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ChalkboardComposer
+        :title="customTitle"
+        :description="customDescription"
+        :price="customPrice"
+        :title-size-adjust="customTitleSizeAdjust"
+        :description-size-adjust="customDescriptionSizeAdjust"
+        :price-size-adjust="customPriceSizeAdjust"
+        label="Custom chalkboard"
+        heading="Download your burger"
+        copy="Share the chalkboard image with your custom burger."
+      />
     </section>
   </section>
 </template>

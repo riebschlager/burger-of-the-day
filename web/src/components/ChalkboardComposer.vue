@@ -6,6 +6,10 @@ const props = withDefaults(
   defineProps<{
     title: string;
     description?: string | null;
+    price?: string | null;
+    titleSizeAdjust?: number;
+    descriptionSizeAdjust?: number;
+    priceSizeAdjust?: number;
     label?: string;
     heading?: string;
     copy?: string;
@@ -18,6 +22,10 @@ const props = withDefaults(
     copy: "Grab a shareable image with the burger title on the board.",
     showHeader: true,
     offsetX: 10,
+    price: null,
+    titleSizeAdjust: 0,
+    descriptionSizeAdjust: 0,
+    priceSizeAdjust: 0,
   }
 );
 
@@ -38,6 +46,15 @@ const loadImage = async () => {
   imageRef.value = image;
   return image;
 };
+
+const SIZE_LIMITS = {
+  title: { min: -6, max: 6, minSize: 20 },
+  description: { min: -6, max: 6, minSize: 12 },
+  price: { min: -6, max: 6, minSize: 10 },
+};
+
+const clampAdjust = (value: number, min: number, max: number) =>
+  Math.min(max, Math.max(min, value));
 
 const wrapText = (
   text: string,
@@ -95,6 +112,17 @@ const formatDescription = (text?: string | null) => {
   return `(${trimmed})`;
 };
 
+const formatPrice = (text?: string | null) => {
+  if (!text) return "";
+  const trimmed = text.trim();
+  if (!trimmed) return "";
+  if (trimmed.startsWith("$")) return trimmed;
+  if (/^\d+(\.\d+)?$/.test(trimmed)) {
+    return `$${trimmed}`;
+  }
+  return trimmed;
+};
+
 const seededAngle = (seed: string, min = -3, max = 3) => {
   let hash = 0;
   for (let i = 0; i < seed.length; i += 1) {
@@ -108,10 +136,11 @@ const fitText = (
   ctx: CanvasRenderingContext2D,
   text: string,
   maxWidth: number,
-  maxHeight: number
+  maxHeight: number,
+  sizeAdjust = 0,
+  minSize = 18
 ) => {
-  let fontSize = Math.round(maxWidth * 0.12);
-  const minSize = 18;
+  let fontSize = Math.max(minSize, Math.round(maxWidth * 0.12) + sizeAdjust);
   let lines: string[] = [];
 
   while (fontSize >= minSize) {
@@ -133,23 +162,56 @@ const layoutText = (
   ctx: CanvasRenderingContext2D,
   title: string,
   description: string,
+  price: string,
   maxWidth: number,
   maxHeight: number
 ) => {
+  const titleAdjust = clampAdjust(
+    props.titleSizeAdjust ?? 0,
+    SIZE_LIMITS.title.min,
+    SIZE_LIMITS.title.max
+  );
+  const descriptionAdjust = clampAdjust(
+    props.descriptionSizeAdjust ?? 0,
+    SIZE_LIMITS.description.min,
+    SIZE_LIMITS.description.max
+  );
+  const priceAdjust = clampAdjust(
+    props.priceSizeAdjust ?? 0,
+    SIZE_LIMITS.price.min,
+    SIZE_LIMITS.price.max
+  );
   const subtitleText = formatDescription(description);
-  if (!subtitleText) {
-    const titleLayout = fitText(ctx, title, maxWidth, maxHeight);
+  const priceText = formatPrice(price);
+  const hasSubtitle = Boolean(subtitleText);
+  const hasPrice = Boolean(priceText);
+
+  if (!hasSubtitle && !hasPrice) {
+    const titleLayout = fitText(
+      ctx,
+      title,
+      maxWidth,
+      maxHeight,
+      titleAdjust,
+      SIZE_LIMITS.title.minSize
+    );
     return {
       title: titleLayout,
       subtitle: null,
+      price: null,
       totalHeight: titleLayout.lines.length * titleLayout.lineHeight,
-      gap: 0,
+      gapAfterTitle: 0,
+      gapAfterSubtitle: 0,
     };
   }
 
-  let titleSize = Math.round(maxWidth * 0.12);
-  const minTitle = 20;
-  const minSubtitle = 12;
+  let titleSize = Math.max(
+    SIZE_LIMITS.title.minSize,
+    Math.round(maxWidth * 0.12) + titleAdjust
+  );
+  const minTitle = SIZE_LIMITS.title.minSize;
+  const minSubtitle = SIZE_LIMITS.description.minSize;
+  const minPrice = SIZE_LIMITS.price.minSize;
 
   while (titleSize >= minTitle) {
     ctx.font = `${titleSize}px ${FONT_FAMILY}`;
@@ -161,50 +223,108 @@ const layoutText = (
     const titleLineHeight = titleSize * 1.2;
     const titleHeight = titleLines.length * titleLineHeight;
 
-    let subtitleSize = Math.max(Math.round(titleSize * 0.55), minSubtitle);
-    let subtitleLines: string[] = [];
-    let subtitleLineHeight = subtitleSize * 1.2;
-    let subtitleHeight = 0;
-    const gap = Math.max(8, Math.round(titleSize * 0.35));
+    const gapAfterTitle = Math.max(8, Math.round(titleSize * 0.35));
+    const gapAfterSubtitle = Math.max(6, Math.round(titleSize * 0.25));
+    let subtitleSize = hasSubtitle
+      ? Math.max(Math.round(titleSize * 0.55) + descriptionAdjust, minSubtitle)
+      : 0;
 
-    while (subtitleSize >= minSubtitle) {
-      ctx.font = `${subtitleSize}px ${FONT_FAMILY}`;
-      subtitleLines = wrapText(
-        subtitleText,
-        maxWidth * 0.92,
-        (value) => ctx.measureText(value).width
-      );
-      subtitleLineHeight = subtitleSize * 1.2;
-      subtitleHeight = subtitleLines.length * subtitleLineHeight;
+    while (!hasSubtitle || subtitleSize >= minSubtitle) {
+      let subtitleLines: string[] = [];
+      let subtitleLineHeight = subtitleSize * 1.2;
+      let subtitleHeight = 0;
 
-      if (titleHeight + gap + subtitleHeight <= maxHeight) {
-        return {
-          title: {
-            fontSize: titleSize,
-            lines: titleLines,
-            lineHeight: titleLineHeight,
-          },
-          subtitle: {
-            fontSize: subtitleSize,
-            lines: subtitleLines,
-            lineHeight: subtitleLineHeight,
-          },
-          totalHeight: titleHeight + gap + subtitleHeight,
-          gap,
-        };
+      if (hasSubtitle) {
+        ctx.font = `${subtitleSize}px ${FONT_FAMILY}`;
+        subtitleLines = wrapText(
+          subtitleText,
+          maxWidth * 0.92,
+          (value) => ctx.measureText(value).width
+        );
+        subtitleLineHeight = subtitleSize * 1.2;
+        subtitleHeight = subtitleLines.length * subtitleLineHeight;
       }
+
+      let priceSize = hasPrice
+        ? Math.max(Math.round(titleSize * 0.42) + priceAdjust, minPrice)
+        : 0;
+
+      while (!hasPrice || priceSize >= minPrice) {
+        let priceLines: string[] = [];
+        let priceLineHeight = priceSize * 1.2;
+        let priceHeight = 0;
+
+        if (hasPrice) {
+          ctx.font = `${priceSize}px ${FONT_FAMILY}`;
+          priceLines = wrapText(
+            priceText,
+            maxWidth * 0.7,
+            (value) => ctx.measureText(value).width
+          );
+          priceLineHeight = priceSize * 1.2;
+          priceHeight = priceLines.length * priceLineHeight;
+        }
+
+        const totalHeight =
+          titleHeight +
+          (hasSubtitle || hasPrice ? gapAfterTitle : 0) +
+          (hasSubtitle ? subtitleHeight : 0) +
+          (hasSubtitle && hasPrice ? gapAfterSubtitle : 0) +
+          (hasPrice ? priceHeight : 0);
+
+        if (totalHeight <= maxHeight) {
+          return {
+            title: {
+              fontSize: titleSize,
+              lines: titleLines,
+              lineHeight: titleLineHeight,
+            },
+            subtitle: hasSubtitle
+              ? {
+                  fontSize: subtitleSize,
+                  lines: subtitleLines,
+                  lineHeight: subtitleLineHeight,
+                }
+              : null,
+            price: hasPrice
+              ? {
+                  fontSize: priceSize,
+                  lines: priceLines,
+                  lineHeight: priceLineHeight,
+                }
+              : null,
+            totalHeight,
+            gapAfterTitle,
+            gapAfterSubtitle: hasSubtitle && hasPrice ? gapAfterSubtitle : 0,
+          };
+        }
+
+        if (!hasPrice) break;
+        priceSize -= 2;
+      }
+
+      if (!hasSubtitle) break;
       subtitleSize -= 2;
     }
 
     titleSize -= 2;
   }
 
-  const fallbackTitle = fitText(ctx, title, maxWidth, maxHeight);
+  const fallbackTitle = fitText(
+    ctx,
+    title,
+    maxWidth,
+    maxHeight,
+    titleAdjust,
+    SIZE_LIMITS.title.minSize
+  );
   return {
     title: fallbackTitle,
     subtitle: null,
+    price: null,
     totalHeight: fallbackTitle.lines.length * fallbackTitle.lineHeight,
-    gap: 0,
+    gapAfterTitle: 0,
+    gapAfterSubtitle: 0,
   };
 };
 
@@ -214,6 +334,7 @@ const render = async () => {
 
   const text = props.title?.trim() || "Burger of the Day";
   const description = props.description?.trim() || "";
+  const price = props.price?.trim() || "";
 
   try {
     const image = await loadImage();
@@ -243,12 +364,13 @@ const render = async () => {
     const textWidth = width - paddingX * 2;
     const textHeight = height - paddingTop - paddingBottom;
 
-    const layout = layoutText(ctx, text, description, textWidth, textHeight);
+    const layout = layoutText(ctx, text, description, price, textWidth, textHeight);
 
     const startY =
       paddingTop + (textHeight - layout.totalHeight) / 2 + layout.title.fontSize;
     const titleBlockHeight = layout.title.lines.length * layout.title.lineHeight;
     const titleStartY = startY;
+    let nextStartY = titleStartY + titleBlockHeight;
 
     ctx.textAlign = "center";
     ctx.textBaseline = "alphabetic";
@@ -301,9 +423,10 @@ const render = async () => {
       ctx.lineWidth = Math.max(1, Math.round(layout.subtitle.fontSize * 0.045));
       ctx.shadowBlur = Math.round(layout.subtitle.fontSize * 0.04);
 
-      const subtitleStartY = titleStartY + titleBlockHeight + layout.gap;
+      const subtitleStartY = nextStartY + layout.gapAfterTitle;
       const subtitleBlockHeight =
         layout.subtitle.lines.length * layout.subtitle.lineHeight;
+      nextStartY = subtitleStartY + subtitleBlockHeight;
 
       drawBlock({
         lines: layout.subtitle.lines,
@@ -312,6 +435,26 @@ const render = async () => {
         blockStartY: subtitleStartY,
         blockHeight: subtitleBlockHeight,
         angle: seededAngle(`${text}-${description}-subtitle`),
+      });
+    }
+
+    if (layout.price) {
+      ctx.font = `${FONT_WEIGHT} ${layout.price.fontSize}px ${FONT_FAMILY}`;
+      ctx.lineWidth = Math.max(1, Math.round(layout.price.fontSize * 0.04));
+      ctx.shadowBlur = Math.round(layout.price.fontSize * 0.035);
+
+      const priceStartY = layout.subtitle
+        ? nextStartY + layout.gapAfterSubtitle
+        : nextStartY + layout.gapAfterTitle;
+      const priceBlockHeight = layout.price.lines.length * layout.price.lineHeight;
+
+      drawBlock({
+        lines: layout.price.lines,
+        lineHeight: layout.price.lineHeight,
+        fontSize: layout.price.fontSize,
+        blockStartY: priceStartY,
+        blockHeight: priceBlockHeight,
+        angle: seededAngle(`${text}-${price}-price`),
       });
     }
 
@@ -336,7 +479,15 @@ onMounted(() => {
 });
 
 watch(
-  () => [props.title, props.description],
+  () => [
+    props.title,
+    props.description,
+    props.price,
+    props.offsetX,
+    props.titleSizeAdjust,
+    props.descriptionSizeAdjust,
+    props.priceSizeAdjust,
+  ],
   () => {
     render();
   }
