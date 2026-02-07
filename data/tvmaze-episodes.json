@@ -1,6 +1,6 @@
 {
   "show_query": "Bob's Burgers",
-  "retrieved_at": "2026-01-04T19:14:47.575249+00:00",
+  "retrieved_at": "2026-02-07T21:54:24.595787+00:00",
   "show": {
     "id": 107,
     "url": "https://www.tvmaze.com/shows/107/bobs-burgers",
@@ -26,7 +26,7 @@
     "rating": {
       "average": 7.9
     },
-    "weight": 100,
+    "weight": 99,
     "network": {
       "id": 4,
       "name": "FOX",
@@ -7294,7 +7294,7 @@
       "airstamp": "2023-02-20T02:00:00+00:00",
       "runtime": 30,
       "rating": {
-        "average": 7.5
+        "average": 7.7
       },
       "image": {
         "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/448/1120387.jpg",
@@ -7323,7 +7323,7 @@
       "airstamp": "2023-02-27T02:00:00+00:00",
       "runtime": 30,
       "rating": {
-        "average": 7.9
+        "average": 8.1
       },
       "image": {
         "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/449/1123739.jpg",
@@ -7352,7 +7352,7 @@
       "airstamp": "2023-03-06T02:00:00+00:00",
       "runtime": 30,
       "rating": {
-        "average": 7.6
+        "average": 7.8
       },
       "image": {
         "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/450/1125308.jpg",
@@ -7381,7 +7381,7 @@
       "airstamp": "2023-03-13T01:00:00+00:00",
       "runtime": 30,
       "rating": {
-        "average": 7.5
+        "average": 7.7
       },
       "image": {
         "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/451/1128488.jpg",
@@ -7410,7 +7410,7 @@
       "airstamp": "2023-03-20T01:00:00+00:00",
       "runtime": 30,
       "rating": {
-        "average": 8
+        "average": 8.2
       },
       "image": {
         "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/453/1132839.jpg",
@@ -7439,7 +7439,7 @@
       "airstamp": "2023-03-20T01:30:00+00:00",
       "runtime": 30,
       "rating": {
-        "average": 7
+        "average": 7.3
       },
       "image": {
         "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/456/1140514.jpg",
@@ -7468,7 +7468,7 @@
       "airstamp": "2023-04-17T00:00:00+00:00",
       "runtime": 30,
       "rating": {
-        "average": 8
+        "average": 8.2
       },
       "image": {
         "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/457/1143397.jpg",
@@ -7497,7 +7497,7 @@
       "airstamp": "2023-04-24T01:00:00+00:00",
       "runtime": 30,
       "rating": {
-        "average": 7.5
+        "average": 7.8
       },
       "image": {
         "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/457/1143398.jpg",
@@ -7961,7 +7961,7 @@
       "airstamp": "2024-05-20T01:30:00+00:00",
       "runtime": 30,
       "rating": {
-        "average": 7.4
+        "average": 7.5
       },
       "image": {
         "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/524/1311794.jpg",
@@ -8048,7 +8048,7 @@
       "airstamp": "2024-09-23T01:30:00+00:00",
       "runtime": 30,
       "rating": {
-        "average": 8.6
+        "average": 8.4
       },
       "image": {
         "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/537/1343570.jpg",
@@ -8222,7 +8222,7 @@
       "airstamp": "2024-11-11T02:00:00+00:00",
       "runtime": 30,
       "rating": {
-        "average": 8.3
+        "average": 7.9
       },
       "image": {
         "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/543/1358680.jpg",
@@ -8280,7 +8280,7 @@
       "airstamp": "2024-12-09T02:00:00+00:00",
       "runtime": 30,
       "rating": {
-        "average": 7.4
+        "average": 7.3
       },
       "image": {
         "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/547/1367569.jpg",
@@ -8628,7 +8628,7 @@
       "airstamp": "2025-08-01T00:30:00+00:00",
       "runtime": 30,
       "rating": {
-        "average": 7.8
+        "average": 7.9
       },
       "image": {
         "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/579/1449677.jpg",
@@ -8686,7 +8686,7 @@
       "airstamp": "2025-08-15T00:00:00+00:00",
       "runtime": 30,
       "rating": {
-        "average": 8.4
+        "average": 8.2
       },
       "image": {
         "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/583/1457649.jpg",
@@ -8715,7 +8715,7 @@
       "airstamp": "2025-09-29T01:30:00+00:00",
       "runtime": 30,
       "rating": {
-        "average": 8.7
+        "average": 8.9
       },
       "image": {
         "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/590/1475010.jpg",
